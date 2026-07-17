@@ -203,8 +203,14 @@ public final class Main {
      * approval checkpoint, the fan-out and the join. A demo that needs no network
      * and costs nothing is not a lesser demo — it is the one that works when the
      * wifi does not.
+     *
+     * <p>Public so the test suite can run this exact fixture through the real graph.
+     * It was private, and the demo silently broke: a new exit gate made the canned
+     * plan and the canned patch inconsistent, {@code --mock} failed, and every test
+     * kept passing because the suite had its own fixture. The first thing a reviewer
+     * runs should not be the one thing nothing tests.
      */
-    private static LlmClient mockClient() {
+    public static LlmClient mockClient() {
         return new DeterministicLlmClient()
                 .when("Restate this requirement", """
                         ### Goal
@@ -271,6 +277,12 @@ public final class Main {
                         ### Out of scope
                         - Distributed rate limiting
                         """)
+                // Both files the plan names. The first version of this fixture proposed
+                // only the limiter and not the controller that calls it. When the
+                // planTasksCovered() exit gate was added, --mock began failing while all
+                // 57 tests kept passing, because HarnessScenarioTest carries its own
+                // fixture. Two mocks, one maintained: the demo a reviewer runs first was
+                // the one nothing tested.
                 .when("Write the code for this plan", """
                         FILE: src/main/java/com/example/urlshortener/RateLimiter.java
                         RATIONALE: in-memory per-IP counter, no new dependency
@@ -303,6 +315,41 @@ public final class Main {
                                 synchronized int increment() {
                                     return ++count;
                                 }
+                            }
+                        }
+```
+
+                        FILE: src/main/java/com/example/urlshortener/LinkController.java
+                        RATIONALE: wires the limiter into the create endpoint; without this the
+                        limiter exists and does nothing
+```java
+                        package com.example.urlshortener;
+
+                        import jakarta.servlet.http.HttpServletRequest;
+                        import org.springframework.http.HttpStatus;
+                        import org.springframework.http.ResponseEntity;
+                        import org.springframework.web.bind.annotation.PostMapping;
+                        import org.springframework.web.bind.annotation.RequestMapping;
+                        import org.springframework.web.bind.annotation.RestController;
+
+                        @RestController
+                        @RequestMapping("/api/v1/links")
+                        public class LinkController {
+
+                            private final LinkService service;
+                            private final RateLimiter rateLimiter;
+
+                            public LinkController(LinkService service, RateLimiter rateLimiter) {
+                                this.service = service;
+                                this.rateLimiter = rateLimiter;
+                            }
+
+                            @PostMapping
+                            public ResponseEntity<String> create(String url, HttpServletRequest request) {
+                                if (!rateLimiter.allow(request.getRemoteAddr())) {
+                                    return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS).build();
+                                }
+                                return ResponseEntity.status(HttpStatus.CREATED).body(service.create(url));
                             }
                         }
 ```

@@ -871,4 +871,42 @@ class HarnessScenarioTest {
         // proceeds on their answer rather than on the harness's.
         assertThat(snap.runStatus()).isEqualTo(TaskState.RunStatus.COMPLETED);
     }
+
+    // ---- the demo is not exempt from the tests -----------------------------
+
+    @Test
+    @DisplayName("the --mock demo walks the whole graph — the fixture a reviewer runs first")
+    void theShippedDemoFixtureStillWorks() throws Exception {
+        Path repo = targetRepo();
+
+        // Main's canned responses, not this class's. They drifted apart once: a new
+        // exit gate made Main's plan and patch inconsistent, --mock started failing,
+        // and the whole suite stayed green because it never ran that fixture. The
+        // README tells a reviewer to start with --mock; this test is what makes that
+        // instruction safe to give.
+        RunSnapshot snap = run(task("run-shipped-mock", TaskState.Scenario.BROWNFIELD, repo),
+                com.jay.agentic.cli.Main.mockClient(),
+                new ScriptedApprover(ApprovalPort.Decision.APPROVE));
+
+        assertThat(snap.runStatus()).isEqualTo(TaskState.RunStatus.COMPLETED);
+
+        // Every stage the demo is supposed to show, actually shown.
+        assertThat(statusOf(snap, StageId.EXPLORE)).isEqualTo(StageStatus.PASSED);
+        assertThat(statusOf(snap, StageId.IMPLEMENT)).isEqualTo(StageStatus.PASSED);
+        assertThat(statusOf(snap, StageId.TEST)).isEqualTo(StageStatus.PASSED);
+        assertThat(statusOf(snap, StageId.DOCS)).isEqualTo(StageStatus.PASSED);
+        assertThat(statusOf(snap, StageId.SECURITY_REVIEW)).isEqualTo(StageStatus.PASSED);
+        assertThat(statusOf(snap, StageId.VALIDATE)).isEqualTo(StageStatus.PASSED);
+        assertThat(statusOf(snap, StageId.RELEASE_GATE)).isEqualTo(StageStatus.PASSED);
+        assertThat(statusOf(snap, StageId.SUMMARY)).isEqualTo(StageStatus.PASSED);
+
+        // And the change it proposes is complete: the limiter and the controller that
+        // calls it. A limiter wired to nothing is the failure this gate exists for.
+        List<String> proposed = snap.artifacts().stream()
+                .filter(a -> a.type() == Artifact.Type.PATCH)
+                .map(Artifact::name).toList();
+        assertThat(proposed).hasSize(2);
+        assertThat(proposed.stream().anyMatch(n -> n.contains("RateLimiter"))).isTrue();
+        assertThat(proposed.stream().anyMatch(n -> n.contains("LinkController"))).isTrue();
+    }
 }

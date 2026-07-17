@@ -66,7 +66,7 @@ the key is valid but the account is empty — top up at console.anthropic.com.
 mvn clean test
 ```
 
-Expect **BUILD SUCCESS** and **57 tests**. This runs entirely offline — no API key
+Expect **BUILD SUCCESS** and **58 tests**. This runs entirely offline — no API key
 needed, no network, no cost. That is deliberate; see "Why mock-first" below.
 
 Coverage report (optional):
@@ -136,7 +136,7 @@ mvn -q exec:java -Dexec.args='--scenario ambiguous --repo ../urlShortener --requ
 mvn clean test
 ```
 
-57 tests. The interesting ones are in `HarnessScenarioTest` — they run the **real**
+58 tests. The interesting ones are in `HarnessScenarioTest` — they run the **real**
 graph, orchestrator, policy engine and tools end to end, substituting only the model
 and the human:
 
@@ -159,6 +159,7 @@ and the human:
 | `ambiguityBlocksReleaseNotPlanning` | A HIGH guess stops shipping, not planning |
 | `resolvedAssumptionUnblocksRelease` | A human answering unblocks the run |
 | `rejectedAssumptionIsRetained` | An overturned guess is recorded, not erased |
+| `theShippedDemoFixtureStillWorks` | The `--mock` demo itself is under test |
 
 ### 2. What a run leaves behind
 
