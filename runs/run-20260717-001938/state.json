@@ -1,0 +1,386 @@
+{
+  "runId" : "run-20260717-001938",
+  "requirement" : "Add per-IP rate limiting to POST /api/v1/links",
+  "targetRepoPath" : "/Users/jayanthreddyaeradla/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/url-shortener",
+  "scenario" : "BROWNFIELD",
+  "runStatus" : "COMPLETED",
+  "stopReason" : null,
+  "createdAt" : "2026-07-17T05:19:38.460253Z",
+  "snapshotAt" : "2026-07-17T05:21:24.840690Z",
+  "stages" : [ {
+    "stageId" : "INTAKE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ "art-2" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:19:38.486081Z",
+    "finishedAt" : "2026-07-17T05:19:38.497629Z"
+  }, {
+    "stageId" : "CLARIFY",
+    "status" : "SKIPPED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : "2026-07-17T05:19:38.461625Z"
+  }, {
+    "stageId" : "EXPLORE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-2" : "62fc8e8082e0b43c4a800ecf37596fc370023fd56ade20f80aeb1dfcf01f533c"
+    },
+    "producedArtifactIds" : [ "art-6" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:19:38.500642Z",
+    "finishedAt" : "2026-07-17T05:19:38.503280Z"
+  }, {
+    "stageId" : "PLAN",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-2" : "62fc8e8082e0b43c4a800ecf37596fc370023fd56ade20f80aeb1dfcf01f533c"
+    },
+    "producedArtifactIds" : [ "art-4" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:19:38.500737Z",
+    "finishedAt" : "2026-07-17T05:19:38.501636Z"
+  }, {
+    "stageId" : "APPROVAL_GATE",
+    "status" : "PASSED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : "2026-07-17T05:21:20.460428Z"
+  }, {
+    "stageId" : "IMPLEMENT",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-6" : "d06f185bc892672d1bb9749ab1b78aac2b78fbe0664a26f143fe930d54baffc2",
+      "art-4" : "fac09701730f725bca1bdf1a7a2cfe69467c944a2e45fd5d52c6f1d530d01822"
+    },
+    "producedArtifactIds" : [ "art-8" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:21:20.465348Z",
+    "finishedAt" : "2026-07-17T05:21:20.474870Z"
+  }, {
+    "stageId" : "TEST",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-4" : "fac09701730f725bca1bdf1a7a2cfe69467c944a2e45fd5d52c6f1d530d01822",
+      "art-8" : "972531f09000d130ab3ca5727afc7b804f988502b2fcaeddd01f69049c08f9e2"
+    },
+    "producedArtifactIds" : [ "art-10" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:21:20.476825Z",
+    "finishedAt" : "2026-07-17T05:21:20.479654Z"
+  }, {
+    "stageId" : "DOCS",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-8" : "972531f09000d130ab3ca5727afc7b804f988502b2fcaeddd01f69049c08f9e2"
+    },
+    "producedArtifactIds" : [ "art-9" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:21:20.476944Z",
+    "finishedAt" : "2026-07-17T05:21:20.477885Z"
+  }, {
+    "stageId" : "SECURITY_REVIEW",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-8" : "972531f09000d130ab3ca5727afc7b804f988502b2fcaeddd01f69049c08f9e2"
+    },
+    "producedArtifactIds" : [ "art-15" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:21:20.477023Z",
+    "finishedAt" : "2026-07-17T05:21:20.480283Z"
+  }, {
+    "stageId" : "VALIDATE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-10" : "890bd0e76e1062b6d9fe088ab8d33d4012df476796804d563e38956b9b0d1fe9",
+      "art-15" : "ecbf2d674ef5979650b81f00fc4e62ecb980c361a7d39516debfd33c8355b10b",
+      "art-9" : "05d12a47f532cc56b1cf19f305c9500aacc00390ce3d0c45b6da712dbbc0f8c8",
+      "art-8" : "972531f09000d130ab3ca5727afc7b804f988502b2fcaeddd01f69049c08f9e2"
+    },
+    "producedArtifactIds" : [ "art-17" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:21:20.484362Z",
+    "finishedAt" : "2026-07-17T05:21:20.485823Z"
+  }, {
+    "stageId" : "RELEASE_GATE",
+    "status" : "PASSED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : "2026-07-17T05:21:24.831597Z"
+  }, {
+    "stageId" : "SUMMARY",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-8" : "972531f09000d130ab3ca5727afc7b804f988502b2fcaeddd01f69049c08f9e2"
+    },
+    "producedArtifactIds" : [ "art-19" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:21:24.835019Z",
+    "finishedAt" : "2026-07-17T05:21:24.837277Z"
+  } ],
+  "artifacts" : [ {
+    "id" : "art-2",
+    "producedBy" : "INTAKE",
+    "type" : "NORMALISED_REQUIREMENT",
+    "name" : "normalised-requirement.md",
+    "content" : "### Goal\nRequests to create a short link are limited per client IP.\n\n### In scope\n- A per-IP request limit on the create endpoint\n\n### Out of scope\n- Limiting the redirect endpoint\n- Per-user or per-API-key limits\n\n### Unstated\n- What the limit should be\n- What response a limited client receives\n\n### Acceptance\n- A client exceeding the limit receives an error rather than a short link\n",
+    "contentHash" : "62fc8e8082e0b43c4a800ecf37596fc370023fd56ade20f80aeb1dfcf01f533c",
+    "producedAt" : "2026-07-17T05:19:38.496517Z"
+  }, {
+    "id" : "art-6",
+    "producedBy" : "EXPLORE",
+    "type" : "IMPACT_ANALYSIS",
+    "name" : "impact-analysis.md",
+    "content" : "### Impacted files\n- src/main/java/com/example/urlshortener/LinkController.java — the create\n  endpoint gains a limit check.\n\n### Impacted APIs and data flows\n- POST /api/v1/links may now return 429.\n\n### Existing patterns to follow\n- Controllers are thin; logic lives in services.\n\n### What I could not determine\n- Whether a proxy sits in front of the service, which would make the\n  remote address unreliable.\n",
+    "contentHash" : "d06f185bc892672d1bb9749ab1b78aac2b78fbe0664a26f143fe930d54baffc2",
+    "producedAt" : "2026-07-17T05:19:38.503257Z"
+  }, {
+    "id" : "art-4",
+    "producedBy" : "PLAN",
+    "type" : "TASK_PLAN",
+    "name" : "task-plan.md",
+    "content" : "### Approach\nAdd a rate limit check to the create endpoint using an in-memory counter\nkeyed by client IP. Smallest change that satisfies the requirement.\n\n### Tasks\n1. [src/main/java/com/example/urlshortener/RateLimiter.java] new in-memory\n   per-IP counter — depends on: none\n2. [src/main/java/com/example/urlshortener/LinkController.java] check the\n   limit before creating — depends on: 1\n\n### Key decision\nDECISION | in-memory counter | single instance, no dependency needed | Redis-backed counter | adds infrastructure the requirement does not justify\n\n### Risks\n- The counter does not survive a restart.\n- It is per-instance, so it does not hold behind a load balancer.\n\n### Out of scope\n- Distributed rate limiting\n",
+    "contentHash" : "fac09701730f725bca1bdf1a7a2cfe69467c944a2e45fd5d52c6f1d530d01822",
+    "producedAt" : "2026-07-17T05:19:38.501509Z"
+  }, {
+    "id" : "art-8",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/main/java/com/example/urlshortener/RateLimiter.java",
+    "content" : "                        package com.example.urlshortener;\n\n                        import java.time.Instant;\n                        import java.util.Map;\n                        import java.util.concurrent.ConcurrentHashMap;\n\n                        public class RateLimiter {\n                            private static final int LIMIT = 100;\n                            private final Map<String, Window> windows = new ConcurrentHashMap<>();\n\n                            public boolean allow(String ip) {\n                                Window w = windows.compute(ip, (k, existing) ->\n                                        existing == null || existing.isExpired()\n                                                ? new Window() : existing);\n                                return w.increment() <= LIMIT;\n                            }\n\n                            private static final class Window {\n                                private final Instant start = Instant.now();\n                                private int count = 0;\n\n                                boolean isExpired() {\n                                    return start.plusSeconds(60).isBefore(Instant.now());\n                                }\n\n                                synchronized int increment() {\n                                    return ++count;\n                                }\n                            }\n                        }\n",
+    "contentHash" : "972531f09000d130ab3ca5727afc7b804f988502b2fcaeddd01f69049c08f9e2",
+    "producedAt" : "2026-07-17T05:21:20.474791Z"
+  }, {
+    "id" : "art-10",
+    "producedBy" : "TEST",
+    "type" : "TEST_SOURCE",
+    "name" : "src/test/java/com/example/urlshortener/RateLimiterTest.java",
+    "content" : "                        package com.example.urlshortener;\n\n                        import org.junit.jupiter.api.Test;\n                        import static org.assertj.core.api.Assertions.assertThat;\n\n                        class RateLimiterTest {\n                            @Test\n                            void allowsUpToTheLimitThenRefuses() {\n                                RateLimiter limiter = new RateLimiter();\n                                for (int i = 0; i < 100; i++) {\n                                    assertThat(limiter.allow(\"1.2.3.4\")).isTrue();\n                                }\n                                assertThat(limiter.allow(\"1.2.3.4\")).isFalse();\n                            }\n\n                            @Test\n                            void limitsAreIndependentPerIp() {\n                                RateLimiter limiter = new RateLimiter();\n                                for (int i = 0; i < 100; i++) limiter.allow(\"1.2.3.4\");\n                                assertThat(limiter.allow(\"5.6.7.8\")).isTrue();\n                            }\n                        }\n",
+    "contentHash" : "890bd0e76e1062b6d9fe088ab8d33d4012df476796804d563e38956b9b0d1fe9",
+    "producedAt" : "2026-07-17T05:21:20.478094Z"
+  }, {
+    "id" : "art-9",
+    "producedBy" : "DOCS",
+    "type" : "DOCUMENTATION",
+    "name" : "change-notes.md",
+    "content" : "# Change notes\n\n_Generated by the agentic harness. Reviewed by a human before merge._\n\n### What changed\nPOST /api/v1/links now rejects a client that exceeds 100 requests per minute.\n\n### Behaviour\n- POST /api/v1/links returns 429 once a client IP exceeds 100 requests\n  in a rolling 60-second window.\n\n### Configuration\n- None. The limit is currently a constant.\n\n### Operational notes\n- The counter is per-instance and in-memory. Behind a load balancer the\n  effective limit is 100 times the instance count.\n\n### Known limitations\n- Does not survive a restart.\n- Trusts the remote address, which is wrong behind a proxy.\n\n\n---\nEvidence: model call mock-7\n",
+    "contentHash" : "05d12a47f532cc56b1cf19f305c9500aacc00390ce3d0c45b6da712dbbc0f8c8",
+    "producedAt" : "2026-07-17T05:21:20.477829Z"
+  }, {
+    "id" : "art-15",
+    "producedBy" : "SECURITY_REVIEW",
+    "type" : "REVIEW_REPORT",
+    "name" : "security-review.md",
+    "content" : "# Security review\n\n## Deterministic scan\n\nNo credential patterns found.\n\n## Review\n\nFINDING | MEDIUM | RateLimiter.java:14 | the remote address is trusted; behind a proxy every client shares one IP | read the client IP from a validated X-Forwarded-For, or configure the proxy protocol\nFINDING | LOW | RateLimiter.java:9 | the map grows without bound as IPs accumulate | evict expired windows\n\n### Residual risk\n- Whether a proxy is in front of this service could not be determined from the code.\n\n\n---\nEvidence: model call mock-9\n",
+    "contentHash" : "ecbf2d674ef5979650b81f00fc4e62ecb980c361a7d39516debfd33c8355b10b",
+    "producedAt" : "2026-07-17T05:21:20.480242Z"
+  }, {
+    "id" : "art-17",
+    "producedBy" : "VALIDATE",
+    "type" : "REVIEW_REPORT",
+    "name" : "validation.md",
+    "content" : "# Validation\n\nCONSISTENT\n\n### Requirement coverage\n- A client exceeding the limit receives an error rather than a short link: yes — RateLimiter returns false above 100 and the controller returns 429.\n\n\n---\nEvidence: model call mock-10\n",
+    "contentHash" : "da9c81b519789c3be2f2b9425f906aec4983452e86f9a9962058ab886268f7aa",
+    "producedAt" : "2026-07-17T05:21:20.485784Z"
+  }, {
+    "id" : "art-19",
+    "producedBy" : "SUMMARY",
+    "type" : "RUN_SUMMARY",
+    "name" : "engineering-summary.md",
+    "content" : "# Engineering summary\n\n**Run:** run-20260717-001938\n**Requirement:** Add per-IP rate limiting to POST /api/v1/links\n**Scenario:** BROWNFIELD\n**Target repository:** /Users/jayanthreddyaeradla/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/url-shortener\n\n## Assessment\n\nThis is mergeable with one caveat that needs a human answer first: the\nlimiter trusts the remote address, so if this service sits behind a proxy\nthe limit applies to the proxy rather than to clients, and it will be\nuseless. The chosen limit of 100 per minute is an assumption, not a\nrequirement. The in-memory counter is per-instance and will not hold\nacross a horizontal scale-out, which is acceptable for now but should be\nrecorded as known.\n\n\n## What was produced\n\n- `src/main/java/com/example/urlshortener/RateLimiter.java` — PATCH (972531f09000)\n- `src/test/java/com/example/urlshortener/RateLimiterTest.java` — TEST_SOURCE (890bd0e76e10)\n- `change-notes.md` — DOCUMENTATION (05d12a47f532)\n- `security-review.md` — REVIEW_REPORT (ecbf2d674ef5)\n- `validation.md` — REVIEW_REPORT (da9c81b51978)\n\n## Stages\n\n| Stage | Outcome | Attempts |\n|---|---|---|\n| INTAKE | PASSED | 1 |\n| CLARIFY | SKIPPED | 0 |\n| EXPLORE | PASSED | 1 |\n| PLAN | PASSED | 1 |\n| APPROVAL_GATE | PASSED | 0 |\n| IMPLEMENT | PASSED | 1 |\n| TEST | PASSED | 1 |\n| DOCS | PASSED | 1 |\n| SECURITY_REVIEW | PASSED | 1 |\n| VALIDATE | PASSED | 1 |\n| RELEASE_GATE | PASSED | 0 |\n| SUMMARY | RUNNING | 1 |\n\n## Decisions\n\n- **What is actually being asked for?** → Requests to create a short link are limited per client IP.\n  - Normalised from the raw requirement; scope boundaries made explicit so later stages cannot quietly widen them.\n  - Rejected: Pass the raw requirement through unchanged — Leaves every later stage to interpret it independently, and they will not interpret it the same way\n- **What is the shape of this change?** → in-memory counter\n  - single instance, no dependency needed\n  - Rejected: Redis-backed counter — adds infrastructure the requirement does not justify\n- **Which parts of the codebase does this change touch?** → no impacted files identified\n  - Identified by searching for the concepts in the requirement, then reading the files that matched. Limited to 6 files to bound context size.\n  - Rejected: Read the whole repository into context — Unaffordable, and buries the relevant three files in noise\n- **Human reviews the plan, assumptions and impact before implementation** → APPROVE\n  - no harm\n  - _Decided by a human._\n- **What would catch this change being wrong?** → 1 test file(s): [src/test/java/com/example/urlshortener/RateLimiterTest.java]\n  - Tests target the behaviour the plan specifies and its failure paths, rather than the shape of the implementation.\n  - Rejected: Assert on the implementation's internals — Passes until the code is refactored, then fails without anything being broken\n- **Is this change safe to propose for merge?** → no high-severity findings\n  - Reviewed by a deterministic scan for known credential shapes and by a model for logic-level issues the scan cannot express. Neither alone is sufficient.\n  - Rejected: Rely on the model review alone — Misses a hardcoded key whenever the model is attending to something more interesting\n- **Do the code, tests, documentation and review describe the same change?** → artifacts are consistent\n  - Each upstream stage validated its own output and could not see the others. This is the only point at which the change is examined as a whole.\n  - Rejected: Trust each stage's own exit gate — Every artifact can pass its own gate while collectively describing different behaviour\n- **Human approves the branch; blocked while high-risk assumptions are open** → APPROVE\n  - no harm\n  - _Decided by a human._\n\n## Human checkpoints\n\n- APPROVAL_GATE: APPROVE — no harm\n- RELEASE_GATE: APPROVE — no harm\n\n## Assumptions\n\n- [MEDIUM/OPEN] the remote address is trusted; behind a proxy every client shares one IP (at RateLimiter.java:14)\n  - _security review finding; suggested fix: read the client IP from a validated X-Forwarded-For, or configure the proxy protocol_\n- [LOW/OPEN] the map grows without bound as IPs accumulate (at RateLimiter.java:9)\n  - _security review finding; suggested fix: evict expired windows_\n\n## Open questions and limitations\n\n- What the limit should be\n- What response a limited client receives\n- Documented limitation: Does not survive a restart.\n- Documented limitation: Trusts the remote address, which is wrong behind a proxy.\n- Untested: Window expiry, which would need a clock abstraction to test without sleeping.\n- Residual security risk: Whether a proxy is in front of this service could not be determined from the code.\n\n\n---\n\n_Produced by the agentic harness. Every artifact referenced above is a\nproposal. Nothing has been applied to the target repository._\n",
+    "contentHash" : "ba1aab78dbac7e318aa8a56c2c28246a2ab7d471f3ed108ebb1faf19435aa27b",
+    "producedAt" : "2026-07-17T05:21:24.837175Z"
+  } ],
+  "assumptions" : [ {
+    "id" : "asm-12",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "the remote address is trusted; behind a proxy every client shares one IP (at RateLimiter.java:14)",
+    "reason" : "security review finding; suggested fix: read the client IP from a validated X-Forwarded-For, or configure the proxy protocol",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "mock-9",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "RateLimiter.java:14",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:21:20.478465Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-13",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "the map grows without bound as IPs accumulate (at RateLimiter.java:9)",
+    "reason" : "security review finding; suggested fix: evict expired windows",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "mock-9",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "RateLimiter.java:9",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:21:20.478498Z",
+    "resolution" : null
+  } ],
+  "decisions" : [ {
+    "id" : "dec-1",
+    "stage" : "INTAKE",
+    "question" : "What is actually being asked for?",
+    "choice" : "Requests to create a short link are limited per client IP.",
+    "rationale" : "Normalised from the raw requirement; scope boundaries made explicit so later stages cannot quietly widen them.",
+    "alternatives" : [ {
+      "option" : "Pass the raw requirement through unchanged",
+      "rejectedBecause" : "Leaves every later stage to interpret it independently, and they will not interpret it the same way"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "mock-1",
+      "detail" : null
+    }, {
+      "kind" : "REQUIREMENT",
+      "locator" : "Add per-IP rate limiting to POST /api/v1/links",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:19:38.496400Z"
+  }, {
+    "id" : "dec-3",
+    "stage" : "PLAN",
+    "question" : "What is the shape of this change?",
+    "choice" : "in-memory counter",
+    "rationale" : "single instance, no dependency needed",
+    "alternatives" : [ {
+      "option" : "Redis-backed counter",
+      "rejectedBecause" : "adds infrastructure the requirement does not justify"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "mock-3",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:19:38.501420Z"
+  }, {
+    "id" : "dec-5",
+    "stage" : "EXPLORE",
+    "question" : "Which parts of the codebase does this change touch?",
+    "choice" : "no impacted files identified",
+    "rationale" : "Identified by searching for the concepts in the requirement, then reading the files that matched. Limited to 6 files to bound context size.",
+    "alternatives" : [ {
+      "option" : "Read the whole repository into context",
+      "rejectedBecause" : "Unaffordable, and buries the relevant three files in noise"
+    } ],
+    "evidence" : [ ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:19:38.503219Z"
+  }, {
+    "id" : "dec-7",
+    "stage" : "APPROVAL_GATE",
+    "question" : "Human reviews the plan, assumptions and impact before implementation",
+    "choice" : "APPROVE",
+    "rationale" : "no harm",
+    "alternatives" : [ ],
+    "evidence" : [ {
+      "kind" : "HUMAN_INPUT",
+      "locator" : "APPROVE",
+      "detail" : null
+    } ],
+    "decidedBy" : "HUMAN",
+    "decidedAt" : "2026-07-17T05:21:20.460334Z"
+  }, {
+    "id" : "dec-11",
+    "stage" : "TEST",
+    "question" : "What would catch this change being wrong?",
+    "choice" : "1 test file(s): [src/test/java/com/example/urlshortener/RateLimiterTest.java]",
+    "rationale" : "Tests target the behaviour the plan specifies and its failure paths, rather than the shape of the implementation.",
+    "alternatives" : [ {
+      "option" : "Assert on the implementation's internals",
+      "rejectedBecause" : "Passes until the code is refactored, then fails without anything being broken"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "mock-8",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:21:20.479610Z"
+  }, {
+    "id" : "dec-14",
+    "stage" : "SECURITY_REVIEW",
+    "question" : "Is this change safe to propose for merge?",
+    "choice" : "no high-severity findings",
+    "rationale" : "Reviewed by a deterministic scan for known credential shapes and by a model for logic-level issues the scan cannot express. Neither alone is sufficient.",
+    "alternatives" : [ {
+      "option" : "Rely on the model review alone",
+      "rejectedBecause" : "Misses a hardcoded key whenever the model is attending to something more interesting"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "mock-9",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "secret-scanner",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:21:20.480040Z"
+  }, {
+    "id" : "dec-16",
+    "stage" : "VALIDATE",
+    "question" : "Do the code, tests, documentation and review describe the same change?",
+    "choice" : "artifacts are consistent",
+    "rationale" : "Each upstream stage validated its own output and could not see the others. This is the only point at which the change is examined as a whole.",
+    "alternatives" : [ {
+      "option" : "Trust each stage's own exit gate",
+      "rejectedBecause" : "Every artifact can pass its own gate while collectively describing different behaviour"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "mock-10",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:21:20.485501Z"
+  }, {
+    "id" : "dec-18",
+    "stage" : "RELEASE_GATE",
+    "question" : "Human approves the branch; blocked while high-risk assumptions are open",
+    "choice" : "APPROVE",
+    "rationale" : "no harm",
+    "alternatives" : [ ],
+    "evidence" : [ {
+      "kind" : "HUMAN_INPUT",
+      "locator" : "APPROVE",
+      "detail" : null
+    } ],
+    "decidedBy" : "HUMAN",
+    "decidedAt" : "2026-07-17T05:21:24.831572Z"
+  } ],
+  "openQuestions" : [ "What the limit should be", "What response a limited client receives", "Documented limitation: Does not survive a restart.", "Documented limitation: Trusts the remote address, which is wrong behind a proxy.", "Untested: Window expiry, which would need a clock abstraction to test without sleeping.", "Residual security risk: Whether a proxy is in front of this service could not be determined from the code." ]
+}

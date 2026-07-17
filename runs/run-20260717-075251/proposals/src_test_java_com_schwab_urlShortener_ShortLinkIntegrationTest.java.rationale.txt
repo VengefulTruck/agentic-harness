@@ -1,0 +1,4 @@
+Target: src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java
+
+Rationale:
+Add integration test for QR code endpoint following existing full-stack test patterns

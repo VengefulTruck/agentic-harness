@@ -1,0 +1,4 @@
+Target: src/main/java/com/shortlink/qr/QrCodeGenerator.java
+
+Rationale:
+Create QR code generation module (task 2) - pure function that converts URL to PNG bytes using ZXing

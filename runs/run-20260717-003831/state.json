@@ -1,0 +1,596 @@
+{
+  "runId" : "run-20260717-003831",
+  "requirement" : "Add per-IP rate limiting to POST /api/v1/links",
+  "targetRepoPath" : "/Users/jayanthreddyaeradla/Downloads/projects/agentic-harness/../urlShortener",
+  "scenario" : "BROWNFIELD",
+  "runStatus" : "FAILED",
+  "stopReason" : null,
+  "createdAt" : "2026-07-17T05:38:31.139504Z",
+  "snapshotAt" : "2026-07-17T05:43:07.954427Z",
+  "stages" : [ {
+    "stageId" : "INTAKE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ "art-2" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:38:31.162026Z",
+    "finishedAt" : "2026-07-17T05:38:34.899687Z"
+  }, {
+    "stageId" : "CLARIFY",
+    "status" : "SKIPPED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : "2026-07-17T05:38:31.140591Z"
+  }, {
+    "stageId" : "EXPLORE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-2" : "5b60f68495b07ee7f7d41fd98a815bdee04e3160080f029424b7926e5135b70f"
+    },
+    "producedArtifactIds" : [ "art-4" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:38:34.903460Z",
+    "finishedAt" : "2026-07-17T05:39:10.580238Z"
+  }, {
+    "stageId" : "PLAN",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-2" : "5b60f68495b07ee7f7d41fd98a815bdee04e3160080f029424b7926e5135b70f",
+      "art-4" : "2fccc12ba26de5b255d9b770f5fa94768bf01f20ba060061b0395ed575a0bb8c"
+    },
+    "producedArtifactIds" : [ "art-6" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:39:10.586731Z",
+    "finishedAt" : "2026-07-17T05:39:48.570101Z"
+  }, {
+    "stageId" : "APPROVAL_GATE",
+    "status" : "PASSED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : "2026-07-17T05:41:40.394551Z"
+  }, {
+    "stageId" : "IMPLEMENT",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-6" : "96f087dd8fe8ac32946214d6b3e6e8265eb7727650eacce9705f8ecbe354ddbe",
+      "art-4" : "2fccc12ba26de5b255d9b770f5fa94768bf01f20ba060061b0395ed575a0bb8c"
+    },
+    "producedArtifactIds" : [ "art-8", "art-9", "art-10", "art-11", "art-12", "art-13" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:41:40.398767Z",
+    "finishedAt" : "2026-07-17T05:42:14.635653Z"
+  }, {
+    "stageId" : "TEST",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-6" : "96f087dd8fe8ac32946214d6b3e6e8265eb7727650eacce9705f8ecbe354ddbe",
+      "art-13" : "b81d4e841c496381234d975909524290bc9a7db52ea05e967f0ed824cc5da9a8",
+      "art-12" : "ec64761b20eae26b43a83befd5e1e62a1250f43cc416196d635873313e26ca47",
+      "art-11" : "040ff44b0bf593a8bb2169aa9ebb4ccc52a2d877f252c98b50379fb9567f9aa4",
+      "art-10" : "00f552274619ed86e6093efaf93ac9cda73268663f6ee82dbf329ca7db952ed0",
+      "art-9" : "2a0005db7aa70f5e9dda7d0baceb241d0d2aeac50d642eced24eeb5ce0dd8153",
+      "art-8" : "c68e59f9c27ea95a78d8140485115dee339143ea34f6817cc8b296109ea41361"
+    },
+    "producedArtifactIds" : [ "art-22", "art-23" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:42:14.638797Z",
+    "finishedAt" : "2026-07-17T05:42:54.578650Z"
+  }, {
+    "stageId" : "DOCS",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-9" : "2a0005db7aa70f5e9dda7d0baceb241d0d2aeac50d642eced24eeb5ce0dd8153",
+      "art-8" : "c68e59f9c27ea95a78d8140485115dee339143ea34f6817cc8b296109ea41361",
+      "art-13" : "b81d4e841c496381234d975909524290bc9a7db52ea05e967f0ed824cc5da9a8",
+      "art-12" : "ec64761b20eae26b43a83befd5e1e62a1250f43cc416196d635873313e26ca47",
+      "art-11" : "040ff44b0bf593a8bb2169aa9ebb4ccc52a2d877f252c98b50379fb9567f9aa4",
+      "art-10" : "00f552274619ed86e6093efaf93ac9cda73268663f6ee82dbf329ca7db952ed0"
+    },
+    "producedArtifactIds" : [ "art-14" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:42:14.638862Z",
+    "finishedAt" : "2026-07-17T05:42:20.734312Z"
+  }, {
+    "stageId" : "SECURITY_REVIEW",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-9" : "2a0005db7aa70f5e9dda7d0baceb241d0d2aeac50d642eced24eeb5ce0dd8153",
+      "art-8" : "c68e59f9c27ea95a78d8140485115dee339143ea34f6817cc8b296109ea41361",
+      "art-13" : "b81d4e841c496381234d975909524290bc9a7db52ea05e967f0ed824cc5da9a8",
+      "art-12" : "ec64761b20eae26b43a83befd5e1e62a1250f43cc416196d635873313e26ca47",
+      "art-11" : "040ff44b0bf593a8bb2169aa9ebb4ccc52a2d877f252c98b50379fb9567f9aa4",
+      "art-10" : "00f552274619ed86e6093efaf93ac9cda73268663f6ee82dbf329ca7db952ed0"
+    },
+    "producedArtifactIds" : [ "art-21" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:42:14.639025Z",
+    "finishedAt" : "2026-07-17T05:42:31.855666Z"
+  }, {
+    "stageId" : "VALIDATE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-21" : "1de99acfd33b1ec132ef7db3ce32e8bbf60a03c590a4663c34e4caa2a955ad41",
+      "art-9" : "2a0005db7aa70f5e9dda7d0baceb241d0d2aeac50d642eced24eeb5ce0dd8153",
+      "art-8" : "c68e59f9c27ea95a78d8140485115dee339143ea34f6817cc8b296109ea41361",
+      "art-14" : "8f68a818a3a2504576b081bc3b468da38a5869823ba882b464e2e0f0be8b6d55",
+      "art-13" : "b81d4e841c496381234d975909524290bc9a7db52ea05e967f0ed824cc5da9a8",
+      "art-12" : "ec64761b20eae26b43a83befd5e1e62a1250f43cc416196d635873313e26ca47",
+      "art-11" : "040ff44b0bf593a8bb2169aa9ebb4ccc52a2d877f252c98b50379fb9567f9aa4",
+      "art-10" : "00f552274619ed86e6093efaf93ac9cda73268663f6ee82dbf329ca7db952ed0",
+      "art-23" : "e4c11bad06ad10a11367e792c0c9177c9db7636b4e86280888f949a4243ba4a6",
+      "art-22" : "c516b5a930ccf40ac56ed7243af41234796bb815b9263af877f800cc16079f27"
+    },
+    "producedArtifactIds" : [ "art-29" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T05:42:54.586064Z",
+    "finishedAt" : "2026-07-17T05:43:07.943122Z"
+  }, {
+    "stageId" : "RELEASE_GATE",
+    "status" : "FAILED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : "entry gate: 2 unresolved high-risk assumption(s) [asm-15: X-Forwarded-For header can be spoofed by attackers to bypass rate limiting by rotating fake IP addresses (at src/main/java/com/schwab/urlShortener/ratelimit/IpExtractor.java:13), asm-25: Filter calls filterChain.doFilter after rateLimiter.checkRateLimit even when exception is thrown, allowing rate-limited requests through, but security review states this is incorrect behavior (between between RateLimitFilter.java and security review finding)]",
+    "startedAt" : null,
+    "finishedAt" : "2026-07-17T05:43:07.950111Z"
+  }, {
+    "stageId" : "SUMMARY",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  } ],
+  "artifacts" : [ {
+    "id" : "art-2",
+    "producedBy" : "INTAKE",
+    "type" : "NORMALISED_REQUIREMENT",
+    "name" : "normalised-requirement.md",
+    "content" : "### Goal\nPOST requests to /api/v1/links should be rate-limited on a per-IP basis.\n\n### In scope\n- Rate limiting applied to POST /api/v1/links endpoint\n- Rate limits enforced per client IP address\n\n### Out of scope\n- Rate limiting on other endpoints\n- Rate limiting by authentication token, user ID, or other identifier\n- Changes to other HTTP methods (GET, PUT, DELETE, etc.)\n- Rate limit response format or HTTP status code\n- Rate limit header information\n- Distributed system coordination (if applicable)\n\n### Unstated\n- What the rate limit threshold is (requests per time window)\n- What time window applies (per second, minute, hour, etc.)\n- How to handle requests that exceed the limit (reject, queue, delay)\n- What HTTP status code to return for rate-limited requests\n- Whether to include rate-limit metadata in responses\n- How to identify client IP (direct connection vs. X-Forwarded-For vs. other proxies)\n- Storage mechanism for rate limit state (in-memory, distributed cache, database)\n- Grace period or burst allowance, if any\n\n### Acceptance\n- Requests to POST /api/v1/links from the same IP address are subject to a rate limit\n- Requests from different IP addresses are counted independently\n- The limit is enforced and prevents or rejects excess requests",
+    "contentHash" : "5b60f68495b07ee7f7d41fd98a815bdee04e3160080f029424b7926e5135b70f",
+    "producedAt" : "2026-07-17T05:38:34.897806Z"
+  }, {
+    "id" : "art-4",
+    "producedBy" : "EXPLORE",
+    "type" : "IMPACT_ANALYSIS",
+    "name" : "impact-analysis.md",
+    "content" : "## Impact Analysis\n\n### Impacted files\n\n- **src/main/java/com/schwab/urlShortener/api/ShortLinkController.java** — The `create` method (annotated with `@PostMapping`) handles POST requests to `/api/v1/links`. This is where rate limiting logic or a rate limiting interceptor/filter would need to be applied. The method currently accepts `CreateShortLinkRequest` and returns `ResponseEntity<ShortLinkResponse>`, and would need to interact with rate limiting components that check per-IP limits before processing the request.\n\n- **src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java** — Contains unit tests for `ShortLinkController`. Would need new test cases to verify that rate limiting is enforced on POST requests, including scenarios where the same IP exceeds the limit and where different IPs are counted independently. Currently has 6 POST test cases (lines 62, 84, 96, 107, 116, 132) that test validation and response structure.\n\n- **src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java** — Contains integration tests that exercise POST `/api/v1/links` through the full stack (lines 54, 96). Would need tests to verify rate limiting behavior end-to-end, ensuring requests are actually rejected when limits are exceeded.\n\n- **New rate limiting component file(s)** — Would need to create new classes to implement the rate limiting mechanism itself (checking IP addresses against limits, storing request counts). The codebase does not currently show any rate limiting infrastructure.\n\n- **Potentially src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java** — May need a new exception handler if rate limiting throws a specific exception type (e.g., `RateLimitExceededException`). Currently handles `ShortLinkNotFoundException`, `InvalidUrlException`, `MethodArgumentNotValidException`, `ShortCodeGenerationException`, and `HttpMessageNotReadableException`. If rate limiting returns HTTP 429, this would be the place to map that exception to a `ProblemDetail` response.\n\n### Impacted APIs and data flows\n\n- **POST /api/v1/links response behavior** — When rate limit is exceeded, requests would be rejected (likely with HTTP 429 status) instead of creating a short link. Currently, valid requests always return 201 with a created link (src/main/java/com/schwab/urlShortener/api/ShortLinkController.java, lines 39-48).\n\n- **IP address extraction** — The rate limiter would need to extract client IP addresses from incoming requests. The codebase shows IP handling exists in `RedirectController` via `ClientIpHasher.hash(request)` (src/main/java/com/schwab/urlShortener/api/RedirectController.java, line 44), which accepts `HttpServletRequest`. Rate limiting would need similar IP extraction but would need the raw IP (not hashed) to enforce limits.\n\n### Existing patterns to follow\n\n- **Exception-to-HTTP mapping via GlobalExceptionHandler** — The codebase uses `@RestControllerAdvice` to translate domain exceptions into RFC 9457 `ProblemDetail` responses (src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java). Rate limit exceptions should follow this pattern, with appropriate logging (client errors logged at DEBUG, server errors at ERROR).\n\n- **Request metadata extraction from HttpServletRequest** — `RedirectController` demonstrates extracting request metadata including IP addresses via `ClientIpHasher.hash(request)` where `request` is `HttpServletRequest` (src/main/java/com/schwab/urlShortener/api/RedirectController.java, lines 39-44). Rate limiting would need similar access to the `HttpServletRequest`.\n\n- **Dependency injection via constructor** — Both controllers use constructor-based dependency injection (src/main/java/com/schwab/urlShortener/api/ShortLinkController.java lines 22-34; src/main/java/com/schwab/urlShortener/api/RedirectController.java lines 25-33). Rate limiting components should follow this pattern.\n\n- **Test configuration with TestConfiguration and @MockitoBean** — Tests use `@WebMvcTest` with `@MockitoBean` for service dependencies (src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java lines 28-49; src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java lines 45-74). Rate limiting tests should mock the rate limiter similarly.\n\n- **Integration tests use SpringBootTest with full context** — Integration tests in `ShortLinkIntegrationTest` use `@SpringBootTest` and `@AutoConfigureMockMvc` to test the full stack (src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java lines 30-31). Rate limiting integration tests should follow this approach.\n\n- **Configuration via @Value annotations** — Controllers inject configuration properties via `@Value` (src/main/java/com/schwab/urlShortener/api/ShortLinkController.java lines 31-32). Rate limit thresholds and time windows should likely be configured the same way.\n\n### What I could not determine\n\n- **Whether ClientIpHasher can provide raw IPs** — The codebase shows `ClientIpHasher.hash(request)` in `RedirectController` (src/main/java/com/schwab/urlShortener/api/RedirectController.java line 44), but the actual implementation of `ClientIpHasher` was not returned by the searches. Cannot determine if this class handles X-Forwarded-For headers, proxy chains, or if it can provide unhashed IPs for rate limiting purposes.\n\n- **Whether any interceptor/filter infrastructure exists** — Searches did not return any `Filter`, `Interceptor`, or `HandlerInterceptor` classes. Cannot determine if there's existing AOP or filter infrastructure that rate limiting could hook into, or if it would need to be created from scratch.\n\n- **What storage mechanisms are available** — Cannot see if there's an existing cache infrastructure (beyond the `CacheManager` used in tests at src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java line 38) or distributed storage that could hold rate limit counters. The implementation approach (in-memory vs. Redis vs. database) is not determinable from the returned code.\n\n- **Application framework configuration** — The main application class was not returned, so cannot determine if there's existing configuration for filters, interceptors, or other cross-cutting concerns that rate limiting should align with.",
+    "contentHash" : "2fccc12ba26de5b255d9b770f5fa94768bf01f20ba060061b0395ed575a0bb8c",
+    "producedAt" : "2026-07-17T05:39:10.579964Z"
+  }, {
+    "id" : "art-6",
+    "producedBy" : "PLAN",
+    "type" : "TASK_PLAN",
+    "name" : "task-plan.md",
+    "content" : "### Approach\n\nWe will implement rate limiting using a servlet filter that intercepts POST requests to /api/v1/links before they reach the controller. The filter will extract the client IP address, check it against an in-memory token bucket rate limiter, and either allow the request to proceed or throw a RateLimitExceededException. This approach follows the existing pattern of exception-based error handling via GlobalExceptionHandler and uses constructor injection for dependencies. Configuration will use @Value annotations consistent with existing controller configuration patterns.\n\n### Tasks\n\n1. src/main/java/com/schwab/urlShortener/ratelimit/RateLimitExceededException.java — create new exception class to represent rate limit violations — depends on: none\n\n2. src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java — add handler method for RateLimitExceededException that returns HTTP 429 with ProblemDetail response — depends on: 1\n\n3. src/main/java/com/schwab/urlShortener/ratelimit/IpExtractor.java — create new component to extract client IP from HttpServletRequest (handle X-Forwarded-For and direct connections) — depends on: none\n\n4. src/main/java/com/schwab/urlShortener/ratelimit/RateLimiter.java — create interface defining checkRateLimit(String ip) method — depends on: 1\n\n5. src/main/java/com/schwab/urlShortener/ratelimit/InMemoryRateLimiter.java — implement RateLimiter using ConcurrentHashMap with token bucket algorithm, configured via @Value for requests-per-window and window-duration — depends on: 4\n\n6. src/main/java/com/schwab/urlShortener/ratelimit/RateLimitFilter.java — create servlet filter that intercepts POST /api/v1/links, uses IpExtractor and RateLimiter, throws RateLimitExceededException when limit exceeded — depends on: 3, 4\n\n7. src/main/resources/application.properties — add rate limit configuration properties (ratelimit.requests-per-window, ratelimit.window-duration-seconds) — depends on: none\n\n8. src/test/java/com/schwab/urlShortener/ratelimit/IpExtractorTest.java — create unit tests for IP extraction including X-Forwarded-For, direct connection, and edge cases — depends on: 3\n\n9. src/test/java/com/schwab/urlShortener/ratelimit/InMemoryRateLimiterTest.java — create unit tests for rate limiter logic including within-limit, exceeds-limit, and time-window scenarios — depends on: 5\n\n10. src/test/java/com/schwab/urlShortener/ratelimit/RateLimitFilterTest.java — create unit tests for filter including path matching, method matching, IP extraction, and exception throwing — depends on: 6\n\n11. src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java — add test case verifying filter integration by mocking RateLimiter to throw RateLimitExceededException — depends on: 2, 6\n\n12. src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java — add integration test that makes multiple POST requests from same IP and verifies HTTP 429 response after limit exceeded — depends on: 2, 6, 7\n\n### Key decision\n\nDECISION | Use servlet filter for rate limiting | Filters execute before controller logic, can inspect HttpServletRequest for IP extraction, and align with servlet container request processing model; exception thrown by filter propagates to GlobalExceptionHandler naturally | Aspect-oriented programming (AOP) with method interceptor | AOP would require access to HttpServletRequest within controller method context and adds complexity for cross-cutting concerns that naturally belong at the HTTP layer rather than business logic layer\n\n### Risks\n\n- **IP extraction accuracy under proxies**: If ClientIpHasher implementation (which we cannot see) handles proxy headers differently than IpExtractor, there could be inconsistency between how IPs are identified for rate limiting vs. analytics. Task 3 may need to align with or reuse ClientIpHasher's logic.\n- **In-memory state loss on restart**: InMemoryRateLimiter state is not persisted, so application restarts reset all rate limit counters. If deployed in multi-instance environments without sticky sessions, each instance maintains separate counts (same IP hitting different instances won't be aggregated).\n- **Clock skew and time window boundaries**: Token bucket implementation must handle edge cases around time window rollovers correctly to avoid burst allowances at window boundaries.\n- **Filter ordering**: If other filters exist (undetermined from impact analysis), RateLimitFilter ordering in the filter chain matters. It should execute early but after any IP resolution/normalization filters.\n\n### Out of scope\n\n- Rate limiting on endpoints other than POST /api/v1/links\n- Rate limiting by authentication token, user ID, or other non-IP identifiers\n- Distributed rate limiting coordination across multiple application instances\n- Response headers indicating rate limit status (X-RateLimit-Limit, X-RateLimit-Remaining, etc.)\n- Dynamic rate limit adjustment based on system load\n- Rate limit metrics/monitoring/observability\n- Allowlisting or denylisting specific IP addresses\n- Different rate limits for different client types or tiers\n- Persistent storage of rate limit state (Redis, database)\n- Graceful degradation if rate limiter fails (fail-open vs. fail-closed behavior)",
+    "contentHash" : "96f087dd8fe8ac32946214d6b3e6e8265eb7727650eacce9705f8ecbe354ddbe",
+    "producedAt" : "2026-07-17T05:39:48.569450Z"
+  }, {
+    "id" : "art-8",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/main/java/com/schwab/urlShortener/ratelimit/RateLimitExceededException.java",
+    "content" : "package com.schwab.urlShortener.ratelimit;\n\npublic class RateLimitExceededException extends RuntimeException {\n    private final String ipAddress;\n\n    public RateLimitExceededException(String ipAddress) {\n        super(\"Rate limit exceeded for IP: \" + ipAddress);\n        this.ipAddress = ipAddress;\n    }\n\n    public String getIpAddress() {\n        return ipAddress;\n    }\n}\n",
+    "contentHash" : "c68e59f9c27ea95a78d8140485115dee339143ea34f6817cc8b296109ea41361",
+    "producedAt" : "2026-07-17T05:42:14.626755Z"
+  }, {
+    "id" : "art-9",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java",
+    "content" : "package com.schwab.urlShortener.api;\n\nimport com.schwab.urlShortener.exception.InvalidUrlException;\nimport com.schwab.urlShortener.exception.ShortCodeGenerationException;\nimport com.schwab.urlShortener.exception.ShortLinkNotFoundException;\nimport com.schwab.urlShortener.ratelimit.RateLimitExceededException;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.http.HttpStatus;\nimport org.springframework.http.ProblemDetail;\nimport org.springframework.http.converter.HttpMessageNotReadableException;\nimport org.springframework.web.bind.MethodArgumentNotValidException;\nimport org.springframework.web.bind.annotation.ExceptionHandler;\nimport org.springframework.web.bind.annotation.RestControllerAdvice;\n\nimport java.net.URI;\n\n@RestControllerAdvice\npublic class GlobalExceptionHandler {\n\n    private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);\n\n    @ExceptionHandler(ShortLinkNotFoundException.class)\n    public ProblemDetail handleShortLinkNotFound(ShortLinkNotFoundException ex) {\n        logger.debug(\"Short link not found: {}\", ex.getMessage());\n        ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(\n            HttpStatus.NOT_FOUND,\n            ex.getMessage()\n        );\n        problemDetail.setType(URI.create(\"https://api.schwab.com/problems/short-link-not-found\"));\n        problemDetail.setTitle(\"Short Link Not Found\");\n        return problemDetail;\n    }\n\n    @ExceptionHandler(InvalidUrlException.class)\n    public ProblemDetail handleInvalidUrl(InvalidUrlException ex) {\n        logger.debug(\"Invalid URL provided: {}\", ex.getMessage());\n        ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(\n            HttpStatus.BAD_REQUEST,\n            ex.getMessage()\n        );\n        problemDetail.setType(URI.create(\"https://api.schwab.com/problems/invalid-url\"));\n        problemDetail.setTitle(\"Invalid URL\");\n        return problemDetail;\n    }\n\n    @ExceptionHandler(MethodArgumentNotValidException.class)\n    public ProblemDetail handleValidationErrors(MethodArgumentNotValidException ex) {\n        logger.debug(\"Validation error: {}\", ex.getMessage());\n        String detail = ex.getBindingResult().getFieldErrors().stream()\n            .map(error -> error.getField() + \": \" + error.getDefaultMessage())\n            .reduce((a, b) -> a + \"; \" + b)\n            .orElse(\"Validation failed\");\n        \n        ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(\n            HttpStatus.BAD_REQUEST,\n            detail\n        );\n        problemDetail.setType(URI.create(\"https://api.schwab.com/problems/validation-error\"));\n        problemDetail.setTitle(\"Validation Error\");\n        return problemDetail;\n    }\n\n    @ExceptionHandler(ShortCodeGenerationException.class)\n    public ProblemDetail handleShortCodeGeneration(ShortCodeGenerationException ex) {\n        logger.error(\"Failed to generate short code: {}\", ex.getMessage());\n        ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(\n            HttpStatus.INTERNAL_SERVER_ERROR,\n            \"Failed to generate a unique short code. Please try again.\"\n        );\n        problemDetail.setType(URI.create(\"https://api.schwab.com/problems/short-code-generation-failed\"));\n        problemDetail.setTitle(\"Short Code Generation Failed\");\n        return problemDetail;\n    }\n\n    @ExceptionHandler(HttpMessageNotReadableException.class)\n    public ProblemDetail handleHttpMessageNotReadable(HttpMessageNotReadableException ex) {\n        logger.debug(\"Malformed JSON request: {}\", ex.getMessage());\n        ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(\n            HttpStatus.BAD_REQUEST,\n            \"Malformed JSON request\"\n        );\n        problemDetail.setType(URI.create(\"https://api.schwab.com/problems/malformed-request\"));\n        problemDetail.setTitle(\"Malformed Request\");\n        return problemDetail;\n    }\n\n    @ExceptionHandler(RateLimitExceededException.class)\n    public ProblemDetail handleRateLimitExceeded(RateLimitExceededException ex) {\n        logger.debug(\"Rate limit exceeded: {}\", ex.getMessage());\n        ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(\n            HttpStatus.TOO_MANY_REQUESTS,\n            ex.getMessage()\n        );\n        problemDetail.setType(URI.create(\"https://api.schwab.com/problems/rate-limit-exceeded\"));\n        problemDetail.setTitle(\"Rate Limit Exceeded\");\n        return problemDetail;\n    }\n}\n",
+    "contentHash" : "2a0005db7aa70f5e9dda7d0baceb241d0d2aeac50d642eced24eeb5ce0dd8153",
+    "producedAt" : "2026-07-17T05:42:14.629749Z"
+  }, {
+    "id" : "art-10",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/main/java/com/schwab/urlShortener/ratelimit/IpExtractor.java",
+    "content" : "package com.schwab.urlShortener.ratelimit;\n\nimport jakarta.servlet.http.HttpServletRequest;\nimport org.springframework.stereotype.Component;\n\n@Component\npublic class IpExtractor {\n\n    public String extractIp(HttpServletRequest request) {\n        String xForwardedFor = request.getHeader(\"X-Forwarded-For\");\n        \n        if (xForwardedFor != null && !xForwardedFor.isEmpty()) {\n            String[] ips = xForwardedFor.split(\",\");\n            return ips[0].trim();\n        }\n        \n        String xRealIp = request.getHeader(\"X-Real-IP\");\n        if (xRealIp != null && !xRealIp.isEmpty()) {\n            return xRealIp.trim();\n        }\n        \n        return request.getRemoteAddr();\n    }\n}\n",
+    "contentHash" : "00f552274619ed86e6093efaf93ac9cda73268663f6ee82dbf329ca7db952ed0",
+    "producedAt" : "2026-07-17T05:42:14.630474Z"
+  }, {
+    "id" : "art-11",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/main/java/com/schwab/urlShortener/ratelimit/RateLimiter.java",
+    "content" : "package com.schwab.urlShortener.ratelimit;\n\npublic interface RateLimiter {\n    void checkRateLimit(String ipAddress) throws RateLimitExceededException;\n}\n",
+    "contentHash" : "040ff44b0bf593a8bb2169aa9ebb4ccc52a2d877f252c98b50379fb9567f9aa4",
+    "producedAt" : "2026-07-17T05:42:14.630946Z"
+  }, {
+    "id" : "art-12",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/main/java/com/schwab/urlShortener/ratelimit/InMemoryRateLimiter.java",
+    "content" : "package com.schwab.urlShortener.ratelimit;\n\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.stereotype.Component;\n\nimport java.time.Instant;\nimport java.util.concurrent.ConcurrentHashMap;\n\n@Component\npublic class InMemoryRateLimiter implements RateLimiter {\n\n    private final int requestsPerWindow;\n    private final long windowDurationSeconds;\n    private final ConcurrentHashMap<String, TokenBucket> buckets;\n\n    public InMemoryRateLimiter(\n            @Value(\"${ratelimit.requests-per-window:60}\") int requestsPerWindow,\n            @Value(\"${ratelimit.window-duration-seconds:60}\") long windowDurationSeconds) {\n        this.requestsPerWindow = requestsPerWindow;\n        this.windowDurationSeconds = windowDurationSeconds;\n        this.buckets = new ConcurrentHashMap<>();\n    }\n\n    @Override\n    public void checkRateLimit(String ipAddress) throws RateLimitExceededException {\n        TokenBucket bucket = buckets.compute(ipAddress, (key, existing) -> {\n            if (existing == null) {\n                return new TokenBucket(requestsPerWindow, windowDurationSeconds);\n            }\n            return existing;\n        });\n\n        if (!bucket.tryConsume()) {\n            throw new RateLimitExceededException(ipAddress);\n        }\n    }\n\n    private static class TokenBucket {\n        private final int capacity;\n        private final long windowDurationSeconds;\n        private int tokens;\n        private long windowStart;\n\n        TokenBucket(int capacity, long windowDurationSeconds) {\n            this.capacity = capacity;\n            this.windowDurationSeconds = windowDurationSeconds;\n            this.tokens = capacity;\n            this.windowStart = Instant.now().getEpochSecond();\n        }\n\n        synchronized boolean tryConsume() {\n            long now = Instant.now().getEpochSecond();\n            \n            if (now - windowStart >= windowDurationSeconds) {\n                tokens = capacity;\n                windowStart = now;\n            }\n\n            if (tokens > 0) {\n                tokens--;\n                return true;\n            }\n            \n            return false;\n        }\n    }\n}\n",
+    "contentHash" : "ec64761b20eae26b43a83befd5e1e62a1250f43cc416196d635873313e26ca47",
+    "producedAt" : "2026-07-17T05:42:14.632269Z"
+  }, {
+    "id" : "art-13",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/main/java/com/schwab/urlShortener/ratelimit/RateLimitFilter.java",
+    "content" : "package com.schwab.urlShortener.ratelimit;\n\nimport jakarta.servlet.FilterChain;\nimport jakarta.servlet.ServletException;\nimport jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\nimport org.springframework.core.annotation.Order;\nimport org.springframework.stereotype.Component;\nimport org.springframework.web.filter.OncePerRequestFilter;\n\nimport java.io.IOException;\n\n@Component\n@Order(1)\npublic class RateLimitFilter extends OncePerRequestFilter {\n\n    private final IpExtractor ipExtractor;\n    private final RateLimiter rateLimiter;\n\n    public RateLimitFilter(IpExtractor ipExtractor, RateLimiter rateLimiter) {\n        this.ipExtractor = ipExtractor;\n        this.rateLimiter = rateLimiter;\n    }\n\n    @Override\n    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)\n            throws ServletException, IOException {\n        \n        if (shouldRateLimit(request)) {\n            String ipAddress = ipExtractor.extractIp(request);\n            rateLimiter.checkRateLimit(ipAddress);\n        }\n\n        filterChain.doFilter(request, response);\n    }\n\n    private boolean shouldRateLimit(HttpServletRequest request) {\n        return \"POST\".equalsIgnoreCase(request.getMethod()) \n            && request.getRequestURI().startsWith(\"/api/v1/links\");\n    }\n}\n",
+    "contentHash" : "b81d4e841c496381234d975909524290bc9a7db52ea05e967f0ed824cc5da9a8",
+    "producedAt" : "2026-07-17T05:42:14.633120Z"
+  }, {
+    "id" : "art-22",
+    "producedBy" : "TEST",
+    "type" : "TEST_SOURCE",
+    "name" : "src/test/java/com/schwab/urlShortener/ratelimit/InMemoryRateLimiterTest.java",
+    "content" : "package com.schwab.urlShortener.ratelimit;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.BeforeEach;\n\nimport java.util.concurrent.CountDownLatch;\nimport java.util.concurrent.ExecutorService;\nimport java.util.concurrent.Executors;\nimport java.util.concurrent.TimeUnit;\nimport java.util.concurrent.atomic.AtomicInteger;\n\nimport static org.assertj.core.api.Assertions.assertThat;\nimport static org.assertj.core.api.Assertions.assertThatThrownBy;\n\nclass InMemoryRateLimiterTest {\n\n    private InMemoryRateLimiter rateLimiter;\n\n    @BeforeEach\n    void setUp() {\n        rateLimiter = new InMemoryRateLimiter(5, 1);\n    }\n\n    @Test\n    void allowsRequestsWithinLimit() {\n        String ip = \"192.168.1.1\";\n\n        for (int i = 0; i < 5; i++) {\n            rateLimiter.checkRateLimit(ip);\n        }\n\n        // No exception thrown means all requests were allowed\n    }\n\n    @Test\n    void throwsExceptionWhenLimitExceeded() {\n        String ip = \"192.168.1.2\";\n\n        for (int i = 0; i < 5; i++) {\n            rateLimiter.checkRateLimit(ip);\n        }\n\n        assertThatThrownBy(() -> rateLimiter.checkRateLimit(ip))\n            .isInstanceOf(RateLimitExceededException.class)\n            .hasMessageContaining(\"192.168.1.2\");\n    }\n\n    @Test\n    void resetsTokensAfterWindowExpires() throws InterruptedException {\n        String ip = \"192.168.1.3\";\n\n        for (int i = 0; i < 5; i++) {\n            rateLimiter.checkRateLimit(ip);\n        }\n\n        assertThatThrownBy(() -> rateLimiter.checkRateLimit(ip))\n            .isInstanceOf(RateLimitExceededException.class);\n\n        Thread.sleep(1100);\n\n        rateLimiter.checkRateLimit(ip);\n        // No exception after window reset\n    }\n\n    @Test\n    void tracksLimitsIndependentlyPerIp() {\n        String ip1 = \"192.168.1.4\";\n        String ip2 = \"192.168.1.5\";\n\n        for (int i = 0; i < 5; i++) {\n            rateLimiter.checkRateLimit(ip1);\n        }\n\n        assertThatThrownBy(() -> rateLimiter.checkRateLimit(ip1))\n            .isInstanceOf(RateLimitExceededException.class);\n\n        for (int i = 0; i < 5; i++) {\n            rateLimiter.checkRateLimit(ip2);\n        }\n        // ip2 has its own limit\n    }\n\n    @Test\n    void handlesZeroRequestsPerWindow() {\n        InMemoryRateLimiter restrictiveRateLimiter = new InMemoryRateLimiter(0, 60);\n        String ip = \"192.168.1.6\";\n\n        assertThatThrownBy(() -> restrictiveRateLimiter.checkRateLimit(ip))\n            .isInstanceOf(RateLimitExceededException.class);\n    }\n\n    @Test\n    void handlesConcurrentRequestsFromSameIp() throws InterruptedException {\n        String ip = \"192.168.1.7\";\n        int threadCount = 10;\n        ExecutorService executor = Executors.newFixedThreadPool(threadCount);\n        CountDownLatch latch = new CountDownLatch(threadCount);\n        AtomicInteger successCount = new AtomicInteger(0);\n        AtomicInteger failureCount = new AtomicInteger(0);\n\n        for (int i = 0; i < threadCount; i++) {\n            executor.submit(() -> {\n                try {\n                    rateLimiter.checkRateLimit(ip);\n                    successCount.incrementAndGet();\n                } catch (RateLimitExceededException e) {\n                    failureCount.incrementAndGet();\n                } finally {\n                    latch.countDown();\n                }\n            });\n        }\n\n        latch.await(5, TimeUnit.SECONDS);\n        executor.shutdown();\n\n        assertThat(successCount.get()).isEqualTo(5);\n        assertThat(failureCount.get()).isEqualTo(5);\n    }\n\n    @Test\n    void allowsFullCapacityInEachNewWindow() throws InterruptedException {\n        String ip = \"192.168.1.8\";\n\n        for (int i = 0; i < 5; i++) {\n            rateLimiter.checkRateLimit(ip);\n        }\n\n        Thread.sleep(1100);\n\n        for (int i = 0; i < 5; i++) {\n            rateLimiter.checkRateLimit(ip);\n        }\n        // All 5 requests in new window should succeed\n    }\n\n    @Test\n    void usesDefaultConfigurationWhenNotProvided() {\n        InMemoryRateLimiter defaultRateLimiter = new InMemoryRateLimiter(60, 60);\n        String ip = \"192.168.1.9\";\n\n        for (int i = 0; i < 60; i++) {\n            defaultRateLimiter.checkRateLimit(ip);\n        }\n\n        assertThatThrownBy(() -> defaultRateLimiter.checkRateLimit(ip))\n            .isInstanceOf(RateLimitExceededException.class);\n    }\n}\n",
+    "contentHash" : "c516b5a930ccf40ac56ed7243af41234796bb815b9263af877f800cc16079f27",
+    "producedAt" : "2026-07-17T05:42:54.575645Z"
+  }, {
+    "id" : "art-23",
+    "producedBy" : "TEST",
+    "type" : "TEST_SOURCE",
+    "name" : "src/test/java/com/schwab/urlShortener/ratelimit/RateLimitFilterTest.java",
+    "content" : "package com.schwab.urlShortener.ratelimit;\n\nimport jakarta.servlet.FilterChain;\nimport jakarta.servlet.ServletException;\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\nimport org.springframework.mock.web.MockHttpServletRequest;\nimport org.springframework.mock.web.MockHttpServletResponse;\n\nimport java.io.IOException;\n\nimport static org.assertj.core.api.Assertions.assertThatThrownBy;\nimport static org.mockito.ArgumentMatchers.any;\nimport static org.mockito.Mockito.*;\n\n@ExtendWith(MockitoExtension.class)\nclass RateLimitFilterTest {\n\n    @Mock\n    private IpExtractor ipExtractor;\n\n    @Mock\n    private RateLimiter rateLimiter;\n\n    @Mock\n    private FilterChain filterChain;\n\n    @InjectMocks\n    private RateLimitFilter rateLimitFilter;\n\n    @Test\n    void appliesRateLimitingToPostLinksEndpoint() throws ServletException, IOException {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        request.setMethod(\"POST\");\n        request.setRequestURI(\"/api/v1/links\");\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        when(ipExtractor.extractIp(request)).thenReturn(\"192.168.1.1\");\n\n        rateLimitFilter.doFilterInternal(request, response, filterChain);\n\n        verify(ipExtractor).extractIp(request);\n        verify(rateLimiter).checkRateLimit(\"192.168.1.1\");\n        verify(filterChain).doFilter(request, response);\n    }\n\n    @Test\n    void doesNotApplyRateLimitingToGetRequests() throws ServletException, IOException {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        request.setMethod(\"GET\");\n        request.setRequestURI(\"/api/v1/links\");\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        rateLimitFilter.doFilterInternal(request, response, filterChain);\n\n        verify(ipExtractor, never()).extractIp(any());\n        verify(rateLimiter, never()).checkRateLimit(any());\n        verify(filterChain).doFilter(request, response);\n    }\n\n    @Test\n    void doesNotApplyRateLimitingToDifferentEndpoint() throws ServletException, IOException {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        request.setMethod(\"POST\");\n        request.setRequestURI(\"/api/v1/other\");\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        rateLimitFilter.doFilterInternal(request, response, filterChain);\n\n        verify(ipExtractor, never()).extractIp(any());\n        verify(rateLimiter, never()).checkRateLimit(any());\n        verify(filterChain).doFilter(request, response);\n    }\n\n    @Test\n    void appliesRateLimitingToSubpathsOfLinksEndpoint() throws ServletException, IOException {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        request.setMethod(\"POST\");\n        request.setRequestURI(\"/api/v1/links/something\");\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        when(ipExtractor.extractIp(request)).thenReturn(\"192.168.1.2\");\n\n        rateLimitFilter.doFilterInternal(request, response, filterChain);\n\n        verify(ipExtractor).extractIp(request);\n        verify(rateLimiter).checkRateLimit(\"192.168.1.2\");\n        verify(filterChain).doFilter(request, response);\n    }\n\n    @Test\n    void propagatesRateLimitExceededException() throws ServletException, IOException {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        request.setMethod(\"POST\");\n        request.setRequestURI(\"/api/v1/links\");\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        when(ipExtractor.extractIp(request)).thenReturn(\"192.168.1.3\");\n        doThrow(new RateLimitExceededException(\"192.168.1.3\"))\n            .when(rateLimiter).checkRateLimit(\"192.168.1.3\");\n\n        assertThatThrownBy(() -> rateLimitFilter.doFilterInternal(request, response, filterChain))\n            .isInstanceOf(RateLimitExceededException.class)\n            .hasMessageContaining(\"192.168.1.3\");\n\n        verify(filterChain, never()).doFilter(any(), any());\n    }\n\n    @Test\n    void caseInsensitiveMethodMatching() throws ServletException, IOException {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        request.setMethod(\"post\");\n        request.setRequestURI(\"/api/v1/links\");\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        when(ipExtractor.extractIp(request)).thenReturn(\"192.168.1.4\");\n\n        rateLimitFilter.doFilterInternal(request, response, filterChain);\n\n        verify(ipExtractor).extractIp(request);\n        verify(rateLimiter).checkRateLimit(\"192.168.1.4\");\n        verify(filterChain).doFilter(request, response);\n    }\n\n    @Test\n    void doesNotApplyRateLimitingToPutRequests() throws ServletException, IOException {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        request.setMethod(\"PUT\");\n        request.setRequestURI(\"/api/v1/links\");\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        rateLimitFilter.doFilterInternal(request, response, filterChain);\n\n        verify(ipExtractor, never()).extractIp(any());\n        verify(rateLimiter, never()).checkRateLimit(any());\n        verify(filterChain).doFilter(request, response);\n    }\n\n    @Test\n    void doesNotApplyRateLimitingToDeleteRequests() throws ServletException, IOException {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        request.setMethod(\"DELETE\");\n        request.setRequestURI(\"/api/v1/links\");\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        rateLimitFilter.doFilterInternal(request, response, filterChain);\n\n        verify(ipExtractor, never()).extractIp(any());\n        verify(rateLimiter, never()).checkRateLimit(any());\n        verify(filterChain).doFilter(request, response);\n    }\n}\n",
+    "contentHash" : "e4c11bad06ad10a11367e792c0c9177c9db7636b4e86280888f949a4243ba4a6",
+    "producedAt" : "2026-07-17T05:42:54.575704Z"
+  }, {
+    "id" : "art-14",
+    "producedBy" : "DOCS",
+    "type" : "DOCUMENTATION",
+    "name" : "change-notes.md",
+    "content" : "# Change notes\n\n_Generated by the agentic harness. Reviewed by a human before merge._\n\n### What changed\n\nPOST /api/v1/links now enforces per-IP rate limiting. Requests exceeding the configured threshold within a time window are rejected with HTTP 429. The rate limit state is maintained in memory per IP address.\n\n### Behaviour\n\n**Endpoint:** POST /api/v1/links\n\n**Rate limit enforcement:**\n- Applies to POST requests to `/api/v1/links` only\n- Identifies client by IP address, checking headers in order: `X-Forwarded-For` (first value), `X-Real-IP`, then `request.getRemoteAddr()`\n- Uses a token bucket algorithm: allows `N` requests per time window\n- On limit exceeded: returns HTTP 429 with problem detail response\n  - Type: `https://api.schwab.com/problems/rate-limit-exceeded`\n  - Detail: `\"Rate limit exceeded for IP: <ip_address>\"`\n\n**Other endpoints:** Unaffected. Rate limiting does not apply to GET requests or other paths.\n\n### Configuration\n\n- `ratelimit.requests-per-window` — maximum requests allowed per IP in one window; default: 60\n- `ratelimit.window-duration-seconds` — duration of the time window in seconds; default: 60\n\nAt boundary: when a time window expires, the token counter resets. A fresh window begins immediately on the next request.\n\n### Operational notes\n\n- Rate limit state is held in memory and lost on application restart\n- No persistence across instances — each application instance maintains independent rate limit buckets\n- Monitor for HTTP 429 responses in logs to identify rate-limited clients\n- High concurrency: token bucket uses synchronization; contention is per-IP, not global\n- Long-running applications may accumulate stale buckets in memory if many unique IPs are seen; no eviction policy is implemented\n\n### Known limitations\n\n- No distributed rate limiting across multiple application instances\n- No mechanism to exempt specific IPs or API keys\n- Token bucket state is not persisted; rate limits reset on restart\n- No metrics or observability hooks to track rate limit violations\n- No grace period or gradual backoff — limit is binary (allow/reject)\n\n---\nEvidence: model call msg_011Cd76WEwzNrsNh7Fuf4US7\n",
+    "contentHash" : "8f68a818a3a2504576b081bc3b468da38a5869823ba882b464e2e0f0be8b6d55",
+    "producedAt" : "2026-07-17T05:42:20.734119Z"
+  }, {
+    "id" : "art-21",
+    "producedBy" : "SECURITY_REVIEW",
+    "type" : "REVIEW_REPORT",
+    "name" : "security-review.md",
+    "content" : "# Security review\n\n## Deterministic scan\n\nNo credential patterns found.\n\n## Review\n\nFINDING | HIGH | src/main/java/com/schwab/urlShortener/ratelimit/IpExtractor.java:13 | X-Forwarded-For header can be spoofed by attackers to bypass rate limiting by rotating fake IP addresses | Validate X-Forwarded-For against trusted proxy list or use request.getRemoteAddr() only, potentially with a config flag for proxy scenarios\n\nFINDING | MEDIUM | src/main/java/com/schwab/urlShortener/ratelimit/InMemoryRateLimiter.java:25 | Unbounded ConcurrentHashMap allows memory exhaustion attack - attacker can create millions of unique IPs to fill memory | Implement bounded cache with LRU eviction (e.g., Caffeine cache with maximumSize)\n\nFINDING | MEDIUM | src/main/java/com/schwab/urlShortener/ratelimit/RateLimitFilter.java:33 | Rate limit check allows request through even when exception is thrown - exception propagates but filterChain.doFilter still executes | Wrap rateLimiter.checkRateLimit in try-catch and return early on RateLimitExceededException, letting GlobalExceptionHandler handle it via controller\n\nFINDING | LOW | src/main/java/com/schwab/urlShortener/ratelimit/RateLimitFilter.java:38 | Request URI prefix match on /api/v1/links will rate limit GET requests to /api/v1/links/{shortCode}, affecting legitimate link resolution | Add exact path match or path pattern match that excludes parameterized paths\n\nFINDING | LOW | src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java:92 | Rate limit exception logs the IP address at DEBUG level, but this PII should be handled with care per GDPR/privacy policies | Confirm IP logging is acceptable per privacy policy, or hash/redact IP in logs\n\n### Residual risk\n- Cannot determine if the application runs behind a trusted reverse proxy (ALB, nginx, etc.) where X-Forwarded-For is safe to use, or if it's directly internet-facing where the header is untrusted\n- Cannot assess if the default rate limit of 60 requests per 60 seconds is appropriate for the business use case - may be too permissive for abuse scenarios or too restrictive for legitimate API clients\n- Cannot determine if there are health check or monitoring endpoints that should be excluded from rate limiting\n- Cannot verify if multiple application instances will coordinate rate limits - in-memory implementation means each instance has independent limits, allowing N times the configured rate across N instances\n- Cannot determine if IPv6 addresses are properly handled by the IpExtractor and if IPv6 prefix-based rate limiting should be considered instead of per-address\n- Cannot assess if the RateLimitFilter order priority (Order(1)) conflicts with other security filters like authentication or CORS\n\n---\nEvidence: model call msg_011Cd76WF3h5XK7erMzR8WJk\n",
+    "contentHash" : "1de99acfd33b1ec132ef7db3ce32e8bbf60a03c590a4663c34e4caa2a955ad41",
+    "producedAt" : "2026-07-17T05:42:31.855500Z"
+  }, {
+    "id" : "art-29",
+    "producedBy" : "VALIDATE",
+    "type" : "REVIEW_REPORT",
+    "name" : "validation.md",
+    "content" : "# Validation\n\nCONFLICT | HIGH | between RateLimitFilter.java and security review finding | Filter calls filterChain.doFilter after rateLimiter.checkRateLimit even when exception is thrown, allowing rate-limited requests through, but security review states this is incorrect behavior\n\nCONFLICT | MEDIUM | between RateLimitFilter.java and requirement | Filter applies rate limiting to all requests matching /api/v1/links prefix including GET /api/v1/links/{shortCode}, but requirement specifies only POST /api/v1/links should be rate limited\n\nCONFLICT | LOW | between documentation and InMemoryRateLimiter.java | Documentation states \"At boundary: when a time window expires, the token counter resets. A fresh window begins immediately on the next request\" but code shows window reset happens in tryConsume when time check passes, not on next request after expiry\n\n### Requirement coverage\n\n**Requirement: Add per-IP rate limiting to POST /api/v1/links**\n\n1. **Rate limiting applies to POST /api/v1/links endpoint**: PARTIAL - The filter matches POST method and path prefix /api/v1/links, but also incorrectly matches /api/v1/links/{shortCode} which would be GET requests for link resolution. Additionally, the filter has a critical bug where it calls filterChain.doFilter even after throwing RateLimitExceededException, allowing rate-limited requests through.\n\n2. **Rate limiting is per-IP**: YES - IpExtractor extracts client IP from X-Forwarded-For, X-Real-IP, or RemoteAddr, and InMemoryRateLimiter maintains separate token buckets per IP address in ConcurrentHashMap.\n\n3. **Rate limit exceeded returns appropriate error response**: YES - RateLimitExceededException is thrown and GlobalExceptionHandler returns HTTP 429 with ProblemDetail response containing type, title, and detail message.\n\n4. **Rate limit is configurable**: YES - InMemoryRateLimiter accepts configuration via @Value annotations for requests-per-window (default 60) and window-duration-seconds (default 60).\n\n5. **Implementation uses approved approach (servlet filter)**: YES - RateLimitFilter extends OncePerRequestFilter and intercepts requests before controller, using constructor injection and exception-based error handling as specified in the plan.\n\n---\nEvidence: model call msg_011Cd76ZBtmPH4DZqNie8FAZ\n",
+    "contentHash" : "bb24d8dd78228de13c48aab71dc73d607ff7c4394aecfd67b3b4ad0acbfe6426",
+    "producedAt" : "2026-07-17T05:43:07.942950Z"
+  } ],
+  "assumptions" : [ {
+    "id" : "asm-15",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "X-Forwarded-For header can be spoofed by attackers to bypass rate limiting by rotating fake IP addresses (at src/main/java/com/schwab/urlShortener/ratelimit/IpExtractor.java:13)",
+    "reason" : "security review finding; suggested fix: Validate X-Forwarded-For against trusted proxy list or use request.getRemoteAddr() only, potentially with a config flag for proxy scenarios",
+    "risk" : "HIGH",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76WF3h5XK7erMzR8WJk",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/ratelimit/IpExtractor.java:13",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:42:31.851977Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-16",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "Unbounded ConcurrentHashMap allows memory exhaustion attack - attacker can create millions of unique IPs to fill memory (at src/main/java/com/schwab/urlShortener/ratelimit/InMemoryRateLimiter.java:25)",
+    "reason" : "security review finding; suggested fix: Implement bounded cache with LRU eviction (e.g., Caffeine cache with maximumSize)",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76WF3h5XK7erMzR8WJk",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/ratelimit/InMemoryRateLimiter.java:25",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:42:31.852059Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-17",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "Rate limit check allows request through even when exception is thrown - exception propagates but filterChain.doFilter still executes (at src/main/java/com/schwab/urlShortener/ratelimit/RateLimitFilter.java:33)",
+    "reason" : "security review finding; suggested fix: Wrap rateLimiter.checkRateLimit in try-catch and return early on RateLimitExceededException, letting GlobalExceptionHandler handle it via controller",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76WF3h5XK7erMzR8WJk",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/ratelimit/RateLimitFilter.java:33",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:42:31.852119Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-18",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "Request URI prefix match on /api/v1/links will rate limit GET requests to /api/v1/links/{shortCode}, affecting legitimate link resolution (at src/main/java/com/schwab/urlShortener/ratelimit/RateLimitFilter.java:38)",
+    "reason" : "security review finding; suggested fix: Add exact path match or path pattern match that excludes parameterized paths",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76WF3h5XK7erMzR8WJk",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/ratelimit/RateLimitFilter.java:38",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:42:31.852135Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-19",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "Rate limit exception logs the IP address at DEBUG level, but this PII should be handled with care per GDPR/privacy policies (at src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java:92)",
+    "reason" : "security review finding; suggested fix: Confirm IP logging is acceptable per privacy policy, or hash/redact IP in logs",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76WF3h5XK7erMzR8WJk",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java:92",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:42:31.852147Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-25",
+    "madeBy" : "VALIDATE",
+    "statement" : "Filter calls filterChain.doFilter after rateLimiter.checkRateLimit even when exception is thrown, allowing rate-limited requests through, but security review states this is incorrect behavior (between between RateLimitFilter.java and security review finding)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "HIGH",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76ZBtmPH4DZqNie8FAZ",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:43:07.942314Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-26",
+    "madeBy" : "VALIDATE",
+    "statement" : "Filter applies rate limiting to all requests matching /api/v1/links prefix including GET /api/v1/links/{shortCode}, but requirement specifies only POST /api/v1/links should be rate limited (between between RateLimitFilter.java and requirement)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76ZBtmPH4DZqNie8FAZ",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:43:07.942359Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-27",
+    "madeBy" : "VALIDATE",
+    "statement" : "Documentation states \"At boundary: when a time window expires, the token counter resets. A fresh window begins immediately on the next request\" but code shows window reset happens in tryConsume when time check passes, not on next request after expiry (between between documentation and InMemoryRateLimiter.java)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76ZBtmPH4DZqNie8FAZ",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T05:43:07.942373Z",
+    "resolution" : null
+  } ],
+  "decisions" : [ {
+    "id" : "dec-1",
+    "stage" : "INTAKE",
+    "question" : "What is actually being asked for?",
+    "choice" : "POST requests to /api/v1/links should be rate-limited on a per-IP basis.",
+    "rationale" : "Normalised from the raw requirement; scope boundaries made explicit so later stages cannot quietly widen them.",
+    "alternatives" : [ {
+      "option" : "Pass the raw requirement through unchanged",
+      "rejectedBecause" : "Leaves every later stage to interpret it independently, and they will not interpret it the same way"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76Dn4HGf2rUWR36JPXG",
+      "detail" : null
+    }, {
+      "kind" : "REQUIREMENT",
+      "locator" : "Add per-IP rate limiting to POST /api/v1/links",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:38:34.897713Z"
+  }, {
+    "id" : "dec-3",
+    "stage" : "EXPLORE",
+    "question" : "Which parts of the codebase does this change touch?",
+    "choice" : "src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java, src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java, src/main/java/com/schwab/urlShortener/api/ShortLinkController.java, src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java, src/main/java/com/schwab/urlShortener/api/RedirectController.java, src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java",
+    "rationale" : "Identified by searching for the concepts in the requirement, then reading the files that matched. Limited to 6 files to bound context size.",
+    "alternatives" : [ {
+      "option" : "Read the whole repository into context",
+      "rejectedBecause" : "Unaffordable, and buries the relevant three files in noise"
+    } ],
+    "evidence" : [ {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:/api/v1/links",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:@(Post|Request)Mapping.*links",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:class.*Controller.*\\{|@RestController|@Controller",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:/public.*POST|@PostMapping/",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:/class ShortLinkController|public class ShortLinkController/",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/api/ShortLinkController.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/api/RedirectController.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:39:10.579443Z"
+  }, {
+    "id" : "dec-5",
+    "stage" : "PLAN",
+    "question" : "What is the shape of this change?",
+    "choice" : "Use servlet filter for rate limiting",
+    "rationale" : "Filters execute before controller logic, can inspect HttpServletRequest for IP extraction, and align with servlet container request processing model; exception thrown by filter propagates to GlobalExceptionHandler naturally",
+    "alternatives" : [ {
+      "option" : "Aspect-oriented programming (AOP) with method interceptor",
+      "rejectedBecause" : "AOP would require access to HttpServletRequest within controller method context and adds complexity for cross-cutting concerns that naturally belong at the HTTP layer rather than business logic layer"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76GkR98Xp4kJNdPgLSJ",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:39:48.569025Z"
+  }, {
+    "id" : "dec-7",
+    "stage" : "APPROVAL_GATE",
+    "question" : "Human reviews the plan, assumptions and impact before implementation",
+    "choice" : "APPROVE",
+    "rationale" : "Plan is grounded in the real codebase: correct package, constructor injection per ShortLinkController, problem+json via GlobalExceptionHandler. Task 5 wires the limiter into the controller, which is what the last two runs omitted. Approving to generate; the 60/min threshold is unverified and the proxy question is still open.",
+    "alternatives" : [ ],
+    "evidence" : [ {
+      "kind" : "HUMAN_INPUT",
+      "locator" : "APPROVE",
+      "detail" : null
+    } ],
+    "decidedBy" : "HUMAN",
+    "decidedAt" : "2026-07-17T05:41:40.394522Z"
+  }, {
+    "id" : "dec-20",
+    "stage" : "SECURITY_REVIEW",
+    "question" : "Is this change safe to propose for merge?",
+    "choice" : "1 high-severity finding(s) — release gate will block",
+    "rationale" : "Reviewed by a deterministic scan for known credential shapes and by a model for logic-level issues the scan cannot express. Neither alone is sufficient.",
+    "alternatives" : [ {
+      "option" : "Rely on the model review alone",
+      "rejectedBecause" : "Misses a hardcoded key whenever the model is attending to something more interesting"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76WF3h5XK7erMzR8WJk",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "secret-scanner",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:42:31.855379Z"
+  }, {
+    "id" : "dec-24",
+    "stage" : "TEST",
+    "question" : "What would catch this change being wrong?",
+    "choice" : "2 test file(s): [src/test/java/com/schwab/urlShortener/ratelimit/InMemoryRateLimiterTest.java, src/test/java/com/schwab/urlShortener/ratelimit/RateLimitFilterTest.java]",
+    "rationale" : "Tests target the behaviour the plan specifies and its failure paths, rather than the shape of the implementation.",
+    "alternatives" : [ {
+      "option" : "Assert on the implementation's internals",
+      "rejectedBecause" : "Passes until the code is refactored, then fails without anything being broken"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76WEyix6wjQcxzL7VLs",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:42:54.578560Z"
+  }, {
+    "id" : "dec-28",
+    "stage" : "VALIDATE",
+    "question" : "Do the code, tests, documentation and review describe the same change?",
+    "choice" : "1 high-severity contradiction(s) — release gate will block",
+    "rationale" : "Each upstream stage validated its own output and could not see the others. This is the only point at which the change is examined as a whole.",
+    "alternatives" : [ {
+      "option" : "Trust each stage's own exit gate",
+      "rejectedBecause" : "Every artifact can pass its own gate while collectively describing different behaviour"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd76ZBtmPH4DZqNie8FAZ",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T05:43:07.942720Z"
+  } ],
+  "openQuestions" : [ "What the rate limit threshold is (requests per time window)", "What time window applies (per second, minute, hour, etc.)", "How to handle requests that exceed the limit (reject, queue, delay)", "What HTTP status code to return for rate-limited requests", "Whether to include rate-limit metadata in responses", "How to identify client IP (direct connection vs. X-Forwarded-For vs. other proxies)", "Storage mechanism for rate limit state (in-memory, distributed cache, database)", "Grace period or burst allowance, if any", "Documented limitation: No distributed rate limiting across multiple application instances", "Documented limitation: No mechanism to exempt specific IPs or API keys", "Documented limitation: Token bucket state is not persisted; rate limits reset on restart", "Documented limitation: No metrics or observability hooks to track rate limit violations", "Documented limitation: No grace period or gradual backoff — limit is binary (allow/reject)", "Residual security risk: Cannot determine if the application runs behind a trusted reverse proxy (ALB, nginx, etc.) where X-Forwarded-For is safe to use, or if it's directly internet-facing where the header is untrusted", "Residual security risk: Cannot assess if the default rate limit of 60 requests per 60 seconds is appropriate for the business use case - may be too permissive for abuse scenarios or too restrictive for legitimate API clients", "Residual security risk: Cannot determine if there are health check or monitoring endpoints that should be excluded from rate limiting", "Residual security risk: Cannot verify if multiple application instances will coordinate rate limits - in-memory implementation means each instance has independent limits, allowing N times the configured rate across N instances", "Residual security risk: Cannot determine if IPv6 addresses are properly handled by the IpExtractor and if IPv6 prefix-based rate limiting should be considered instead of per-address", "Residual security risk: Cannot assess if the RateLimitFilter order priority (Order(1)) conflicts with other security filters like authentication or CORS", "Untested: **IpExtractor logic**: IP extraction from headers (X-Forwarded-For, X-Real-IP, remote address) is not tested as there are only 2 test file slots and the core rate limiting logic takes priority. The IpExtractor is tested via integration in the filter test, but edge cases like malformed headers, multiple X-Forwarded-For IPs, IPv6 addresses, and empty header values remain untested.", "Untested: **GlobalExceptionHandler integration**: The mapping of RateLimitExceededException to HTTP 429 with ProblemDetail is not tested. This is standard exception handler behavior that could be covered by ShortLinkControllerTest or ShortLinkIntegrationTest as specified in the plan.", "Untested: **Time boundary edge cases**: While window reset is tested, precise boundary conditions (e.g., requests exactly at window expiration time, clock drift) are not exhaustively covered.", "Untested: **Memory cleanup**: The ConcurrentHashMap in InMemoryRateLimiter grows unbounded as IPs are added. There are no tests for memory behavior with thousands of unique IPs, though this is more of a production concern than unit test scope.", "Requirement coverage: 1. **Rate limiting applies to POST /api/v1/links endpoint**: PARTIAL - The filter matches POST method and path prefix /api/v1/links, but also incorrectly matches /api/v1/links/{shortCode} which would be GET requests for link resolution. Additionally, the filter has a critical bug where it calls filterChain.doFilter even after throwing RateLimitExceededException, allowing rate-limited requests through.", "Requirement coverage: 4. **Rate limit is configurable**: YES - InMemoryRateLimiter accepts configuration via @Value annotations for requests-per-window (default 60) and window-duration-seconds (default 60).", "entry gate refused RELEASE_GATE" ]
+}

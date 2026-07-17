@@ -1,0 +1,4 @@
+Target: src/test/java/com/shortlink/qr/QrCodeGeneratorTest.java
+
+Rationale:
+Unit tests for QR generation function (task 6) - validates QR code generation produces valid PNG output

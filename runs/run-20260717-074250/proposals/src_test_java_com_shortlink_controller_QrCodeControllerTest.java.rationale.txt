@@ -1,0 +1,4 @@
+Target: src/test/java/com/shortlink/controller/QrCodeControllerTest.java
+
+Rationale:
+Integration tests for endpoint (task 7) - tests valid code, invalid code, and response headers

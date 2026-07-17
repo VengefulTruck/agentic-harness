@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/exception/GlobalExceptionHandler.java
+
+Rationale:
+Handle RateLimitExceededException and return 429 with problem+json, following the existing error handling pattern

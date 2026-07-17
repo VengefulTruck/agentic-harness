@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/service/UrlValidator.java
+
+Rationale:
+Add private/internal IP detection logic and integrate into validation method (Task 1, 7)

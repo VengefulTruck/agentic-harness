@@ -1,0 +1,4 @@
+Target: src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java
+
+Rationale:
+Add tests for QR endpoint covering success and 404 cases following existing test patterns

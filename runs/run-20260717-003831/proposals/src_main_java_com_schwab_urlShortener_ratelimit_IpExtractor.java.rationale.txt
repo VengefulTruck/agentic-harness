@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/ratelimit/IpExtractor.java
+
+Rationale:
+Component to extract client IP from HttpServletRequest with X-Forwarded-For support, following constructor injection pattern

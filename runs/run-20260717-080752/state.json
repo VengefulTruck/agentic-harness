@@ -1,0 +1,382 @@
+{
+  "runId" : "run-20260717-080752",
+  "requirement" : "Make the links safer",
+  "targetRepoPath" : "/Users/jayanthreddyaeradla/Downloads/agentic-harness-complete/agentic-harness/../urlShortener",
+  "scenario" : "AMBIGUOUS",
+  "runStatus" : "FAILED",
+  "stopReason" : null,
+  "createdAt" : "2026-07-17T13:07:52.216604Z",
+  "snapshotAt" : "2026-07-17T13:09:24.270811Z",
+  "stages" : [ {
+    "stageId" : "INTAKE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ "art-2" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:07:52.247968Z",
+    "finishedAt" : "2026-07-17T13:07:55.712475Z"
+  }, {
+    "stageId" : "CLARIFY",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-2" : "e28bb28f9578b1d091345594046bd631509d33447eba4333d191d8b40f47f4ba"
+    },
+    "producedArtifactIds" : [ "art-9" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:07:55.717566Z",
+    "finishedAt" : "2026-07-17T13:08:10.022772Z"
+  }, {
+    "stageId" : "EXPLORE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-2" : "e28bb28f9578b1d091345594046bd631509d33447eba4333d191d8b40f47f4ba"
+    },
+    "producedArtifactIds" : [ "art-11" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:07:55.717518Z",
+    "finishedAt" : "2026-07-17T13:08:34.910770Z"
+  }, {
+    "stageId" : "PLAN",
+    "status" : "FAILED",
+    "attempts" : 2,
+    "inputFingerprint" : {
+      "art-2" : "e28bb28f9578b1d091345594046bd631509d33447eba4333d191d8b40f47f4ba",
+      "art-11" : "621645525e57ab3f5a54036b1f8eed657b2a4f43d1eabdf4eead32eafcee23eb"
+    },
+    "producedArtifactIds" : [ "art-15" ],
+    "failureReason" : "exit gate: 2 unresolved high-risk assumption(s) [asm-3: The safety risks being addressed are malicious external links (phishing, malware, unauthorized redirects) rather than data leakage, broken links, or accessibility issues, asm-4: \"Links\" refers to user-generated or user-clickable hyperlinks in the application UI/content, not API endpoints, database foreign keys, or symbolic links]",
+    "startedAt" : "2026-07-17T13:09:01.747540Z",
+    "finishedAt" : "2026-07-17T13:09:24.265621Z"
+  }, {
+    "stageId" : "APPROVAL_GATE",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  }, {
+    "stageId" : "IMPLEMENT",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  }, {
+    "stageId" : "TEST",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  }, {
+    "stageId" : "DOCS",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  }, {
+    "stageId" : "SECURITY_REVIEW",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  }, {
+    "stageId" : "VALIDATE",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  }, {
+    "stageId" : "RELEASE_GATE",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  }, {
+    "stageId" : "SUMMARY",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  } ],
+  "artifacts" : [ {
+    "id" : "art-2",
+    "producedBy" : "INTAKE",
+    "type" : "NORMALISED_REQUIREMENT",
+    "name" : "normalised-requirement.md",
+    "content" : "### Goal\nLinks in the system should be protected against specified safety risks.\n\n### In scope\n- Making links safer (unspecified mechanism or risk category)\n\n### Out of scope\n- Fixing non-link vulnerabilities\n- Changes to non-link UI elements\n- Performance or user experience modifications unrelated to safety\n\n### Unstated\n- What specific safety risks are being addressed (e.g., malicious redirects, XSS, phishing, broken links, data leakage)\n- Which links or link types are in scope (e.g., user-generated, external, internal, markdown, HTML)\n- What mechanism should implement the safety (e.g., validation, sanitization, warnings, allowlisting, HTTPS enforcement)\n- Whether this applies to links in all contexts (UI, content, documentation, etc.) or specific ones\n- What \"safer\" means quantitatively or qualitatively\n- Whether existing link safety measures should be modified or new ones added\n\n### Acceptance\nNone determinable without clarification of what safety risks must be mitigated and how.",
+    "contentHash" : "e28bb28f9578b1d091345594046bd631509d33447eba4333d191d8b40f47f4ba",
+    "producedAt" : "2026-07-17T13:07:55.710144Z"
+  }, {
+    "id" : "art-9",
+    "producedBy" : "CLARIFY",
+    "type" : "DESIGN",
+    "name" : "clarification.md",
+    "content" : "# Clarification\n\nASSUMPTION | HIGH | The safety risks being addressed are malicious external links (phishing, malware, unauthorized redirects) rather than data leakage, broken links, or accessibility issues | The mitigation strategy differs completely depending on the threat model\nASSUMPTION | HIGH | \"Links\" refers to user-generated or user-clickable hyperlinks in the application UI/content, not API endpoints, database foreign keys, or symbolic links | Different types of links require fundamentally different safety mechanisms\nASSUMPTION | MEDIUM | The solution should apply to all link types uniformly rather than different rules for internal vs external links | This determines whether we need link classification logic and separate policy enforcement\nASSUMPTION | MEDIUM | Safety improvements should be implemented through technical controls (validation, sanitization, warnings) rather than policy/process changes | This determines whether we build features or update documentation/training\nASSUMPTION | LOW | Existing links that don't meet new safety criteria should be flagged/fixed rather than grandfathered in | This affects migration strategy and backward compatibility\nASSUMPTION | LOW | The system currently has some links and this requirement aims to improve their safety rather than add link functionality where none exists | This determines whether we're retrofitting or building new\n\nQUESTION | What specific safety risks should be mitigated (e.g., XSS, phishing, malware, open redirects, data leakage)?\nQUESTION | Which links are in scope: user-generated content, external links, internal navigation, all of the above?\nQUESTION | What safety mechanism is acceptable: validation/sanitization, user warnings, allowlisting, HTTPS enforcement, rel=\"noopener\", or something else?\nQUESTION | What is the compliance or regulatory driver, if any, that defines \"safer\"?",
+    "contentHash" : "426f6368b0fc09d089ae5ebb05a8958817956411866b29c751a44268e2a13499",
+    "producedAt" : "2026-07-17T13:08:10.022365Z"
+  }, {
+    "id" : "art-11",
+    "producedBy" : "EXPLORE",
+    "type" : "IMPACT_ANALYSIS",
+    "name" : "impact-analysis.md",
+    "content" : "## Impact Analysis\n\n### Impacted files\n\n- **src/main/java/com/schwab/urlShortener/service/UrlValidator.java** — The core validation logic would need modification. Currently blocks dangerous schemes (javascript:, data:, file:, etc.) via an allowlist of http/https. The change might add additional safety mechanisms like SSRF protection (the test at UrlValidatorTest.java:147 documents that internal addresses like 169.254.169.254, localhost, and 10.0.0.1 are currently accepted), stronger URL parsing, or additional scheme/host validation.\n\n- **src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java** — Tests would need updates to cover new safety requirements. Current tests validate scheme blocking (line 59), length limits (line 115, 123), and document the known SSRF gap (line 147). New tests would be needed for whatever safety mechanism is added.\n\n- **src/main/java/com/schwab/urlShortener/api/RedirectController.java** — If safety involves redirect-time checks (not just validation-time), this would need changes. Currently performs resolution at line 43 and redirects without additional safety checks beyond what UrlValidator already enforced at creation time.\n\n- **src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java** — Tests covering redirect behavior would need updates if redirect-time safety checks are added. Currently tests the redirect mechanism (line 65-103) but no additional safety validations beyond scheme blocking already tested elsewhere.\n\n- **src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java** — Integration test at line 91 verifies end-to-end rejection of dangerous schemes. Would need additional test cases for new safety mechanisms to prove they work through the full stack.\n\n### Impacted APIs and data flows\n\n- **POST /api/v1/links** — Request validation might become stricter. Currently rejects javascript: and other dangerous schemes (ShortLinkControllerTest.java:127), blank URLs (line 94), and URLs over 2048 chars (UrlValidatorTest.java:123). New safety requirements might reject additional patterns, potentially breaking existing client integrations that submit URLs now accepted.\n\n- **GET /r/{shortCode}** — Redirect behavior might add runtime safety checks. Currently performs no additional validation at redirect time beyond what was enforced at creation (RedirectController.java:43). If SSRF protection is added with DNS resolution at redirect time (as mentioned in UrlValidator.java:18 and UrlValidatorTest.java:135), redirect latency would increase and some previously-created links might stop working.\n\n### Existing patterns to follow\n\n- **Allowlist-based validation** — UrlValidator.java uses an allowlist approach for schemes (only http/https allowed), not a blocklist. The comment at line 12-13 states \"allowlist schemes: anything outside http and https is rejected. Safer than a blocklist that must anticipate every scheme nobody thought of.\"\n\n- **Validation at service boundary** — ShortLinkService.java:39-63 shows validation happens in the service layer before database interaction. The validator is called before repository operations (verified by ShortLinkServiceTest.java:124 which confirms nothing reaches storage when validation fails).\n\n- **Test-driven security controls** — Security features have explicit test coverage. UrlValidatorTest.java:41 documents the attack vectors each rejected scheme represents (XSS via javascript:, filesystem access via file:, etc.). ShortLinkIntegrationTest.java:91 proves controls survive end-to-end.\n\n- **Document known gaps** — UrlValidatorTest.java:132-149 documents the SSRF vulnerability with a test explicitly labeled \"KNOWN GAP\" rather than silently ignoring it. The pattern is to pin current behavior even when incorrect, so changes to fix it cause test failures that force review.\n\n- **Exception handling for validation** — InvalidUrlException (used by UrlValidator.java:26) is caught by GlobalExceptionHandler.java:45 and translated to 400 Bad Request with problem+json. New validation failures should follow this pattern, not throw different exception types.\n\n### What I could not determine\n\n- **Which specific safety risks are being addressed** — The requirement says \"make links safer\" but doesn't specify if this means fixing the documented SSRF gap (UrlValidatorTest.java:147), adding open redirect protection, implementing content-type checking, adding URL reputation/blocklist checks, or something else entirely.\n\n- **Whether safety applies at creation-time, redirect-time, or both** — UrlValidator.java:18 states SSRF cannot be fixed at validation time (\"DNS can change after validation\") but it's unclear if the requirement wants validation-time hardening, redirect-time checks, or both.\n\n- **Impact on existing stored links** — If safety checks are added at redirect time, whether the ~millions of already-shortened links in production would suddenly start failing redirects. No evidence in the codebase of a migration or versioning strategy for retroactive safety enforcement.\n\n- **Whether external link following is in scope** — No evidence found of HTTP client code that would follow the shortened URL to validate the destination. All validation appears to be syntactic/structural only.\n\n- **Performance budget for safety additions** — RedirectController.java:39 and AsyncConfig.java:35 show redirect speed is explicitly prioritized. It's unclear what latency increase (if any) would be acceptable for safety checks at redirect time.",
+    "contentHash" : "621645525e57ab3f5a54036b1f8eed657b2a4f43d1eabdf4eead32eafcee23eb",
+    "producedAt" : "2026-07-17T13:08:34.909891Z"
+  }, {
+    "id" : "art-15",
+    "producedBy" : "PLAN",
+    "type" : "TASK_PLAN",
+    "name" : "task-plan.md",
+    "content" : "### Approach\n\nThis plan implements SSRF protection at redirect-time by resolving destination URLs to IP addresses and blocking private/internal ranges, following the explicit guidance in UrlValidator.java:18 that DNS cannot be trusted at validation time. The implementation adds DNS resolution logic to RedirectController, updates the existing SSRF test gap documentation to reflect the fix, and ensures the change is covered by integration tests without breaking existing stored links.\n\n### Tasks\n\n1. [src/main/java/com/schwab/urlShortener/service/IpAddressValidator.java] Create new validator to check if resolved IP addresses are in private/internal ranges (RFC1918, loopback, link-local, etc.) — depends on: none\n\n2. [src/test/java/com/schwab/urlShortener/service/IpAddressValidatorTest.java] Add test coverage for IpAddressValidator including all private ranges, IPv4/IPv6, edge cases — depends on: 1\n\n3. [src/main/java/com/schwab/urlShortener/api/RedirectController.java] Add DNS resolution and IP validation before redirect at line 43, throwing ForbiddenRedirectException for blocked IPs — depends on: 1\n\n4. [src/main/java/com/schwab/urlShortener/exception/ForbiddenRedirectException.java] Create new exception for SSRF-blocked redirects — depends on: none\n\n5. [src/main/java/com/schwab/urlShortener/exception/GlobalExceptionHandler.java] Add handler for ForbiddenRedirectException returning 403 with problem+json — depends on: 4\n\n6. [src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java] Add tests for SSRF protection at redirect time (169.254.169.254, localhost, 10.0.0.1) — depends on: 3, 4, 5\n\n7. [src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java] Update KNOWN GAP test at line 147 to reference that SSRF is now caught at redirect-time, not removed from validation — depends on: 3\n\n8. [src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java] Add integration test proving SSRF protection works end-to-end when redirecting to internal IPs — depends on: 3, 4, 5\n\n### Key decision\n\nDECISION | Implement SSRF protection at redirect-time with synchronous DNS resolution | UrlValidator.java:18 explicitly states DNS cannot be trusted at validation time, and RedirectController is where the actual outbound request risk materializes | Implementing at validation-time (creation) | DNS can change between creation and redirect making validation-time checks ineffective, plus it would break existing stored links pointing to domains that later resolve to internal IPs\n\n### Risks\n\n- DNS resolution adds latency to every redirect, potentially violating the performance priorities documented in AsyncConfig.java:35 and RedirectController.java:39\n- DNS resolution itself could be a DoS vector if attackers create links to slow-resolving or timeout-prone domains\n- Existing stored links that resolve to internal IPs will suddenly start failing with 403, breaking functionality for legitimate use cases (e.g., internal tool shortlinks)\n- DNS rebinding attacks could bypass protection if attacker controls DNS and changes resolution between our check and the user's browser resolution\n- IPv6 support depends on Java runtime DNS configuration; some environments may only resolve IPv4\n\n### Out of scope\n\n- Fixing other \"link safety\" concerns beyond SSRF (XSS, phishing, malware, open redirect amplification)\n- Adding async/cached DNS resolution to mitigate performance impact\n- Implementing allow-lists for legitimate internal destinations\n- Retroactive scanning/migration of existing stored links\n- Protection against DNS rebinding or time-of-check-time-of-use races\n- Content-type validation or HTTP-level checks of destination URLs\n- Rate limiting to prevent DNS DoS via shortlink creation",
+    "contentHash" : "50622ac3844a0d2e0b60cfc3b0ea5793a4b8fcfcf9937d234a8faee775a384f3",
+    "producedAt" : "2026-07-17T13:09:24.264656Z"
+  } ],
+  "assumptions" : [ {
+    "id" : "asm-3",
+    "madeBy" : "CLARIFY",
+    "statement" : "The safety risks being addressed are malicious external links (phishing, malware, unauthorized redirects) rather than data leakage, broken links, or accessibility issues",
+    "reason" : "The mitigation strategy differs completely depending on the threat model",
+    "risk" : "HIGH",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7gVeARhqgsRS4fhujM1",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:08:10.022019Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-4",
+    "madeBy" : "CLARIFY",
+    "statement" : "\"Links\" refers to user-generated or user-clickable hyperlinks in the application UI/content, not API endpoints, database foreign keys, or symbolic links",
+    "reason" : "Different types of links require fundamentally different safety mechanisms",
+    "risk" : "HIGH",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7gVeARhqgsRS4fhujM1",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:08:10.022037Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-5",
+    "madeBy" : "CLARIFY",
+    "statement" : "The solution should apply to all link types uniformly rather than different rules for internal vs external links",
+    "reason" : "This determines whether we need link classification logic and separate policy enforcement",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7gVeARhqgsRS4fhujM1",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:08:10.022044Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-6",
+    "madeBy" : "CLARIFY",
+    "statement" : "Safety improvements should be implemented through technical controls (validation, sanitization, warnings) rather than policy/process changes",
+    "reason" : "This determines whether we build features or update documentation/training",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7gVeARhqgsRS4fhujM1",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:08:10.022049Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-7",
+    "madeBy" : "CLARIFY",
+    "statement" : "Existing links that don't meet new safety criteria should be flagged/fixed rather than grandfathered in",
+    "reason" : "This affects migration strategy and backward compatibility",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7gVeARhqgsRS4fhujM1",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:08:10.022053Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-8",
+    "madeBy" : "CLARIFY",
+    "statement" : "The system currently has some links and this requirement aims to improve their safety rather than add link functionality where none exists",
+    "reason" : "This determines whether we're retrofitting or building new",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7gVeARhqgsRS4fhujM1",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:08:10.022057Z",
+    "resolution" : null
+  } ],
+  "decisions" : [ {
+    "id" : "dec-1",
+    "stage" : "INTAKE",
+    "question" : "What is actually being asked for?",
+    "choice" : "Links in the system should be protected against specified safety risks.",
+    "rationale" : "Normalised from the raw requirement; scope boundaries made explicit so later stages cannot quietly widen them.",
+    "alternatives" : [ {
+      "option" : "Pass the raw requirement through unchanged",
+      "rejectedBecause" : "Leaves every later stage to interpret it independently, and they will not interpret it the same way"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7gVBza9948K7tR8bExz",
+      "detail" : null
+    }, {
+      "kind" : "REQUIREMENT",
+      "locator" : "Make the links safer",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:07:55.709974Z"
+  }, {
+    "id" : "dec-10",
+    "stage" : "EXPLORE",
+    "question" : "Which parts of the codebase does this change touch?",
+    "choice" : "src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java, src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java, src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java, src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java, src/test/java/com/schwab/urlShortener/service/ShortLinkServiceTest.java, src/main/java/com/schwab/urlShortener/config/AsyncConfig.java",
+    "rationale" : "Identified by searching for the concepts in the requirement, then reading the files that matched. Limited to 6 files to bound context size.",
+    "alternatives" : [ {
+      "option" : "Read the whole repository into context",
+      "rejectedBecause" : "Unaffordable, and buries the relevant three files in noise"
+    } ],
+    "evidence" : [ {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:\\b(link|url|href|redirect|uri)\\b",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:(sanitize|validate|escape|encode|safe|security)\\b.*\\b(link|url|href|redirect)",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:class\\s+\\w*(Link|Url|Href|Redirect|Uri)\\w*",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:/\\b(javascript|data|vbscript|file|ftp)\\b/i",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:/\\b(allowlist|blocklist|dangerous.*scheme|unsafe)\\b/i",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/service/ShortLinkServiceTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/config/AsyncConfig.java",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:08:34.909570Z"
+  }, {
+    "id" : "dec-12",
+    "stage" : "PLAN",
+    "question" : "What is the shape of this change?",
+    "choice" : "Implement SSRF protection at redirect-time with DNS resolution rather than creation-time validation",
+    "rationale" : "The codebase explicitly documents (UrlValidator.java:18, UrlValidatorTest.java:135) that DNS can change between validation and redirect, and redirect-time is when the actual security risk materializes",
+    "alternatives" : [ {
+      "option" : "Strengthening creation-time validation with DNS pre-resolution",
+      "rejectedBecause" : "DNS results could become stale by redirect time, creating false security confidence while leaving the actual SSRF vulnerability unfixed, and would add latency to link creation rather than redirect where caching can mitigate it"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7gYLze6322UKE5ervPX",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:09:01.744016Z"
+  }, {
+    "id" : "dec-14",
+    "stage" : "PLAN",
+    "question" : "What is the shape of this change?",
+    "choice" : "Implement SSRF protection at redirect-time with synchronous DNS resolution",
+    "rationale" : "UrlValidator.java:18 explicitly states DNS cannot be trusted at validation time, and RedirectController is where the actual outbound request risk materializes",
+    "alternatives" : [ {
+      "option" : "Implementing at validation-time (creation)",
+      "rejectedBecause" : "DNS can change between creation and redirect making validation-time checks ineffective, plus it would break existing stored links pointing to domains that later resolve to internal IPs"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7gaLbdgztyRS9BWNxL2",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:09:24.264572Z"
+  } ],
+  "openQuestions" : [ "What specific safety risks are being addressed (e.g., malicious redirects, XSS, phishing, broken links, data leakage)", "Which links or link types are in scope (e.g., user-generated, external, internal, markdown, HTML)", "What mechanism should implement the safety (e.g., validation, sanitization, warnings, allowlisting, HTTPS enforcement)", "Whether this applies to links in all contexts (UI, content, documentation, etc.) or specific ones", "What \"safer\" means quantitatively or qualitatively", "Whether existing link safety measures should be modified or new ones added", "What specific safety risks should be mitigated (e.g., XSS, phishing, malware, open redirects, data leakage)?", "Which links are in scope: user-generated content, external links, internal navigation, all of the above?", "What safety mechanism is acceptable: validation/sanitization, user warnings, allowlisting, HTTPS enforcement, rel=\"noopener\", or something else?", "What is the compliance or regulatory driver, if any, that defines \"safer\"?", "PLAN failed after 2 attempt(s): exit gate: 2 unresolved high-risk assumption(s) [asm-3: The safety risks being addressed are malicious external links (phishing, malware, unauthorized redirects) rather than data leakage, broken links, or accessibility issues, asm-4: \"Links\" refers to user-generated or user-clickable hyperlinks in the application UI/content, not API endpoints, database foreign keys, or symbolic links]" ]
+}

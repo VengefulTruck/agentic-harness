@@ -1,0 +1,775 @@
+{
+  "runId" : "run-20260717-081620",
+  "requirement" : "Make the links safer",
+  "targetRepoPath" : "/Users/jayanthreddyaeradla/Downloads/agentic-harness-complete/agentic-harness/../urlShortener",
+  "scenario" : "AMBIGUOUS",
+  "runStatus" : "FAILED",
+  "stopReason" : null,
+  "createdAt" : "2026-07-17T13:16:20.846180Z",
+  "snapshotAt" : "2026-07-17T13:26:21.486601Z",
+  "stages" : [ {
+    "stageId" : "INTAKE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ "art-2" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:16:20.874739Z",
+    "finishedAt" : "2026-07-17T13:16:23.883767Z"
+  }, {
+    "stageId" : "CLARIFY",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-2" : "192a6955b670d22e4a234380101ebb73906bdf749861a4702001e6f9b48d85e7"
+    },
+    "producedArtifactIds" : [ "art-9" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:16:23.888743Z",
+    "finishedAt" : "2026-07-17T13:16:36.561444Z"
+  }, {
+    "stageId" : "EXPLORE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-2" : "192a6955b670d22e4a234380101ebb73906bdf749861a4702001e6f9b48d85e7"
+    },
+    "producedArtifactIds" : [ "art-11" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:16:23.888783Z",
+    "finishedAt" : "2026-07-17T13:16:53.460518Z"
+  }, {
+    "stageId" : "PLAN",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-11" : "84050fc34b5ace48564e49392e83d93b244ce341a6e8d7726215cd629cb8797f",
+      "art-2" : "192a6955b670d22e4a234380101ebb73906bdf749861a4702001e6f9b48d85e7"
+    },
+    "producedArtifactIds" : [ "art-13" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:16:53.467581Z",
+    "finishedAt" : "2026-07-17T13:17:16.607596Z"
+  }, {
+    "stageId" : "APPROVAL_GATE",
+    "status" : "PASSED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : "2026-07-17T13:23:41.178614Z"
+  }, {
+    "stageId" : "IMPLEMENT",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-11" : "84050fc34b5ace48564e49392e83d93b244ce341a6e8d7726215cd629cb8797f",
+      "art-13" : "6127b83362cd9bccfe10d6ad5f863c36b8dc0c713a3e5c9f50adfa68489a21e7"
+    },
+    "producedArtifactIds" : [ "art-18", "art-19", "art-20", "art-21" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:23:41.183324Z",
+    "finishedAt" : "2026-07-17T13:25:01.131613Z"
+  }, {
+    "stageId" : "TEST",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-13" : "6127b83362cd9bccfe10d6ad5f863c36b8dc0c713a3e5c9f50adfa68489a21e7",
+      "art-21" : "4826c39fe1203d90c4a5e306ece054c1c1e484127010392d12645dadf2c21228",
+      "art-20" : "c9ac13207f17cb14f0de0925eeffd3cd1a81898bc611f331ae1aa71cdec4fd17",
+      "art-19" : "cb1585faf99060119da1ded31f16f44c15529cce57aef11dafc84ddef4a32c33",
+      "art-18" : "1a614d5e593ba39d05a22b5879397d31c67bab183214677c7c349adeb0524e17"
+    },
+    "producedArtifactIds" : [ "art-30", "art-31" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:25:01.135356Z",
+    "finishedAt" : "2026-07-17T13:26:00.188213Z"
+  }, {
+    "stageId" : "DOCS",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-21" : "4826c39fe1203d90c4a5e306ece054c1c1e484127010392d12645dadf2c21228",
+      "art-19" : "cb1585faf99060119da1ded31f16f44c15529cce57aef11dafc84ddef4a32c33",
+      "art-18" : "1a614d5e593ba39d05a22b5879397d31c67bab183214677c7c349adeb0524e17",
+      "art-20" : "c9ac13207f17cb14f0de0925eeffd3cd1a81898bc611f331ae1aa71cdec4fd17"
+    },
+    "producedArtifactIds" : [ "art-22" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:25:01.135323Z",
+    "finishedAt" : "2026-07-17T13:25:09.801401Z"
+  }, {
+    "stageId" : "SECURITY_REVIEW",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-21" : "4826c39fe1203d90c4a5e306ece054c1c1e484127010392d12645dadf2c21228",
+      "art-19" : "cb1585faf99060119da1ded31f16f44c15529cce57aef11dafc84ddef4a32c33",
+      "art-18" : "1a614d5e593ba39d05a22b5879397d31c67bab183214677c7c349adeb0524e17",
+      "art-20" : "c9ac13207f17cb14f0de0925eeffd3cd1a81898bc611f331ae1aa71cdec4fd17"
+    },
+    "producedArtifactIds" : [ "art-29" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:25:01.135362Z",
+    "finishedAt" : "2026-07-17T13:25:27.950756Z"
+  }, {
+    "stageId" : "VALIDATE",
+    "status" : "PASSED",
+    "attempts" : 1,
+    "inputFingerprint" : {
+      "art-22" : "f1199b945bf1ca2705a95f069aebac138c9a0b633b1c2dc0e8ae4db6440a72f1",
+      "art-31" : "f51165fffc1cb6e9310f2808e14c8005b51e6c7f695b40cf9be04c978d3e259f",
+      "art-21" : "4826c39fe1203d90c4a5e306ece054c1c1e484127010392d12645dadf2c21228",
+      "art-20" : "c9ac13207f17cb14f0de0925eeffd3cd1a81898bc611f331ae1aa71cdec4fd17",
+      "art-30" : "9efb3685c2af078579b8bfd201243ae2e17e383bbf11065ec1f8874a98c9151e",
+      "art-19" : "cb1585faf99060119da1ded31f16f44c15529cce57aef11dafc84ddef4a32c33",
+      "art-29" : "e86f7af26fc5c83bb14ea85d3603505cba3ce5d819688c12c5e11e33b1d91cf7",
+      "art-18" : "1a614d5e593ba39d05a22b5879397d31c67bab183214677c7c349adeb0524e17"
+    },
+    "producedArtifactIds" : [ "art-42" ],
+    "failureReason" : null,
+    "startedAt" : "2026-07-17T13:26:00.192961Z",
+    "finishedAt" : "2026-07-17T13:26:21.479047Z"
+  }, {
+    "stageId" : "RELEASE_GATE",
+    "status" : "FAILED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : "entry gate: 2 unresolved high-risk assumption(s) [asm-24: Time-of-check-time-of-use (TOCTOU) race condition: DNS is resolved at creation time but not at redirect time, allowing DNS rebinding attacks where attacker passes validation with public IP then changes DNS to private IP before users click the link (at src/main/java/com/schwab/urlShortener/service/UrlValidator.java:77-80), asm-33: Plan explicitly states \"Out of scope: Changes to redirect-time behavior in RedirectController.java\" but security review identifies HIGH severity TOCTOU vulnerability requiring redirect-time validation, which approved plan deliberately excludes (between between plan and code)]",
+    "startedAt" : null,
+    "finishedAt" : "2026-07-17T13:26:21.483383Z"
+  }, {
+    "stageId" : "SUMMARY",
+    "status" : "BLOCKED",
+    "attempts" : 0,
+    "inputFingerprint" : { },
+    "producedArtifactIds" : [ ],
+    "failureReason" : null,
+    "startedAt" : null,
+    "finishedAt" : null
+  } ],
+  "artifacts" : [ {
+    "id" : "art-2",
+    "producedBy" : "INTAKE",
+    "type" : "NORMALISED_REQUIREMENT",
+    "name" : "normalised-requirement.md",
+    "content" : "### Goal\nLinks in the system should be made safer.\n\n### In scope\n- Making links safer (mechanism unspecified)\n\n### Out of scope\n- Changes to non-link elements\n- User education or warnings\n- Removing links entirely\n- Changes to link appearance or presentation\n\n### Unstated\n- Which links are in scope (all links? specific categories?)\n- What safety risks are being addressed (malicious URLs, broken links, tracking, privacy concerns, credential leakage?)\n- How safety should be achieved (validation, sanitization, user confirmation, external checking?)\n- What \"safer\" means quantitatively or qualitatively\n- Whether this applies to links in code, UI, documentation, or all of the above\n\n### Acceptance\n- Cannot be determined without clarification of the safety concern being addressed and which links are affected",
+    "contentHash" : "192a6955b670d22e4a234380101ebb73906bdf749861a4702001e6f9b48d85e7",
+    "producedAt" : "2026-07-17T13:16:23.881713Z"
+  }, {
+    "id" : "art-9",
+    "producedBy" : "CLARIFY",
+    "type" : "DESIGN",
+    "name" : "clarification.md",
+    "content" : "# Clarification\n\nASSUMPTION | HIGH | Links refer to HTTP/HTTPS hyperlinks in the application's user interface or user-generated content | The term \"links\" could mean database foreign keys, symbolic links, API endpoints, or hyperlinks - each requiring completely different safety measures\nQUESTION | What type of links need to be made safer (hyperlinks, database relationships, file system links, API links, or other)?\n\nASSUMPTION | HIGH | The primary safety concern is preventing users from being directed to malicious or phishing websites | Safety could mean preventing CSRF attacks, stopping credential leakage, blocking tracking, preventing open redirects, or numerous other security concerns - each requiring different solutions\nQUESTION | What specific safety risks or threats are being addressed (malicious URLs, phishing, tracking, credential leakage, CSRF, open redirects, broken links)?\n\nASSUMPTION | HIGH | This applies to all links throughout the system regardless of source or context | Links from trusted admin users, third-party content, user-generated content, and internal navigation may require different safety measures with different risk profiles\nQUESTION | Which links are in scope (all links, only external links, only user-generated links, links in specific modules)?\n\nASSUMPTION | MEDIUM | Existing link functionality and user workflows should be preserved while adding safety measures | Safety improvements could involve removing certain link types entirely, requiring multi-step confirmation, or blocking entire categories of destinations\nQUESTION | Should the solution preserve existing link functionality, or can it change how users interact with links?\n\nASSUMPTION | MEDIUM | Safety measures should be automated/technical rather than user-facing warnings or education | The solution could be technical validation, user confirmations/warnings, or training rather than code changes\n\nASSUMPTION | LOW | This is a proactive security improvement rather than addressing a specific incident or compliance requirement | The urgency, scope and acceptable tradeoffs differ significantly between compliance-driven and proactive improvements",
+    "contentHash" : "6cc4c45cedeb1a653721cfe9460588e05d2928b511817600f93e6e728b0538da",
+    "producedAt" : "2026-07-17T13:16:36.560809Z"
+  }, {
+    "id" : "art-11",
+    "producedBy" : "EXPLORE",
+    "type" : "IMPACT_ANALYSIS",
+    "name" : "impact-analysis.md",
+    "content" : "## Impact Analysis\n\n### Impacted files\n\n- `src/main/java/com/schwab/urlShortener/service/UrlValidator.java` — This is the primary security control for URLs. The requirement to \"make links safer\" would likely involve enhancing validation logic here, as it already handles scheme allowlisting and basic safety checks (lines 10-18, 41-51).\n\n- `src/main/java/com/schwab/urlShortener/api/RedirectController.java` — Performs the redirect operation (line 43). If \"safer\" means adding security headers, validation at redirect time, or other redirect-time protections, this would change.\n\n- `src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java` — Contains tests for the validation logic, including security-focused tests for dangerous schemes (lines 41-61). Would need new tests for whatever safety mechanism is added.\n\n- `src/main/java/com/schwab/urlShortener/service/ShortLinkService.java` — Calls the URL validator before persistence (line 28, validated at line 117 in tests). If additional safety checks are needed at service level, this would be affected.\n\n- `src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java` — Tests the redirect behavior. If redirect-time safety measures are added, tests would be needed here.\n\n- `src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java` — End-to-end tests including a security control test (lines 92-100). Would need integration tests for new safety features.\n\n### Impacted APIs and data flows\n\n- **POST /api/v1/links** — If safety involves stricter validation, this endpoint would reject more URLs. The error responses might change (currently returns 400 with problem+json per `src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java:136`).\n\n- **GET /r/{shortCode}** — If safety involves redirect-time checks, the redirect flow would change. Currently returns 302 with Location header (`src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java:73-75`).\n\n- **Error responses** — The `GlobalExceptionHandler` at `src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java` handles `InvalidUrlException` (lines 43-45). New safety checks might introduce new exception types or change error messages.\n\n### Existing patterns to follow\n\n- **Allowlist approach** — `UrlValidator` uses an allowlist for schemes (http/https only), as shown in `src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java:41-61`. Any new safety mechanism should follow allowlist rather than blocklist principles.\n\n- **Validation before persistence** — The service validates URLs before touching the database, per `src/test/java/com/schwab/urlShortener/service/ShortLinkServiceTest.java:117-122`. New checks should follow this pattern.\n\n- **Documented gaps** — Known security gaps are documented in tests with clear markers, like the SSRF gap in `src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java:135-152`. New limitations should be documented similarly.\n\n- **Problem+json for errors** — User-facing errors return RFC 7807 problem+json format, as seen in `src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java:136` and `src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java:115-117`.\n\n- **Security-first comments** — Security decisions are explicitly documented in code comments, like the scheme allowlist rationale in `src/main/java/com/schwab/urlShortener/service/UrlValidator.java:10-18`.\n\n### What I could not determine\n\n- **Which specific safety concern** — The searches show existing protections against XSS via scheme allowlisting (javascript:, data:) and basic URL validation. The known gap is SSRF (internal addresses accepted per `src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java:135-152`). Whether \"safer\" means addressing this gap, adding other protections (open redirects, phishing, malware domains), or something else is unclear.\n\n- **Scope of \"links\"** — Cannot determine if this applies only to user-submitted URLs in the shortener (the `longUrl` field), or also to links in documentation, configuration, or UI that were not visible in the searches.\n\n- **Implementation mechanism** — Whether safety should be achieved through enhanced validation, external service checks, user warnings, rate limiting, or other means cannot be determined from the searches.\n\n- **Performance requirements** — The codebase shows concern for redirect performance (`src/main/java/com/schwab/urlShortener/config/AsyncConfig.java:35-37` mentions not blocking redirects). Whether safety checks must be synchronous (at creation time) or can be asynchronous is unclear.",
+    "contentHash" : "84050fc34b5ace48564e49392e83d93b244ce341a6e8d7726215cd629cb8797f",
+    "producedAt" : "2026-07-17T13:16:53.458348Z"
+  }, {
+    "id" : "art-13",
+    "producedBy" : "PLAN",
+    "type" : "TASK_PLAN",
+    "name" : "task-plan.md",
+    "content" : "### Approach\n\nThe plan addresses the documented SSRF gap (allowing internal/private IP addresses) as the most concrete safety improvement identified in the impact analysis. We enhance `UrlValidator` to reject internal network addresses, update dependent validation flows, and add comprehensive tests. This approach follows the existing allowlist pattern, validates at creation time (not redirect time) to avoid performance impact, and leverages the documented security gap as the clearest target for \"safer.\"\n\n### Tasks\n\n1. `src/main/java/com/schwab/urlShortener/service/UrlValidator.java` — Add private/internal IP address detection logic (RFC1918, loopback, link-local ranges) and integrate into validation method — depends on: none\n\n2. `src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java` — Replace the SSRF gap documentation (lines 135-152) with passing tests that verify rejection of internal addresses (127.0.0.1, 10.x, 192.168.x, 169.254.x, ::1, localhost) — depends on: 1\n\n3. `src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java` — Add tests for edge cases: IP address obfuscation (decimal/hex/octal notation), DNS rebinding scenarios where validation might be bypassed — depends on: 1\n\n4. `src/test/java/com/schwab/urlShortener/service/ShortLinkServiceTest.java` — Add test case verifying that internal URLs are rejected at service level with appropriate InvalidUrlException — depends on: 1\n\n5. `src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java` — Add API-level test verifying 400 response with problem+json when internal URL submitted — depends on: 1\n\n6. `src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java` — Add end-to-end test verifying internal URL rejection through full request/response cycle — depends on: 1\n\n7. `src/main/java/com/schwab/urlShortener/service/UrlValidator.java` — Update security comments (lines 10-18) to document the SSRF protection and any remaining limitations (e.g., DNS rebinding, TOCTOU) — depends on: 1, 2, 3\n\n### Key decision\n\n**DECISION** | Address the documented SSRF gap by blocking internal/private IP addresses | The impact analysis explicitly identifies this as a known security limitation (UrlValidatorTest.java:135-152), making it the most concrete interpretation of \"safer\"; it aligns with the existing allowlist pattern; and blocking happens at creation time avoiding redirect performance concerns mentioned in AsyncConfig.java | Adding other safety measures (phishing detection, malware domain checking, rate limiting, user warnings) | These would require external services (undefined performance/cost), address unspecified threats (impact analysis couldn't determine which safety concern), or add user-facing friction (assumption: preserve existing workflows)\n\n### Risks\n\n- DNS rebinding attacks could bypass IP-based validation if attacker controls DNS and changes resolution between validation and redirect time (TOCTOU vulnerability)\n- IP address obfuscation techniques (octal, hex, decimal notation) might bypass naive IP detection if not handled comprehensively\n- Legitimate use cases requiring internal addresses (corporate intranets, development environments) would be blocked with no override mechanism\n- The change assumes URL resolution at validation time won't create new SSRF vectors in the validator itself\n\n### Out of scope\n\n- Protection against phishing, malware domains, or other non-SSRF threats (no mechanism specified in requirement)\n- Changes to redirect-time behavior in `RedirectController.java` (following async performance concerns and validation-before-persistence pattern)\n- User-facing warnings or confirmations (assumption: automated technical measures)\n- Rate limiting or abuse prevention unrelated to URL content\n- Handling of edge cases like DNS rebinding or TOCTOU attacks (documented as remaining limitations)\n- Override mechanisms for legitimate internal URL use cases",
+    "contentHash" : "6127b83362cd9bccfe10d6ad5f863c36b8dc0c713a3e5c9f50adfa68489a21e7",
+    "producedAt" : "2026-07-17T13:17:16.606627Z"
+  }, {
+    "id" : "art-18",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/main/java/com/schwab/urlShortener/service/UrlValidator.java",
+    "content" : "package com.schwab.urlShortener.service;\n\nimport org.springframework.stereotype.Component;\n\nimport java.net.InetAddress;\nimport java.net.URI;\nimport java.net.UnknownHostException;\nimport java.util.Set;\n\n/**\n * Validates URLs for security and format requirements.\n * \n * Security controls:\n * - Allowlist of safe schemes (http, https only) to prevent XSS via javascript:, data:, etc.\n * - Rejection of private/internal IP addresses to prevent SSRF attacks against internal infrastructure\n * \n * Known limitations:\n * - DNS rebinding attacks: An attacker controlling DNS could pass validation with a public IP,\n *   then change DNS to resolve to a private IP between validation and redirect time (TOCTOU).\n * - IP obfuscation in hostnames is detected, but new encoding schemes may emerge.\n * - Does not protect against phishing, malware domains, or other content-based threats.\n */\n@Component\npublic class UrlValidator {\n    private static final Set<String> ALLOWED_SCHEMES = Set.of(\"http\", \"https\");\n    \n    // RFC 1918 private address ranges\n    private static final String[] PRIVATE_IP_PATTERNS = {\n        \"^10\\\\..*\",           // 10.0.0.0/8\n        \"^172\\\\.(1[6-9]|2[0-9]|3[0-1])\\\\..*\",  // 172.16.0.0/12\n        \"^192\\\\.168\\\\..*\"     // 192.168.0.0/16\n    };\n    \n    public void validate(String url) {\n        if (url == null || url.trim().isEmpty()) {\n            throw new InvalidUrlException(\"URL cannot be empty\");\n        }\n        \n        URI uri;\n        try {\n            uri = URI.create(url);\n        } catch (IllegalArgumentException e) {\n            throw new InvalidUrlException(\"Invalid URL format: \" + e.getMessage());\n        }\n        \n        validateScheme(uri);\n        validateHost(uri);\n    }\n    \n    private void validateScheme(URI uri) {\n        String scheme = uri.getScheme();\n        if (scheme == null || !ALLOWED_SCHEMES.contains(scheme.toLowerCase())) {\n            throw new InvalidUrlException(\n                \"URL scheme must be http or https. Found: \" + scheme\n            );\n        }\n    }\n    \n    private void validateHost(URI uri) {\n        String host = uri.getHost();\n        if (host == null || host.trim().isEmpty()) {\n            throw new InvalidUrlException(\"URL must have a valid host\");\n        }\n        \n        // Check for localhost variations\n        if (isLocalhost(host)) {\n            throw new InvalidUrlException(\"URLs pointing to localhost are not allowed\");\n        }\n        \n        // Try to resolve and check if it's a private/internal address\n        try {\n            InetAddress address = InetAddress.getByName(host);\n            if (isPrivateOrInternalAddress(address)) {\n                throw new InvalidUrlException(\"URLs pointing to private or internal IP addresses are not allowed\");\n            }\n        } catch (UnknownHostException e) {\n            // If we can't resolve the host, we'll allow it through\n            // The redirect will fail naturally if the host doesn't exist\n            // This avoids being overly restrictive for valid public domains with temporary DNS issues\n        }\n    }\n    \n    private boolean isLocalhost(String host) {\n        String lowerHost = host.toLowerCase();\n        return lowerHost.equals(\"localhost\") || \n               lowerHost.equals(\"localhost.localdomain\") ||\n               lowerHost.startsWith(\"localhost.\");\n    }\n    \n    private boolean isPrivateOrInternalAddress(InetAddress address) {\n        // Check loopback (127.0.0.0/8 for IPv4, ::1 for IPv6)\n        if (address.isLoopbackAddress()) {\n            return true;\n        }\n        \n        // Check link-local (169.254.0.0/16 for IPv4, fe80::/10 for IPv6)\n        if (address.isLinkLocalAddress()) {\n            return true;\n        }\n        \n        // Check site-local/private (deprecated for IPv6 but still checked)\n        if (address.isSiteLocalAddress()) {\n            return true;\n        }\n        \n        // Additional check for RFC 1918 private ranges using string matching\n        // This catches cases where the Java API might not flag them\n        String hostAddress = address.getHostAddress();\n        for (String pattern : PRIVATE_IP_PATTERNS) {\n            if (hostAddress.matches(pattern)) {\n                return true;\n            }\n        }\n        \n        return false;\n    }\n}\n",
+    "contentHash" : "1a614d5e593ba39d05a22b5879397d31c67bab183214677c7c349adeb0524e17",
+    "producedAt" : "2026-07-17T13:25:01.122297Z"
+  }, {
+    "id" : "art-19",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java",
+    "content" : "package com.schwab.urlShortener.service;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.params.ParameterizedTest;\nimport org.junit.jupiter.params.provider.ValueSource;\n\nimport static org.junit.jupiter.api.Assertions.*;\n\nclass UrlValidatorTest {\n    \n    private final UrlValidator validator = new UrlValidator();\n\n    @Test\n    void validHttpUrl_shouldPass() {\n        assertDoesNotThrow(() -> validator.validate(\"http://example.com\"));\n    }\n\n    @Test\n    void validHttpsUrl_shouldPass() {\n        assertDoesNotThrow(() -> validator.validate(\"https://example.com\"));\n    }\n\n    @Test\n    void validUrlWithPath_shouldPass() {\n        assertDoesNotThrow(() -> validator.validate(\"https://example.com/path/to/resource\"));\n    }\n\n    @Test\n    void validUrlWithQueryParams_shouldPass() {\n        assertDoesNotThrow(() -> validator.validate(\"https://example.com/path?param=value&other=123\"));\n    }\n\n    @Test\n    void nullUrl_shouldThrowException() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(null)\n        );\n        assertTrue(ex.getMessage().contains(\"cannot be empty\"));\n    }\n\n    @Test\n    void emptyUrl_shouldThrowException() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"\")\n        );\n        assertTrue(ex.getMessage().contains(\"cannot be empty\"));\n    }\n\n    @Test\n    void javascriptScheme_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"javascript:alert('xss')\")\n        );\n        assertTrue(ex.getMessage().contains(\"scheme must be http or https\"));\n    }\n\n    @Test\n    void dataScheme_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"data:text/html,<script>alert('xss')</script>\")\n        );\n        assertTrue(ex.getMessage().contains(\"scheme must be http or https\"));\n    }\n\n    @Test\n    void fileScheme_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"file:///etc/passwd\")\n        );\n        assertTrue(ex.getMessage().contains(\"scheme must be http or https\"));\n    }\n\n    @Test\n    void ftpScheme_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"ftp://files.example.com/file.txt\")\n        );\n        assertTrue(ex.getMessage().contains(\"scheme must be http or https\"));\n    }\n\n    @Test\n    void localhostUrl_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"http://localhost:8080/admin\")\n        );\n        assertTrue(ex.getMessage().contains(\"localhost\"));\n    }\n\n    @Test\n    void localhostVariation_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"http://localhost.localdomain/admin\")\n        );\n        assertTrue(ex.getMessage().contains(\"localhost\"));\n    }\n\n    @Test\n    void loopbackIpv4_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"http://127.0.0.1/admin\")\n        );\n        assertTrue(ex.getMessage().contains(\"private or internal\"));\n    }\n\n    @Test\n    void loopbackIpv4Variant_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"http://127.1.1.1/admin\")\n        );\n        assertTrue(ex.getMessage().contains(\"private or internal\"));\n    }\n\n    @ParameterizedTest\n    @ValueSource(strings = {\n        \"http://10.0.0.1/admin\",\n        \"http://10.255.255.255/admin\",\n        \"http://10.1.2.3:8080/resource\"\n    })\n    void rfc1918ClassA_shouldBeRejected(String url) {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(url)\n        );\n        assertTrue(ex.getMessage().contains(\"private or internal\"));\n    }\n\n    @ParameterizedTest\n    @ValueSource(strings = {\n        \"http://172.16.0.1/admin\",\n        \"http://172.31.255.255/admin\",\n        \"http://172.20.10.5:8080/resource\"\n    })\n    void rfc1918ClassB_shouldBeRejected(String url) {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(url)\n        );\n        assertTrue(ex.getMessage().contains(\"private or internal\"));\n    }\n\n    @ParameterizedTest\n    @ValueSource(strings = {\n        \"http://192.168.0.1/admin\",\n        \"http://192.168.255.255/admin\",\n        \"http://192.168.1.1:8080/resource\"\n    })\n    void rfc1918ClassC_shouldBeRejected(String url) {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(url)\n        );\n        assertTrue(ex.getMessage().contains(\"private or internal\"));\n    }\n\n    @ParameterizedTest\n    @ValueSource(strings = {\n        \"http://169.254.0.1/metadata\",\n        \"http://169.254.169.254/latest/meta-data\"\n    })\n    void linkLocalAddress_shouldBeRejected(String url) {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(url)\n        );\n        assertTrue(ex.getMessage().contains(\"private or internal\"));\n    }\n\n    @Test\n    void ipv6Loopback_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"http://[::1]/admin\")\n        );\n        assertTrue(ex.getMessage().contains(\"private or internal\"));\n    }\n\n    @Test\n    void ipv6LinkLocal_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"http://[fe80::1]/admin\")\n        );\n        assertTrue(ex.getMessage().contains(\"private or internal\"));\n    }\n\n    @Test\n    void urlWithoutHost_shouldBeRejected() {\n        InvalidUrlException ex = assertThrows(\n            InvalidUrlException.class,\n            () -> validator.validate(\"http:///path\")\n        );\n        assertTrue(ex.getMessage().contains(\"valid host\"));\n    }\n}\n",
+    "contentHash" : "cb1585faf99060119da1ded31f16f44c15529cce57aef11dafc84ddef4a32c33",
+    "producedAt" : "2026-07-17T13:25:01.124231Z"
+  }, {
+    "id" : "art-20",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/test/java/com/schwab/urlShortener/service/ShortLinkServiceTest.java",
+    "content" : "package com.schwab.urlShortener.service;\n\nimport com.schwab.urlShortener.domain.ShortLink;\nimport com.schwab.urlShortener.domain.ShortLinkRepository;\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport java.util.Optional;\n\nimport static org.junit.jupiter.api.Assertions.*;\nimport static org.mockito.ArgumentMatchers.any;\nimport static org.mockito.Mockito.*;\n\n@ExtendWith(MockitoExtension.class)\nclass ShortLinkServiceTest {\n\n    @Mock\n    private ShortLinkRepository repository;\n\n    @Mock\n    private UrlValidator urlValidator;\n\n    @Mock\n    private ShortCodeGenerator shortCodeGenerator;\n\n    @InjectMocks\n    private ShortLinkService service;\n\n    @Test\n    void createShortLink_withValidUrl_shouldSucceed() {\n        String longUrl = \"https://example.com/very/long/path\";\n        String shortCode = \"abc123\";\n        \n        when(shortCodeGenerator.generate()).thenReturn(shortCode);\n        when(repository.existsByShortCode(shortCode)).thenReturn(false);\n        when(repository.save(any(ShortLink.class))).thenAnswer(i -> i.getArgument(0));\n        \n        ShortLink result = service.createShortLink(longUrl);\n        \n        assertNotNull(result);\n        assertEquals(longUrl, result.getLongUrl());\n        assertEquals(shortCode, result.getShortCode());\n        \n        verify(urlValidator).validate(longUrl);\n        verify(repository).save(any(ShortLink.class));\n    }\n\n    @Test\n    void createShortLink_withInvalidUrl_shouldThrowException() {\n        String invalidUrl = \"not-a-valid-url\";\n        \n        doThrow(new InvalidUrlException(\"Invalid URL format\"))\n            .when(urlValidator).validate(invalidUrl);\n        \n        assertThrows(InvalidUrlException.class, () -> {\n            service.createShortLink(invalidUrl);\n        });\n        \n        verify(urlValidator).validate(invalidUrl);\n        verify(repository, never()).save(any());\n    }\n\n    @Test\n    void createShortLink_withCollision_shouldRetry() {\n        String longUrl = \"https://example.com\";\n        String firstCode = \"abc123\";\n        String secondCode = \"def456\";\n        \n        when(shortCodeGenerator.generate())\n            .thenReturn(firstCode)\n            .thenReturn(secondCode);\n        when(repository.existsByShortCode(firstCode)).thenReturn(true);\n        when(repository.existsByShortCode(secondCode)).thenReturn(false);\n        when(repository.save(any(ShortLink.class))).thenAnswer(i -> i.getArgument(0));\n        \n        ShortLink result = service.createShortLink(longUrl);\n        \n        assertEquals(secondCode, result.getShortCode());\n        verify(shortCodeGenerator, times(2)).generate();\n    }\n\n    @Test\n    void getLongUrl_withExistingShortCode_shouldReturnUrl() {\n        String shortCode = \"abc123\";\n        String longUrl = \"https://example.com\";\n        ShortLink link = new ShortLink(longUrl, shortCode);\n        \n        when(repository.findByShortCode(shortCode)).thenReturn(Optional.of(link));\n        \n        Optional<String> result = service.getLongUrl(shortCode);\n        \n        assertTrue(result.isPresent());\n        assertEquals(longUrl, result.get());\n    }\n\n    @Test\n    void getLongUrl_withNonExistentShortCode_shouldReturnEmpty() {\n        String shortCode = \"nonexistent\";\n        \n        when(repository.findByShortCode(shortCode)).thenReturn(Optional.empty());\n        \n        Optional<String> result = service.getLongUrl(shortCode);\n        \n        assertFalse(result.isPresent());\n    }\n\n    @Test\n    void incrementClickCount_shouldUpdateRepository() {\n        String shortCode = \"abc123\";\n        \n        service.incrementClickCount(shortCode);\n        \n        verify(repository).incrementClickCount(shortCode);\n    }\n\n    @Test\n    void createShortLink_validatesUrl_beforePersisting() {\n        String longUrl = \"https://example.com\";\n        String shortCode = \"abc123\";\n        \n        when(shortCodeGenerator.generate()).thenReturn(shortCode);\n        when(repository.existsByShortCode(shortCode)).thenReturn(false);\n        when(repository.save(any(ShortLink.class))).thenAnswer(i -> i.getArgument(0));\n        \n        service.createShortLink(longUrl);\n        \n        verify(urlValidator).validate(longUrl);\n    }\n\n    @Test\n    void createShortLink_withInternalUrl_shouldRejectAtServiceLevel() {\n        String internalUrl = \"http://192.168.1.1/admin\";\n        \n        doThrow(new InvalidUrlException(\"URLs pointing to private or internal IP addresses are not allowed\"))\n            .when(urlValidator).validate(internalUrl);\n        \n        InvalidUrlException ex = assertThrows(InvalidUrlException.class, () -> {\n            service.createShortLink(internalUrl);\n        });\n        \n        assertTrue(ex.getMessage().contains(\"private or internal\"));\n        verify(urlValidator).validate(internalUrl);\n        verify(repository, never()).save(any());\n    }\n\n    @Test\n    void createShortLink_withLocalhostUrl_shouldRejectAtServiceLevel() {\n        String localhostUrl = \"http://localhost:8080/admin\";\n        \n        doThrow(new InvalidUrlException(\"URLs pointing to localhost are not allowed\"))\n            .when(urlValidator).validate(localhostUrl);\n        \n        InvalidUrlException ex = assertThrows(InvalidUrlException.class, () -> {\n            service.createShortLink(localhostUrl);\n        });\n        \n        assertTrue(ex.getMessage().contains(\"localhost\"));\n        verify(urlValidator).validate(localhostUrl);\n        verify(repository, never()).save(any());\n    }\n}\n",
+    "contentHash" : "c9ac13207f17cb14f0de0925eeffd3cd1a81898bc611f331ae1aa71cdec4fd17",
+    "producedAt" : "2026-07-17T13:25:01.128889Z"
+  }, {
+    "id" : "art-21",
+    "producedBy" : "IMPLEMENT",
+    "type" : "PATCH",
+    "name" : "src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java",
+    "content" : "package com.schwab.urlShortener.api;\n\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport com.schwab.urlShortener.domain.ShortLink;\nimport com.schwab.urlShortener.service.InvalidUrlException;\nimport com.schwab.urlShortener.service.ShortLinkService;\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;\nimport org.springframework.boot.test.mock.mockito.MockBean;\nimport org.springframework.http.MediaType;\nimport org.springframework.test.web.servlet.MockMvc;\n\nimport static org.hamcrest.Matchers.containsString;\nimport static org.mockito.ArgumentMatchers.anyString;\nimport static org.mockito.Mockito.when;\nimport static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;\nimport static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;\n\n@WebMvcTest(ShortLinkController.class)\nclass ShortLinkControllerTest {\n\n    @Autowired\n    private MockMvc mockMvc;\n\n    @Autowired\n    private ObjectMapper objectMapper;\n\n    @MockBean\n    private ShortLinkService shortLinkService;\n\n    @Test\n    void createShortLink_withValidUrl_shouldReturn201() throws Exception {\n        String longUrl = \"https://example.com/very/long/path\";\n        String shortCode = \"abc123\";\n        ShortLink link = new ShortLink(longUrl, shortCode);\n        \n        when(shortLinkService.createShortLink(longUrl)).thenReturn(link);\n        \n        CreateShortLinkRequest request = new CreateShortLinkRequest(longUrl);\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isCreated())\n            .andExpect(header().exists(\"Location\"))\n            .andExpect(header().string(\"Location\", containsString(\"/r/\" + shortCode)))\n            .andExpect(jsonPath(\"$.shortCode\").value(shortCode))\n            .andExpect(jsonPath(\"$.longUrl\").value(longUrl))\n            .andExpect(jsonPath(\"$.shortUrl\").value(containsString(\"/r/\" + shortCode)));\n    }\n\n    @Test\n    void createShortLink_withNullUrl_shouldReturn400() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(null);\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(jsonPath(\"$.title\").value(\"Bad Request\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"longUrl\")));\n    }\n\n    @Test\n    void createShortLink_withEmptyUrl_shouldReturn400() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(jsonPath(\"$.title\").value(\"Bad Request\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"longUrl\")));\n    }\n\n    @Test\n    void createShortLink_withInvalidUrl_shouldReturn400() throws Exception {\n        String invalidUrl = \"not-a-url\";\n        \n        when(shortLinkService.createShortLink(invalidUrl))\n            .thenThrow(new InvalidUrlException(\"Invalid URL format\"));\n        \n        CreateShortLinkRequest request = new CreateShortLinkRequest(invalidUrl);\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"Invalid URL format\")));\n    }\n\n    @Test\n    void createShortLink_withDangerousScheme_shouldReturn400() throws Exception {\n        String dangerousUrl = \"javascript:alert('xss')\";\n        \n        when(shortLinkService.createShortLink(dangerousUrl))\n            .thenThrow(new InvalidUrlException(\"URL scheme must be http or https\"));\n        \n        CreateShortLinkRequest request = new CreateShortLinkRequest(dangerousUrl);\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"));\n    }\n\n    @Test\n    void createShortLink_withInternalIpAddress_shouldReturn400() throws Exception {\n        String internalUrl = \"http://192.168.1.1/admin\";\n        \n        when(shortLinkService.createShortLink(internalUrl))\n            .thenThrow(new InvalidUrlException(\"URLs pointing to private or internal IP addresses are not allowed\"));\n        \n        CreateShortLinkRequest request = new CreateShortLinkRequest(internalUrl);\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"private or internal\")));\n    }\n\n    @Test\n    void createShortLink_withLocalhostUrl_shouldReturn400() throws Exception {\n        String localhostUrl = \"http://localhost:8080/admin\";\n        \n        when(shortLinkService.createShortLink(localhostUrl))\n            .thenThrow(new InvalidUrlException(\"URLs pointing to localhost are not allowed\"));\n        \n        CreateShortLinkRequest request = new CreateShortLinkRequest(localhostUrl);\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"localhost\")));\n    }\n\n    @Test\n    void createShortLink_withMalformedJson_shouldReturn400() throws Exception {\n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(\"{invalid json\"))\n            .andExpect(status().isBadRequest());\n    }\n\n    @Test\n    void createShortLink_withUrlExceedingMaxLength_shouldReturn400() throws Exception {\n        String veryLongUrl = \"https://example.com/\" + \"a\".repeat(2048);\n        \n        CreateShortLinkRequest request = new CreateShortLinkRequest(veryLongUrl);\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(jsonPath(\"$.title\").value(\"Bad Request\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"longUrl\")));\n    }\n}\n",
+    "contentHash" : "4826c39fe1203d90c4a5e306ece054c1c1e484127010392d12645dadf2c21228",
+    "producedAt" : "2026-07-17T13:25:01.130102Z"
+  }, {
+    "id" : "art-30",
+    "producedBy" : "TEST",
+    "type" : "TEST_SOURCE",
+    "name" : "src/test/java/com/schwab/urlShortener/service/UrlValidatorIpObfuscationTest.java",
+    "content" : "package com.schwab.urlShortener.service;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.params.ParameterizedTest;\nimport org.junit.jupiter.params.provider.ValueSource;\n\nimport static org.assertj.core.api.Assertions.assertThat;\nimport static org.assertj.core.api.Assertions.assertThatThrownBy;\n\n/**\n * Tests for IP address obfuscation techniques that attackers might use to bypass\n * naive IP validation. These techniques exploit the fact that many URL parsers\n * accept alternative representations of IP addresses beyond standard dotted-decimal.\n */\nclass UrlValidatorIpObfuscationTest {\n    \n    private final UrlValidator validator = new UrlValidator();\n\n    @Test\n    void decimalNotation_localhost_shouldBeRejected() {\n        // 127.0.0.1 in decimal = 2130706433\n        String decimalLocalhostUrl = \"http://2130706433/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(decimalLocalhostUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void decimalNotation_privateNetwork_shouldBeRejected() {\n        // 192.168.1.1 in decimal = 3232235777\n        String decimalPrivateUrl = \"http://3232235777/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(decimalPrivateUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void hexNotation_localhost_shouldBeRejected() {\n        // 127.0.0.1 in hex = 0x7f000001\n        String hexLocalhostUrl = \"http://0x7f000001/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(hexLocalhostUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void octalNotation_localhost_shouldBeRejected() {\n        // 127.0.0.1 in octal per-octet = 0177.0.0.01\n        String octalLocalhostUrl = \"http://0177.0.0.01/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(octalLocalhostUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void mixedNotation_privateNetwork_shouldBeRejected() {\n        // Mixed representations: 192.168.0x01.1\n        String mixedUrl = \"http://192.168.0x01.1/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(mixedUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @ParameterizedTest\n    @ValueSource(strings = {\n        \"http://0xc0a80001/admin\",      // 192.168.0.1 in full hex\n        \"http://0300.0250.0000.0001/admin\", // 192.168.0.1 in full octal\n        \"http://3232235521/admin\"       // 192.168.0.1 in decimal\n    })\n    void obfuscatedRfc1918Addresses_shouldBeRejected(String url) {\n        assertThatThrownBy(() -> validator.validate(url))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void ipv4MappedIpv6_loopback_shouldBeRejected() {\n        // IPv4-mapped IPv6 for 127.0.0.1\n        String ipv4MappedUrl = \"http://[::ffff:127.0.0.1]/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(ipv4MappedUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void ipv4MappedIpv6_privateNetwork_shouldBeRejected() {\n        // IPv4-mapped IPv6 for 192.168.1.1\n        String ipv4MappedUrl = \"http://[::ffff:192.168.1.1]/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(ipv4MappedUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void ipv6_uniqueLocal_shouldBeRejected() {\n        // fc00::/7 is unique local address range (IPv6 equivalent of private)\n        String uniqueLocalUrl = \"http://[fc00::1]/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(uniqueLocalUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void ipv6_siteLocal_shouldBeRejected() {\n        // fec0::/10 is deprecated site-local range\n        String siteLocalUrl = \"http://[fec0::1]/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(siteLocalUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void normalPublicIp_shouldNotBeRejected() {\n        // 8.8.8.8 is Google's public DNS\n        String publicIpUrl = \"http://8.8.8.8/page\";\n        \n        // Should not throw - this is a public IP\n        validator.validate(publicIpUrl);\n    }\n\n    @Test\n    void obfuscatedPublicIp_shouldNotBeRejected() {\n        // 8.8.8.8 in decimal = 134744072\n        String decimalPublicUrl = \"http://134744072/page\";\n        \n        // Should not throw - this is a public IP even when obfuscated\n        validator.validate(decimalPublicUrl);\n    }\n\n    @Test\n    void shorthandLoopback_shouldBeRejected() {\n        // 127.1 is a valid shorthand for 127.0.0.1 in many parsers\n        String shorthandUrl = \"http://127.1/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(shorthandUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n\n    @Test\n    void trailingDotHostname_localhost_shouldBeRejected() {\n        // Trailing dot is valid DNS syntax\n        String trailingDotUrl = \"http://localhost./admin\";\n        \n        assertThatThrownBy(() -> validator.validate(trailingDotUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"localhost\");\n    }\n\n    @Test\n    void uppercaseLocalhost_shouldBeRejected() {\n        String uppercaseUrl = \"http://LOCALHOST/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(uppercaseUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"localhost\");\n    }\n\n    @Test\n    void linkLocalIpv6_fullForm_shouldBeRejected() {\n        // fe80:: is link-local\n        String linkLocalUrl = \"http://[fe80:0000:0000:0000:0000:0000:0000:0001]/admin\";\n        \n        assertThatThrownBy(() -> validator.validate(linkLocalUrl))\n            .isInstanceOf(InvalidUrlException.class)\n            .hasMessageContaining(\"private or internal\");\n    }\n}\n",
+    "contentHash" : "9efb3685c2af078579b8bfd201243ae2e17e383bbf11065ec1f8874a98c9151e",
+    "producedAt" : "2026-07-17T13:26:00.185349Z"
+  }, {
+    "id" : "art-31",
+    "producedBy" : "TEST",
+    "type" : "TEST_SOURCE",
+    "name" : "src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java",
+    "content" : "package com.schwab.urlShortener;\n\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport com.schwab.urlShortener.api.CreateShortLinkRequest;\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.params.ParameterizedTest;\nimport org.junit.jupiter.params.provider.ValueSource;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.http.MediaType;\nimport org.springframework.test.web.servlet.MockMvc;\n\nimport static org.hamcrest.Matchers.containsString;\nimport static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;\nimport static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;\n\n@SpringBootTest\n@AutoConfigureMockMvc\nclass ShortLinkIntegrationTest {\n\n    @Autowired\n    private MockMvc mockMvc;\n\n    @Autowired\n    private ObjectMapper objectMapper;\n\n    @Test\n    void createShortLink_withPublicUrl_shouldSucceedEndToEnd() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"https://www.google.com/search?q=test\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isCreated())\n            .andExpect(content().contentType(MediaType.APPLICATION_JSON))\n            .andExpect(jsonPath(\"$.shortCode\").exists())\n            .andExpect(jsonPath(\"$.longUrl\").value(\"https://www.google.com/search?q=test\"))\n            .andExpect(jsonPath(\"$.shortUrl\").exists())\n            .andExpect(header().exists(\"Location\"));\n    }\n\n    @ParameterizedTest\n    @ValueSource(strings = {\n        \"http://localhost:8080/admin\",\n        \"http://127.0.0.1/internal\",\n        \"http://10.0.0.1/resource\",\n        \"http://192.168.1.1/config\",\n        \"http://172.16.0.1/secret\",\n        \"http://169.254.169.254/metadata\"\n    })\n    void createShortLink_withInternalUrls_shouldRejectEndToEnd(String internalUrl) throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(internalUrl);\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.status\").value(400))\n            .andExpect(jsonPath(\"$.detail\").exists());\n    }\n\n    @Test\n    void createShortLink_withLocalhostVariation_shouldRejectEndToEnd() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"http://localhost.localdomain/page\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"localhost\")));\n    }\n\n    @Test\n    void createShortLink_withIpv6Loopback_shouldRejectEndToEnd() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"http://[::1]/admin\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"private or internal\")));\n    }\n\n    @Test\n    void createShortLink_withIpv6LinkLocal_shouldRejectEndToEnd() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"http://[fe80::1]/resource\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"private or internal\")));\n    }\n\n    @Test\n    void createShortLink_withJavascriptScheme_shouldRejectEndToEnd() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"javascript:alert('xss')\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"scheme must be http or https\")));\n    }\n\n    @Test\n    void createShortLink_withDataScheme_shouldRejectEndToEnd() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"data:text/html,<script>alert('xss')</script>\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"scheme must be http or https\")));\n    }\n\n    @Test\n    void createShortLink_withObfuscatedLoopback_shouldRejectEndToEnd() throws Exception {\n        // 127.0.0.1 in decimal notation\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"http://2130706433/admin\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"private or internal\")));\n    }\n\n    @Test\n    void createShortLink_withObfuscatedPrivateIp_shouldRejectEndToEnd() throws Exception {\n        // 192.168.1.1 in hex notation\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"http://0xc0a80101/admin\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(content().contentType(\"application/problem+json\"))\n            .andExpect(jsonPath(\"$.title\").value(\"Invalid URL\"))\n            .andExpect(jsonPath(\"$.detail\").value(containsString(\"private or internal\")));\n    }\n\n    @Test\n    void createShortLink_withNullUrl_shouldRejectWithValidationErrorEndToEnd() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(null);\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(jsonPath(\"$.title\").value(\"Bad Request\"));\n    }\n\n    @Test\n    void createShortLink_withEmptyUrl_shouldRejectWithValidationErrorEndToEnd() throws Exception {\n        CreateShortLinkRequest request = new CreateShortLinkRequest(\"\");\n        \n        mockMvc.perform(post(\"/api/v1/links\")\n                .contentType(MediaType.APPLICATION_JSON)\n                .content(objectMapper.writeValueAsString(request)))\n            .andExpect(status().isBadRequest())\n            .andExpect(jsonPath(\"$.title\").value(\"Bad Request\"));\n    }\n\n    @Test\n    void createShortLink_multipleValidRequests_shouldSucceedIndependentlyEndToEnd() throws Exception {\n        String[] validUrls = {\n            \"https://www.example.com/page1\",\n            \"https://www.example.org/page2\",\n            \"http://public.domain.net/resource\"\n        };\n        \n        for (String url : validUrls) {\n            CreateShortLinkRequest request = new CreateShortLinkRequest(url);\n            \n            mockMvc.perform(post(\"/api/v1/links\")\n                    .contentType(MediaType.APPLICATION_JSON)\n                    .content(objectMapper.writeValueAsString(request)))\n                .andExpect(status().isCreated())\n                .andExpect(jsonPath(\"$.longUrl\").value(url));\n        }\n    }\n}\n",
+    "contentHash" : "f51165fffc1cb6e9310f2808e14c8005b51e6c7f695b40cf9be04c978d3e259f",
+    "producedAt" : "2026-07-17T13:26:00.185466Z"
+  }, {
+    "id" : "art-22",
+    "producedBy" : "DOCS",
+    "type" : "DOCUMENTATION",
+    "name" : "change-notes.md",
+    "content" : "# Change notes\n\n_Generated by the agentic harness. Reviewed by a human before merge._\n\n# Documentation: URL Validation for Link Safety\n\n### What changed\n\nURLs submitted to create short links are now validated against XSS and SSRF attack vectors before being stored. The validator rejects non-HTTP(S) schemes (preventing `javascript:` and `data:` URLs) and blocks redirects to private/internal IP addresses (preventing attacks on internal infrastructure).\n\n### Behaviour\n\n**Validation occurs during short link creation:**\n- Input: A URL string passed to `ShortLinkService.createShortLink(String longUrl)`\n- Output: If valid, a `ShortLink` object is created and persisted. If invalid, an `InvalidUrlException` is thrown with a descriptive message.\n\n**Rejection criteria:**\n- Null or empty URLs\n- Missing or non-HTTP(S) scheme (rejects: `javascript:`, `data:`, `file:`, `ftp:`, etc.)\n- Missing host\n- Localhost hostnames or variations (`localhost`, `localhost.localdomain`, `localhost.*`)\n- IP addresses in loopback range (`127.0.0.0/8` for IPv4, `::1` for IPv6)\n- IP addresses in RFC 1918 private ranges (`10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`)\n- Link-local addresses (`169.254.0.0/16` for IPv4, `fe80::/10` for IPv6)\n\n**For hostnames that cannot be resolved (DNS failures):**\n- Validation passes; the redirect will fail naturally if the host truly does not exist\n\n**HTTP API response:**\n- `POST /api/v1/links` with invalid URL returns `400 Bad Request` with a problem+json response containing the validation error detail\n- `201 Created` response only issued for valid URLs\n\n### Configuration\n\nNone. The allowed scheme list (http, https) and private IP ranges (RFC 1918 loopback, link-local, site-local) are hardcoded.\n\n### Operational notes\n\n- Validation happens synchronously during link creation; users will see immediate feedback if a URL is rejected.\n- Legitimate URLs to public IPs, any valid public domain, and standard http/https URLs are unaffected.\n- Internal services or tools that create short links to internal systems will now be blocked; those integrations need alternative solutions (direct redirect endpoints, allowlisting, etc.).\n- Monitor for `InvalidUrlException` exceptions in logs to identify patterns of rejected URLs.\n\n### Known limitations\n\n- **DNS rebinding attacks:** An attacker controlling DNS can pass validation by serving a public IP address, then change DNS to resolve to a private IP between validation and redirect time. This is a class of attacks the validator does not defend against.\n- **IP obfuscation:** The validator detects RFC 1918 ranges and common internal patterns but cannot prevent all possible IP encoding/obfuscation schemes that may emerge.\n- **No content-based threat detection:** The validator does not detect phishing, malware, or other threats based on the destination content or domain reputation.\n- **Temporary DNS resolution failures treated as success:** If a public domain has transient DNS issues during validation, it will pass and fail only when the user attempts to access the link.\n\n---\nEvidence: model call msg_011Cd7ho3G5Pj5TZoQ7i3J7Y\n",
+    "contentHash" : "f1199b945bf1ca2705a95f069aebac138c9a0b633b1c2dc0e8ae4db6440a72f1",
+    "producedAt" : "2026-07-17T13:25:09.799801Z"
+  }, {
+    "id" : "art-29",
+    "producedBy" : "SECURITY_REVIEW",
+    "type" : "REVIEW_REPORT",
+    "name" : "security-review.md",
+    "content" : "# Security review\n\n## Deterministic scan\n\nNo credential patterns found.\n\n## Review\n\nFINDING | MEDIUM | src/main/java/com/schwab/urlShortener/service/UrlValidator.java:74 | DNS resolution in validateHost catches UnknownHostException and allows unresolvable hosts through validation, permitting storage of non-existent domains that could be registered by attackers later for delayed exploitation | Either reject unresolvable hosts immediately (breaking temporary DNS issues), or implement async validation post-creation to detect and flag suspicious domains\nFINDING | HIGH | src/main/java/com/schwab/urlShortener/service/UrlValidator.java:77-80 | Time-of-check-time-of-use (TOCTOU) race condition: DNS is resolved at creation time but not at redirect time, allowing DNS rebinding attacks where attacker passes validation with public IP then changes DNS to private IP before users click the link | Add identical validation in RedirectController before performing redirect, or cache the resolved IP address with the link and validate again at redirect time\nFINDING | LOW | src/main/java/com/schwab/urlShortener/service/UrlValidator.java:96-106 | Pattern matching for RFC 1918 ranges using regex on string representation is redundant with InetAddress.isSiteLocalAddress() and could miss edge cases in IP address formatting (octal, hex, IPv4-mapped IPv6) | Remove the redundant PRIVATE_IP_PATTERNS string matching and rely solely on InetAddress API methods which handle all IP address encodings correctly\nFINDING | MEDIUM | src/main/java/com/schwab/urlShortener/service/UrlValidator.java:59-61 | Localhost detection only checks the hostname string, missing numeric representations like 127.0.0.0/8 range beyond 127.0.0.1, and localhost variants with subdomains like \"admin.localhost\" | Remove the separate isLocalhost check entirely and rely on InetAddress.isLoopbackAddress() which correctly identifies all loopback addresses after DNS resolution\nFINDING | LOW | src/main/java/com/schwab/urlShortener/service/UrlValidator.java:35 | URL can contain credentials in userinfo component (http://user:pass@example.com) which could be logged or stored, leading to credential exposure in logs, database exports, or URL displays | Add validation to reject URLs containing userinfo component: if (uri.getUserInfo() != null) throw new InvalidUrlException(\"URLs with embedded credentials are not allowed\")\n\n### Residual risk\n\n- **DNS rebinding window**: The TOCTOU gap between validation and redirect cannot be fully closed without persistent IP caching or redirect-time revalidation. The documented limitation acknowledges this but the risk remains exploitable.\n- **Public malicious domains**: The validator blocks private IPs but has no protection against phishing sites, malware distribution, or attacker-controlled public domains as documented in the code comments.\n- **IPv6 private ranges**: Testing focuses on common IPv6 addresses (loopback, link-local) but fc00::/7 ULA (Unique Local Addresses, IPv6 equivalent of RFC 1918) may not be consistently flagged by all Java versions' isSiteLocalAddress().\n- **Redirect-time validation**: Cannot confirm from the provided files whether RedirectController performs any validation before redirect or simply blindly redirects to stored URLs, which would make the TOCTOU vulnerability exploitable in production.\n- **Rate limiting on validation**: No evidence of rate limiting on link creation, allowing attackers to probe internal networks by attempting to create links to various internal IPs and observing which ones get rejected.\n- **Error message information disclosure**: Rejection messages explicitly state \"private or internal IP\" which confirms to attackers which internal IP ranges exist and are reachable from the server's network perspective.\n- **IP address obfuscation**: While the code comment mentions IP obfuscation detection, relying on InetAddress.getByName() handles most cases, but novel encoding schemes (decimal, octal mixing, IPv4-in-IPv6) may bypass detection depending on Java version.\n\n---\nEvidence: model call msg_011Cd7ho3F5S9rz63q3qFR4x\n",
+    "contentHash" : "e86f7af26fc5c83bb14ea85d3603505cba3ce5d819688c12c5e11e33b1d91cf7",
+    "producedAt" : "2026-07-17T13:25:27.950123Z"
+  }, {
+    "id" : "art-42",
+    "producedBy" : "VALIDATE",
+    "type" : "REVIEW_REPORT",
+    "name" : "validation.md",
+    "content" : "# Validation\n\nCONFLICT | HIGH | between plan and code | Plan explicitly states \"Out of scope: Changes to redirect-time behavior in RedirectController.java\" but security review identifies HIGH severity TOCTOU vulnerability requiring redirect-time validation, which approved plan deliberately excludes\n\nCONFLICT | MEDIUM | between code and security review | Code at UrlValidator.java:96-106 implements PRIVATE_IP_PATTERNS regex matching which security review (LOW finding) calls \"redundant with InetAddress.isSiteLocalAddress() and could miss edge cases\" - code includes supposedly unnecessary duplication\n\nCONFLICT | MEDIUM | between plan and security review | Plan states \"blocking happens at creation time avoiding redirect performance concerns\" as a key decision rationale, but security review HIGH finding requires redirect-time validation to prevent DNS rebinding, contradicting the performance-driven decision\n\nCONFLICT | LOW | between code and security review | Code at UrlValidator.java:59-61 implements isLocalhost() string matching which security review (MEDIUM finding) recommends removing entirely in favor of InetAddress.isLoopbackAddress(), but code includes both approaches\n\nCONFLICT | MEDIUM | between plan risks and implementation | Plan lists \"DNS rebinding attacks could bypass IP-based validation\" as a known risk and places it \"Out of scope: Handling of edge cases like DNS rebinding or TOCTOU attacks\" but security review rates this HIGH severity requiring mitigation, not documentation\n\nCONFLICT | LOW | between code documentation and security review | Code comments at UrlValidator.java:16-17 state \"IP obfuscation in hostnames is detected\" but security review notes \"IP address obfuscation... may bypass detection depending on Java version\" suggesting detection is incomplete\n\nCONFLICT | MEDIUM | between tests and security review findings | Tests include UrlValidatorIpObfuscationTest.java with extensive obfuscation testing, but security review LOW finding says to \"Remove the redundant PRIVATE_IP_PATTERNS string matching and rely solely on InetAddress API methods\" - tests validate behavior that review says should be removed\n\nCONFLICT | LOW | between code and security review | Code does not validate userinfo component (http://user:pass@example.com) which security review (LOW finding) recommends rejecting to prevent credential exposure\n\n### Requirement coverage\n\n**Requirement: \"Make the links safer\"**\n\nThis is an AMBIGUOUS requirement with no specific acceptance conditions stated. Evaluating against the plan's interpretation:\n\n1. **Block SSRF attacks against internal infrastructure**: PARTIAL - Code implements validation to reject private IPs at creation time, but security review HIGH finding shows DNS rebinding attacks can bypass this protection due to TOCTOU gap. The plan explicitly excludes redirect-time validation needed for complete protection.\n\n2. **Prevent XSS via dangerous URL schemes**: YES - Code successfully blocks javascript:, data:, file:, and other non-HTTP(S) schemes as evidenced by tests.\n\n3. **Preserve existing workflows**: YES - Public URLs continue to work normally; only internal/private addresses are rejected with clear error messages.\n\n4. **Improve safety without external dependencies**: YES - Solution uses only built-in Java InetAddress APIs without requiring external malware/phishing services.\n\n**Overall assessment**: The change makes links SAFER but not SAFE. It addresses the documented SSRF gap partially, introduces protection against XSS schemes, but leaves multiple security findings unaddressed (TOCTOU vulnerability, credential exposure, redundant validation logic). The plan's explicit exclusion of redirect-time validation conflicts with the security review's HIGH severity finding that this is necessary for effective SSRF protection.\n\n---\nEvidence: model call msg_011Cd7hsPiVnosP8Hwv577ZL\n",
+    "contentHash" : "5e15a4158998055520e0c5c4f28b1f947949cc0999f0f8f743c647afce59d6bd",
+    "producedAt" : "2026-07-17T13:26:21.478539Z"
+  } ],
+  "assumptions" : [ {
+    "id" : "asm-3",
+    "madeBy" : "CLARIFY",
+    "statement" : "Links refer to HTTP/HTTPS hyperlinks in the application's user interface or user-generated content",
+    "reason" : "The term \"links\" could mean database foreign keys, symbolic links, API endpoints, or hyperlinks - each requiring completely different safety measures",
+    "risk" : "HIGH",
+    "status" : "REJECTED",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7h8uib2L6DYeMbKeGny",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:16:36.560260Z",
+    "resolution" : "No. There is no UI. \"Links\" here means the short links this service creates: a short code that resolves to a user-supplied target URL, per ShortLink and UrlValidator. Not UI hyperlinks, not FKs."
+  }, {
+    "id" : "asm-4",
+    "madeBy" : "CLARIFY",
+    "statement" : "The primary safety concern is preventing users from being directed to malicious or phishing websites",
+    "reason" : "Safety could mean preventing CSRF attacks, stopping credential leakage, blocking tracking, preventing open redirects, or numerous other security concerns - each requiring different solutions",
+    "risk" : "HIGH",
+    "status" : "CONFIRMED",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7h8uib2L6DYeMbKeGny",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:16:36.560299Z",
+    "resolution" : "Yes. A shortener hides the destination from whoever clicks it, so a malicious target URL is the defining risk of this service. UrlValidator already blocks javascript: and data: for exactly that reason — this is the same threat, one layer out."
+  }, {
+    "id" : "asm-5",
+    "madeBy" : "CLARIFY",
+    "statement" : "This applies to all links throughout the system regardless of source or context",
+    "reason" : "Links from trusted admin users, third-party content, user-generated content, and internal navigation may require different safety measures with different risk profiles",
+    "risk" : "HIGH",
+    "status" : "CONFIRMED",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7h8uib2L6DYeMbKeGny",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:16:36.560315Z",
+    "resolution" : "Yes, trivially. There is one kind of link and no notion of a trusted submitter. Everything arrives through POST /api/v1/links and gets the same treatment."
+  }, {
+    "id" : "asm-6",
+    "madeBy" : "CLARIFY",
+    "statement" : "Existing link functionality and user workflows should be preserved while adding safety measures",
+    "reason" : "Safety improvements could involve removing certain link types entirely, requiring multi-step confirmation, or blocking entire categories of destinations",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7h8uib2L6DYeMbKeGny",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:16:36.560326Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-7",
+    "madeBy" : "CLARIFY",
+    "statement" : "Safety measures should be automated/technical rather than user-facing warnings or education",
+    "reason" : "The solution could be technical validation, user confirmations/warnings, or training rather than code changes",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7h8uib2L6DYeMbKeGny",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:16:36.560345Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-8",
+    "madeBy" : "CLARIFY",
+    "statement" : "This is a proactive security improvement rather than addressing a specific incident or compliance requirement",
+    "reason" : "The urgency, scope and acceptable tradeoffs differ significantly between compliance-driven and proactive improvements",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7h8uib2L6DYeMbKeGny",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:16:36.560353Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-23",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "DNS resolution in validateHost catches UnknownHostException and allows unresolvable hosts through validation, permitting storage of non-existent domains that could be registered by attackers later for delayed exploitation (at src/main/java/com/schwab/urlShortener/service/UrlValidator.java:74)",
+    "reason" : "security review finding; suggested fix: Either reject unresolvable hosts immediately (breaking temporary DNS issues), or implement async validation post-creation to detect and flag suspicious domains",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7ho3F5S9rz63q3qFR4x",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/service/UrlValidator.java:74",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:25:27.949471Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-24",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "Time-of-check-time-of-use (TOCTOU) race condition: DNS is resolved at creation time but not at redirect time, allowing DNS rebinding attacks where attacker passes validation with public IP then changes DNS to private IP before users click the link (at src/main/java/com/schwab/urlShortener/service/UrlValidator.java:77-80)",
+    "reason" : "security review finding; suggested fix: Add identical validation in RedirectController before performing redirect, or cache the resolved IP address with the link and validate again at redirect time",
+    "risk" : "HIGH",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7ho3F5S9rz63q3qFR4x",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/service/UrlValidator.java:77-80",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:25:27.949525Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-25",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "Pattern matching for RFC 1918 ranges using regex on string representation is redundant with InetAddress.isSiteLocalAddress() and could miss edge cases in IP address formatting (octal, hex, IPv4-mapped IPv6) (at src/main/java/com/schwab/urlShortener/service/UrlValidator.java:96-106)",
+    "reason" : "security review finding; suggested fix: Remove the redundant PRIVATE_IP_PATTERNS string matching and rely solely on InetAddress API methods which handle all IP address encodings correctly",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7ho3F5S9rz63q3qFR4x",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/service/UrlValidator.java:96-106",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:25:27.949540Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-26",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "Localhost detection only checks the hostname string, missing numeric representations like 127.0.0.0/8 range beyond 127.0.0.1, and localhost variants with subdomains like \"admin.localhost\" (at src/main/java/com/schwab/urlShortener/service/UrlValidator.java:59-61)",
+    "reason" : "security review finding; suggested fix: Remove the separate isLocalhost check entirely and rely on InetAddress.isLoopbackAddress() which correctly identifies all loopback addresses after DNS resolution",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7ho3F5S9rz63q3qFR4x",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/service/UrlValidator.java:59-61",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:25:27.949551Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-27",
+    "madeBy" : "SECURITY_REVIEW",
+    "statement" : "URL can contain credentials in userinfo component (http://user:pass@example.com) which could be logged or stored, leading to credential exposure in logs, database exports, or URL displays (at src/main/java/com/schwab/urlShortener/service/UrlValidator.java:35)",
+    "reason" : "security review finding; suggested fix: Add validation to reject URLs containing userinfo component: if (uri.getUserInfo() != null) throw new InvalidUrlException(\"URLs with embedded credentials are not allowed\")",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7ho3F5S9rz63q3qFR4x",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/service/UrlValidator.java:35",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:25:27.949563Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-33",
+    "madeBy" : "VALIDATE",
+    "statement" : "Plan explicitly states \"Out of scope: Changes to redirect-time behavior in RedirectController.java\" but security review identifies HIGH severity TOCTOU vulnerability requiring redirect-time validation, which approved plan deliberately excludes (between between plan and code)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "HIGH",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hsPiVnosP8Hwv577ZL",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:26:21.478076Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-34",
+    "madeBy" : "VALIDATE",
+    "statement" : "Code at UrlValidator.java:96-106 implements PRIVATE_IP_PATTERNS regex matching which security review (LOW finding) calls \"redundant with InetAddress.isSiteLocalAddress() and could miss edge cases\" - code includes supposedly unnecessary duplication (between between code and security review)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hsPiVnosP8Hwv577ZL",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:26:21.478101Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-35",
+    "madeBy" : "VALIDATE",
+    "statement" : "Plan states \"blocking happens at creation time avoiding redirect performance concerns\" as a key decision rationale, but security review HIGH finding requires redirect-time validation to prevent DNS rebinding, contradicting the performance-driven decision (between between plan and security review)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hsPiVnosP8Hwv577ZL",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:26:21.478113Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-36",
+    "madeBy" : "VALIDATE",
+    "statement" : "Code at UrlValidator.java:59-61 implements isLocalhost() string matching which security review (MEDIUM finding) recommends removing entirely in favor of InetAddress.isLoopbackAddress(), but code includes both approaches (between between code and security review)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hsPiVnosP8Hwv577ZL",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:26:21.478122Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-37",
+    "madeBy" : "VALIDATE",
+    "statement" : "Plan lists \"DNS rebinding attacks could bypass IP-based validation\" as a known risk and places it \"Out of scope: Handling of edge cases like DNS rebinding or TOCTOU attacks\" but security review rates this HIGH severity requiring mitigation, not documentation (between between plan risks and implementation)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hsPiVnosP8Hwv577ZL",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:26:21.478131Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-38",
+    "madeBy" : "VALIDATE",
+    "statement" : "Code comments at UrlValidator.java:16-17 state \"IP obfuscation in hostnames is detected\" but security review notes \"IP address obfuscation... may bypass detection depending on Java version\" suggesting detection is incomplete (between between code documentation and security review)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hsPiVnosP8Hwv577ZL",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:26:21.478140Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-39",
+    "madeBy" : "VALIDATE",
+    "statement" : "Tests include UrlValidatorIpObfuscationTest.java with extensive obfuscation testing, but security review LOW finding says to \"Remove the redundant PRIVATE_IP_PATTERNS string matching and rely solely on InetAddress API methods\" - tests validate behavior that review says should be removed (between between tests and security review findings)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "MEDIUM",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hsPiVnosP8Hwv577ZL",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:26:21.478148Z",
+    "resolution" : null
+  }, {
+    "id" : "asm-40",
+    "madeBy" : "VALIDATE",
+    "statement" : "Code does not validate userinfo component (http://user:pass@example.com) which security review (LOW finding) recommends rejecting to prevent credential exposure (between between code and security review)",
+    "reason" : "validation found the artifacts disagree",
+    "risk" : "LOW",
+    "status" : "OPEN",
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hsPiVnosP8Hwv577ZL",
+      "detail" : null
+    } ],
+    "recordedAt" : "2026-07-17T13:26:21.478155Z",
+    "resolution" : null
+  } ],
+  "decisions" : [ {
+    "id" : "dec-1",
+    "stage" : "INTAKE",
+    "question" : "What is actually being asked for?",
+    "choice" : "Links in the system should be made safer.",
+    "rationale" : "Normalised from the raw requirement; scope boundaries made explicit so later stages cannot quietly widen them.",
+    "alternatives" : [ {
+      "option" : "Pass the raw requirement through unchanged",
+      "rejectedBecause" : "Leaves every later stage to interpret it independently, and they will not interpret it the same way"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7h8guA84LBSEMHtrkwh",
+      "detail" : null
+    }, {
+      "kind" : "REQUIREMENT",
+      "locator" : "Make the links safer",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:16:23.881582Z"
+  }, {
+    "id" : "dec-10",
+    "stage" : "EXPLORE",
+    "question" : "Which parts of the codebase does this change touch?",
+    "choice" : "src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java, src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java, src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java, src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java, src/test/java/com/schwab/urlShortener/service/ShortLinkServiceTest.java, src/main/java/com/schwab/urlShortener/config/AsyncConfig.java",
+    "rationale" : "Identified by searching for the concepts in the requirement, then reading the files that matched. Limited to 6 files to bound context size.",
+    "alternatives" : [ {
+      "option" : "Read the whole repository into context",
+      "rejectedBecause" : "Unaffordable, and buries the relevant three files in noise"
+    } ],
+    "evidence" : [ {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:\\b(Link|URL|Uri|Href|redirect|openUrl|createLink)\\b",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:\\b(href|url|link|uri)\\s*=|getAttribute\\s*\\(\\s*[\"\\']?(href|url|link|uri)",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:\\b(HtmlLink|Hyperlink|ExternalLink|SafeUrl|UrlValidator|LinkSanitizer)\\b",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:`",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:/\\b(redirect|location|setHeader|sendRedirect|forward|Location)\\b/",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "search_repo:/\\b(sanitize|escape|encode|validate|check|safe)\\b.*\\b(url|link|href|uri)\\b/",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/api/RedirectControllerTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/test/java/com/schwab/urlShortener/service/ShortLinkServiceTest.java",
+      "detail" : null
+    }, {
+      "kind" : "SOURCE_FILE",
+      "locator" : "src/main/java/com/schwab/urlShortener/config/AsyncConfig.java",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:16:53.458095Z"
+  }, {
+    "id" : "dec-12",
+    "stage" : "PLAN",
+    "question" : "What is the shape of this change?",
+    "choice" : "see the plan artifact",
+    "rationale" : "The plan did not state a key decision in the expected form; its reasoning is in the artifact rather than in this ledger entry.",
+    "alternatives" : [ ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hB5uZuarK1LCY2v6xg",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:17:16.606440Z"
+  }, {
+    "id" : "dec-14",
+    "stage" : "APPROVAL_GATE",
+    "question" : "Assumption: Links refer to HTTP/HTTPS hyperlinks in the application's user interface or user-generated content",
+    "choice" : "REJECTED",
+    "rationale" : "No. There is no UI. \"Links\" here means the short links this service creates: a short code that resolves to a user-supplied target URL, per ShortLink and UrlValidator. Not UI hyperlinks, not FKs.",
+    "alternatives" : [ ],
+    "evidence" : [ {
+      "kind" : "HUMAN_INPUT",
+      "locator" : "REJECTED",
+      "detail" : null
+    } ],
+    "decidedBy" : "HUMAN",
+    "decidedAt" : "2026-07-17T13:23:41.176315Z"
+  }, {
+    "id" : "dec-15",
+    "stage" : "APPROVAL_GATE",
+    "question" : "Assumption: The primary safety concern is preventing users from being directed to malicious or phishing websites",
+    "choice" : "CONFIRMED",
+    "rationale" : "Yes. A shortener hides the destination from whoever clicks it, so a malicious target URL is the defining risk of this service. UrlValidator already blocks javascript: and data: for exactly that reason — this is the same threat, one layer out.",
+    "alternatives" : [ ],
+    "evidence" : [ {
+      "kind" : "HUMAN_INPUT",
+      "locator" : "CONFIRMED",
+      "detail" : null
+    } ],
+    "decidedBy" : "HUMAN",
+    "decidedAt" : "2026-07-17T13:23:41.176529Z"
+  }, {
+    "id" : "dec-16",
+    "stage" : "APPROVAL_GATE",
+    "question" : "Assumption: This applies to all links throughout the system regardless of source or context",
+    "choice" : "CONFIRMED",
+    "rationale" : "Yes, trivially. There is one kind of link and no notion of a trusted submitter. Everything arrives through POST /api/v1/links and gets the same treatment.",
+    "alternatives" : [ ],
+    "evidence" : [ {
+      "kind" : "HUMAN_INPUT",
+      "locator" : "CONFIRMED",
+      "detail" : null
+    } ],
+    "decidedBy" : "HUMAN",
+    "decidedAt" : "2026-07-17T13:23:41.178344Z"
+  }, {
+    "id" : "dec-17",
+    "stage" : "APPROVAL_GATE",
+    "question" : "Human reviews the plan, assumptions and impact before implementation",
+    "choice" : "APPROVE",
+    "rationale" : "Settled all three. Corrected asm-3: there is no UI — \"links\" means the short links this service creates, i.e. user-supplied target URLs behind a short code.",
+    "alternatives" : [ ],
+    "evidence" : [ {
+      "kind" : "HUMAN_INPUT",
+      "locator" : "APPROVE",
+      "detail" : null
+    } ],
+    "decidedBy" : "HUMAN",
+    "decidedAt" : "2026-07-17T13:23:41.178597Z"
+  }, {
+    "id" : "dec-28",
+    "stage" : "SECURITY_REVIEW",
+    "question" : "Is this change safe to propose for merge?",
+    "choice" : "1 high-severity finding(s) — release gate will block",
+    "rationale" : "Reviewed by a deterministic scan for known credential shapes and by a model for logic-level issues the scan cannot express. Neither alone is sufficient.",
+    "alternatives" : [ {
+      "option" : "Rely on the model review alone",
+      "rejectedBecause" : "Misses a hardcoded key whenever the model is attending to something more interesting"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7ho3F5S9rz63q3qFR4x",
+      "detail" : null
+    }, {
+      "kind" : "TOOL_CALL",
+      "locator" : "secret-scanner",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:25:27.949992Z"
+  }, {
+    "id" : "dec-32",
+    "stage" : "TEST",
+    "question" : "What would catch this change being wrong?",
+    "choice" : "2 test file(s): [src/test/java/com/schwab/urlShortener/service/UrlValidatorIpObfuscationTest.java, src/test/java/com/schwab/urlShortener/ShortLinkIntegrationTest.java]",
+    "rationale" : "Tests target the behaviour the plan specifies and its failure paths, rather than the shape of the implementation.",
+    "alternatives" : [ {
+      "option" : "Assert on the implementation's internals",
+      "rejectedBecause" : "Passes until the code is refactored, then fails without anything being broken"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7ho3vFvoDJtxwpVRaYv",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:26:00.187393Z"
+  }, {
+    "id" : "dec-41",
+    "stage" : "VALIDATE",
+    "question" : "Do the code, tests, documentation and review describe the same change?",
+    "choice" : "1 high-severity contradiction(s) — release gate will block",
+    "rationale" : "Each upstream stage validated its own output and could not see the others. This is the only point at which the change is examined as a whole.",
+    "alternatives" : [ {
+      "option" : "Trust each stage's own exit gate",
+      "rejectedBecause" : "Every artifact can pass its own gate while collectively describing different behaviour"
+    } ],
+    "evidence" : [ {
+      "kind" : "LLM_CALL",
+      "locator" : "msg_011Cd7hsPiVnosP8Hwv577ZL",
+      "detail" : null
+    } ],
+    "decidedBy" : "AGENT",
+    "decidedAt" : "2026-07-17T13:26:21.478372Z"
+  } ],
+  "openQuestions" : [ "Which links are in scope (all links? specific categories?)", "What safety risks are being addressed (malicious URLs, broken links, tracking, privacy concerns, credential leakage?)", "How safety should be achieved (validation, sanitization, user confirmation, external checking?)", "What \"safer\" means quantitatively or qualitatively", "Whether this applies to links in code, UI, documentation, or all of the above", "What type of links need to be made safer (hyperlinks, database relationships, file system links, API links, or other)?", "What specific safety risks or threats are being addressed (malicious URLs, phishing, tracking, credential leakage, CSRF, open redirects, broken links)?", "Which links are in scope (all links, only external links, only user-generated links, links in specific modules)?", "Should the solution preserve existing link functionality, or can it change how users interact with links?", "Documented limitation: **DNS rebinding attacks:** An attacker controlling DNS can pass validation by serving a public IP address, then change DNS to resolve to a private IP between validation and redirect time. This is a class of attacks the validator does not defend against.", "Documented limitation: **IP obfuscation:** The validator detects RFC 1918 ranges and common internal patterns but cannot prevent all possible IP encoding/obfuscation schemes that may emerge.", "Documented limitation: **No content-based threat detection:** The validator does not detect phishing, malware, or other threats based on the destination content or domain reputation.", "Documented limitation: **Temporary DNS resolution failures treated as success:** If a public domain has transient DNS issues during validation, it will pass and fail only when the user attempts to access the link.", "Residual security risk: **DNS rebinding window**: The TOCTOU gap between validation and redirect cannot be fully closed without persistent IP caching or redirect-time revalidation. The documented limitation acknowledges this but the risk remains exploitable.", "Residual security risk: **Public malicious domains**: The validator blocks private IPs but has no protection against phishing sites, malware distribution, or attacker-controlled public domains as documented in the code comments.", "Residual security risk: **IPv6 private ranges**: Testing focuses on common IPv6 addresses (loopback, link-local) but fc00::/7 ULA (Unique Local Addresses, IPv6 equivalent of RFC 1918) may not be consistently flagged by all Java versions' isSiteLocalAddress().", "Residual security risk: **Redirect-time validation**: Cannot confirm from the provided files whether RedirectController performs any validation before redirect or simply blindly redirects to stored URLs, which would make the TOCTOU vulnerability exploitable in production.", "Residual security risk: **Rate limiting on validation**: No evidence of rate limiting on link creation, allowing attackers to probe internal networks by attempting to create links to various internal IPs and observing which ones get rejected.", "Residual security risk: **Error message information disclosure**: Rejection messages explicitly state \"private or internal IP\" which confirms to attackers which internal IP ranges exist and are reachable from the server's network perspective.", "Residual security risk: **IP address obfuscation**: While the code comment mentions IP obfuscation detection, relying on InetAddress.getByName() handles most cases, but novel encoding schemes (decimal, octal mixing, IPv4-in-IPv6) may bypass detection depending on Java version.", "Untested: **DNS rebinding attacks**: Tests cannot verify protection against an attacker who controls DNS and changes the IP address between validation and redirect time (TOCTOU vulnerability). This would require either mocking DNS resolution at different points in time or running live DNS servers that change responses, both of which are impractical in unit/integration tests.", "Untested: **Time-of-check-time-of-use (TOCTOU) race conditions**: Similar to DNS rebinding, we cannot test the scenario where a hostname resolves to a public IP during validation but later resolves to a private IP during the actual redirect.", "Untested: **Unknown future IP obfuscation techniques**: While we test known obfuscation methods (octal, hex, decimal, IPv4-mapped IPv6), attackers may discover new encoding schemes that Java's InetAddress parsing accepts but we haven't anticipated.", "Untested: **External DNS resolution behavior**: The tests rely on Java's `InetAddress.getByName()` behavior, which may vary across environments, DNS configurations, or when hosts are genuinely unresolvable. The production behavior of allowing through unresolvable hosts is a deliberate design choice but difficult to test consistently.", "Untested: **Performance characteristics**: Tests don't verify that DNS resolution during validation doesn't create performance bottlenecks or timeout issues with slow/unresponsive DNS servers.", "Untested: **IPv6 edge cases**: While we test common IPv6 private ranges, the full IPv6 address space has many special-use ranges that may not all be covered by Java's built-in checks.", "Requirement coverage: This is an AMBIGUOUS requirement with no specific acceptance conditions stated. Evaluating against the plan's interpretation:", "Requirement coverage: 1. **Block SSRF attacks against internal infrastructure**: PARTIAL - Code implements validation to reject private IPs at creation time, but security review HIGH finding shows DNS rebinding attacks can bypass this protection due to TOCTOU gap. The plan explicitly excludes redirect-time validation needed for complete protection.", "Requirement coverage: 2. **Prevent XSS via dangerous URL schemes**: YES - Code successfully blocks javascript:, data:, file:, and other non-HTTP(S) schemes as evidenced by tests.", "Requirement coverage: 3. **Preserve existing workflows**: YES - Public URLs continue to work normally; only internal/private addresses are rejected with clear error messages.", "Requirement coverage: *Overall assessment**: The change makes links SAFER but not SAFE. It addresses the documented SSRF gap partially, introduces protection against XSS schemes, but leaves multiple security findings unaddressed (TOCTOU vulnerability, credential exposure, redundant validation logic). The plan's explicit exclusion of redirect-time validation conflicts with the security review's HIGH severity finding that this is necessary for effective SSRF protection.", "entry gate refused RELEASE_GATE" ]
+}

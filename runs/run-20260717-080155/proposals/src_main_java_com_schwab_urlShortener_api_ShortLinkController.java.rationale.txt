@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/api/ShortLinkController.java
+
+Rationale:
+Add QR endpoint to existing controller following established patterns with constructor injection

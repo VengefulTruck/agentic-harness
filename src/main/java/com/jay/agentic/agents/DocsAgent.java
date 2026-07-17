@@ -1,0 +1,144 @@
+package com.jay.agentic.agents;
+
+import com.jay.agentic.llm.LlmClient;
+import com.jay.agentic.state.Artifact;
+import com.jay.agentic.state.EvidenceRef;
+import com.jay.agentic.state.StageId;
+import com.jay.agentic.state.TaskState;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Documents the proposed change.
+ *
+ * <p>Runs on {@link LlmClient.Tier#FAST}, and that is a considered choice rather
+ * than a saving. Describing a change that has already been made is not the same
+ * problem as deciding what the change should be — the reasoning happened at PLAN
+ * and IMPLEMENT, and this stage restates the result. Spending deep-model rates
+ * here buys prose that reads marginally better, which is not what the run is for.
+ *
+ * <p>The tier split within one parallel branch set is the point worth noticing:
+ * TEST and SECURITY_REVIEW run DEEP alongside this running FAST. Same fan-out,
+ * different economics, because they are different jobs.
+ */
+public final class DocsAgent implements Agent {
+
+    private static final String SYSTEM = """
+            You are the documentation step of an automated software engineering pipeline.
+            You describe a change that has been proposed, for the people who will review
+            and later maintain it.
+
+            Rules:
+            - Describe what the change does and why, not how the code is written. The
+              code is already there for anyone who wants the how.
+            - Document the observable contract: inputs, outputs, errors, limits.
+            - Do not restate the plan. The plan is a separate artifact.
+            - Do not invent behaviour that is not in the proposed code.
+            - Be brief. Documentation nobody reads is documentation that does not exist.
+            """;
+
+    private final LlmClient llm;
+
+    public DocsAgent(LlmClient llm) {
+        this.llm = llm;
+    }
+
+    @Override
+    public StageId stage() {
+        return StageId.DOCS;
+    }
+
+    @Override
+    public Output execute(TaskState state) throws AgentException {
+        List<Artifact> patches = state.artifactsOfType(Artifact.Type.PATCH);
+        if (patches.isEmpty()) {
+            throw new AgentException("docs has no proposed change to document");
+        }
+
+        Map<String, String> inputs = new HashMap<>();
+        for (Artifact p : patches) {
+            inputs.put(p.id(), p.contentHash());
+        }
+
+        StringBuilder code = new StringBuilder();
+        for (Artifact p : patches) {
+            code.append("### ").append(p.name()).append("\n```java\n")
+                    .append(p.content()).append("\n```\n\n");
+        }
+
+        String prompt = PromptBuilder.create()
+                .requirement(state)
+                .section("The proposed code", code.toString())
+                .assumptions(state)
+                .task("""
+                        Write the documentation for this change under exactly these headings:
+
+                        ### What changed
+                        Two or three sentences. What is now true that was not before.
+
+                        ### Behaviour
+                        The observable contract. For an API: the endpoint, its inputs, its
+                        responses including error responses, and any limits. For internal
+                        code: what it guarantees to callers.
+
+                        ### Configuration
+                        Bullets: any new setting, its default, and what happens at the
+                        boundaries. "None" if nothing is configurable.
+
+                        ### Operational notes
+                        Bullets: what an operator should know — what to watch, what failure
+                        looks like in production. "None" if nothing.
+
+                        ### Known limitations
+                        Bullets: what this change does not handle. "None" if genuinely none.
+                        """)
+                .build();
+
+        LlmClient.Response response;
+        try {
+            response = llm.complete(LlmClient.Request.of(
+                    LlmClient.Tier.FAST, SYSTEM, prompt, 2500));
+        } catch (LlmClient.LlmException e) {
+            throw new AgentException("docs could not document the change: " + e.getMessage(), e);
+        }
+
+        String content = response.content();
+        if (content.isBlank()) {
+            throw new AgentException("docs produced no documentation");
+        }
+
+        // Limitations the model admits to go to the human, not just into a file.
+        // A limitation buried in a doc nobody opens has been disclosed to nobody.
+        for (String limit : extractSection(content, "### Known limitations")) {
+            state.addOpenQuestion("Documented limitation: " + limit);
+        }
+
+        Artifact artifact = Artifact.of(
+                state.nextId("art"), StageId.DOCS, Artifact.Type.DOCUMENTATION,
+                "change-notes.md",
+                "# Change notes\n\n_Generated by the agentic harness. Reviewed by a human "
+                        + "before merge._\n\n" + content
+                        + "\n\n---\nEvidence: model call " + response.callId() + "\n");
+
+        return Output.of(List.of(artifact), inputs);
+    }
+
+    private static List<String> extractSection(String content, String heading) {
+        List<String> found = new java.util.ArrayList<>();
+        boolean in = false;
+        for (String raw : content.split("\n")) {
+            String line = raw.strip();
+            if (line.startsWith("###")) {
+                in = line.equalsIgnoreCase(heading);
+                continue;
+            }
+            if (!in || line.isBlank() || line.equalsIgnoreCase("none")) continue;
+            String text = line.startsWith("-") || line.startsWith("*")
+                    ? line.substring(1).strip() : line;
+            if (!text.isBlank()) found.add(text);
+        }
+        return List.copyOf(found);
+    }
+}

@@ -1,0 +1,4 @@
+Target: src/main/java/com/shortlink/service/ShortLinkService.java
+
+Rationale:
+Service to resolve short link codes to full URLs (task 3) - follows typical Spring service pattern

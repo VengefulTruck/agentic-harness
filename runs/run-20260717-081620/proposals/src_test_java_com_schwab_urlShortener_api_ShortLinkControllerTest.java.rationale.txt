@@ -1,0 +1,4 @@
+Target: src/test/java/com/schwab/urlShortener/api/ShortLinkControllerTest.java
+
+Rationale:
+Add API-level test verifying 400 response with problem+json when internal URL submitted (Task 5)

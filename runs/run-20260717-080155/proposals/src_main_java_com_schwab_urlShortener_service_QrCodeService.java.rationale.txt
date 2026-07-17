@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/service/QrCodeService.java
+
+Rationale:
+New service class to encapsulate QR code generation logic using ZXing library

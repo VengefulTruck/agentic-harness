@@ -1,0 +1,22 @@
+# Build output
+target/
+
+# Run artifacts. Traces and proposals are per-run and can be large; the three
+# live runs kept as evidence are committed deliberately with `git add -f`.
+runs/
+
+# Never. The key lives in the environment and nowhere else.
+.env
+*.pem
+*.key
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store

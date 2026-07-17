@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/ratelimit/RateLimitExceededException.java
+
+Rationale:
+Exception class for rate limit violations, enables exception-based flow to GlobalExceptionHandler

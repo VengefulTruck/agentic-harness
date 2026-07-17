@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java
+
+Rationale:
+Add exception handler for QrCodeGenerationException following existing patterns

@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/api/GlobalExceptionHandler.java
+
+Rationale:
+Add @ExceptionHandler for RateLimitExceededException to return HTTP 429, following the pattern for InvalidUrlException and ShortLinkNotFoundException

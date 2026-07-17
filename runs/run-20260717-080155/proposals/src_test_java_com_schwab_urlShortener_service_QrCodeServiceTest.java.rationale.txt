@@ -1,0 +1,4 @@
+Target: src/test/java/com/schwab/urlShortener/service/QrCodeServiceTest.java
+
+Rationale:
+Unit tests for QR code service verifying PNG generation and error handling

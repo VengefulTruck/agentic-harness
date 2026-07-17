@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/ratelimit/IpRateLimiter.java
+
+Rationale:
+Component to track per-IP request counts using in-memory storage with time-window buckets, following @Component pattern from ClientIpHasher

@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/ratelimit/RateLimitExceededException.java
+
+Rationale:
+Domain exception to signal rate limit violations, following the pattern of InvalidUrlException and ShortLinkNotFoundException

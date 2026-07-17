@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/service/RateLimiterService.java
+
+Rationale:
+Core rate limiting logic with in-memory IP tracking, time window management, and configurable limits via @Value

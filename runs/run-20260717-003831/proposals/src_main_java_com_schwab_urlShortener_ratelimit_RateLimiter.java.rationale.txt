@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/ratelimit/RateLimiter.java
+
+Rationale:
+Interface defining rate limit checking contract for dependency injection and testability

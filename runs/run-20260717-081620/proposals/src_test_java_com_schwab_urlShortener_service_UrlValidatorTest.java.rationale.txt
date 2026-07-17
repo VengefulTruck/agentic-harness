@@ -1,0 +1,4 @@
+Target: src/test/java/com/schwab/urlShortener/service/UrlValidatorTest.java
+
+Rationale:
+Replace SSRF gap documentation with passing tests for internal address rejection, add edge case tests (Task 2, 3)

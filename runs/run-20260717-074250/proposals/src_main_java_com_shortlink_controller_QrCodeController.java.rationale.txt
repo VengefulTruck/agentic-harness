@@ -1,0 +1,4 @@
+Target: src/main/java/com/shortlink/controller/QrCodeController.java
+
+Rationale:
+REST controller endpoint handler (task 4) - extracts code, resolves URL, generates QR, returns PNG with correct content-type

@@ -1,0 +1,4 @@
+Target: src/test/java/com/schwab/urlShortener/service/ShortLinkServiceTest.java
+
+Rationale:
+Add test verifying internal URLs are rejected at service level with InvalidUrlException (Task 4)

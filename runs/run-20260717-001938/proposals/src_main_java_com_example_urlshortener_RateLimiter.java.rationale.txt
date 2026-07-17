@@ -1,0 +1,4 @@
+Target: src/main/java/com/example/urlshortener/RateLimiter.java
+
+Rationale:
+in-memory per-IP counter, no new dependency

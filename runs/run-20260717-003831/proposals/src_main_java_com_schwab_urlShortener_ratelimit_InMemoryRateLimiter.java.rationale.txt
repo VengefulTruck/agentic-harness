@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/ratelimit/InMemoryRateLimiter.java
+
+Rationale:
+Token bucket implementation using ConcurrentHashMap, configured via @Value following controller pattern

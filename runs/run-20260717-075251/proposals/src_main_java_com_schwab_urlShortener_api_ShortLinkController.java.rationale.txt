@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/api/ShortLinkController.java
+
+Rationale:
+Add getQrCode endpoint method to return QR code PNG for a short link, following existing controller patterns

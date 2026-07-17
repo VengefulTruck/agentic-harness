@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/ratelimit/RateLimitFilter.java
+
+Rationale:
+Servlet filter intercepting POST /api/v1/links, using IpExtractor and RateLimiter via constructor injection

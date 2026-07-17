@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/exception/RateLimitExceededException.java
+
+Rationale:
+New exception for rate limit violations, following the existing pattern of custom exceptions like InvalidUrlException and ShortLinkNotFoundException

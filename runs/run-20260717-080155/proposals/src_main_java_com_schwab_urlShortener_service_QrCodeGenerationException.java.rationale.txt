@@ -1,0 +1,4 @@
+Target: src/main/java/com/schwab/urlShortener/service/QrCodeGenerationException.java
+
+Rationale:
+Domain exception for QR code generation failures, follows existing exception pattern
